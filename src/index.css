@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&family=JetBrains+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0e0e0e;
+  --color-on-background: #ffffff;
+  --color-surface: #0e0e0e;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-low: #131313;
+  --color-surface-container: #1a1919;
+  --color-surface-container-high: #201f1f;
+  --color-surface-container-highest: #262626;
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #adaaaa;
+  --color-primary: #FFB300;
+  --color-on-primary: #3E2700;
+  --color-primary-dim: #E6A100;
+  --color-secondary: #26fedc;
+  --color-on-secondary: #005d4f;
+  --color-secondary-container: #006b5b;
+  --color-on-secondary-container: #ddfff5;
+  --color-outline: #777575;
+  --color-outline-variant: #494847;
+
+  --font-headline: "Syncopate", sans-serif;
+  --font-body: "JetBrains Mono", monospace;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --radius-none: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-full: 9999px;
+}
+
+@layer utilities {
+  .text-glow-primary {
+    text-shadow: 0 0 15px rgba(255, 179, 0, 0.4);
+  }
+  .text-glow-secondary {
+    text-shadow: 0 0 15px rgba(38, 254, 220, 0.4);
+  }
+  .border-glow-primary {
+    box-shadow: 0 0 10px rgba(255, 179, 0, 0.2);
+  }
+  .bg-glass {
+    backdrop-filter: blur(20px);
+    background-color: rgba(14, 14, 14, 0.7);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}

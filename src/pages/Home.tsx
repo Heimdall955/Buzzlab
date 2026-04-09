@@ -1,0 +1,506 @@
+import React from 'react';
+import { Thermometer, Weight, FileAudio, Home as HomeIcon, ArrowLeft, ArrowRight, Circle, Bug, Hourglass, Plane } from 'lucide-react';
+import { motion } from 'motion/react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
+
+const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+  
+  return (
+    <header className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <motion.img 
+          initial={{ scale: 1 }}
+          animate={{ scale: 1.05 }}
+          transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
+          className="w-full h-full object-cover opacity-70 grayscale-[10%] brightness-[0.5]" 
+          alt="honeybee" 
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkxa5YVh4G41xi1jdfn1frHkN3uQz3qhOguxp0z9DK-X7xPmdvvj4k7ac94bJ-HwVr-4yEii-MVyyJnQKOIglTMgD7q6P23_viBQbQCaONqFthNom6PTBK2F8vYWB87Iaw7PuUICkWrA5f87HxfP4_S3anrsFYYeqSWohXYLb93Y0aIF8E56-YzXP48UemVuomVRJvP1dz42SOuYSlv_uuiuc30_J1C5YH4MQcODJlL6v3lC3auZWLRaHas2sM_Bb3SUDZx4TZ5MiE"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+      </div>
+      <div className="relative z-10 container mx-auto px-6 md:px-12 text-center max-w-6xl">
+        <motion.h1 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="font-headline text-4xl md:text-6xl lg:text-7xl font-black text-primary uppercase tracking-tighter mb-8 leading-tight text-glow-primary"
+        >
+          BUZZLAB: {t.subtitle} <br className="hidden md:block" /> {t.title}
+        </motion.h1>
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-lg md:text-2xl text-[#F8F9FA] max-w-3xl mx-auto mb-12 opacity-100 leading-relaxed font-medium"
+        >
+          {t.desc}
+        </motion.p>
+        <motion.button 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfT-MYwHHnIwwVyJP7fwHJJR50StGJL-NfUpnOSVGcEV9yaKw/viewform?usp=header', '_blank')}
+          className="bg-primary text-on-primary font-headline font-bold text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 uppercase tracking-widest border-glow-primary"
+        >
+          {t.btn}
+        </motion.button>
+      </div>
+    </header>
+  );
+};
+
+const PactSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].pact;
+  
+  return (
+    <section className="py-20 md:py-32 bg-surface-container-low border-t border-outline-variant/10 relative z-10">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden border border-outline-variant/10">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="p-8 md:p-16 bg-surface-container-lowest flex flex-col justify-center"
+          >
+            <span className="font-headline text-outline text-xs md:text-sm tracking-[0.3em] mb-4">{t.standardMetric}</span>
+            <h2 className="font-headline text-3xl md:text-4xl text-[#F8F9FA] mb-8 uppercase">{t.standardTitle}</h2>
+            <p className="text-[#F8F9FA] mb-8 leading-relaxed opacity-90 text-sm md:text-base">
+              {t.standardDesc}
+            </p>
+            <div className="h-1 bg-outline-variant/30 w-full relative overflow-hidden">
+              <motion.div 
+                initial={{ width: 0 }}
+                whileInView={{ width: "95%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
+                className="absolute left-0 top-0 h-full bg-outline"
+              ></motion.div>
+            </div>
+            <div className="mt-4 text-outline font-headline text-[10px] md:text-xs tracking-widest">{t.standardLabel}</div>
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="p-8 md:p-16 bg-[#002b25] relative flex flex-col justify-center border-t md:border-t-0 md:border-l border-secondary/20"
+          >
+            <div className="absolute inset-0 opacity-20">
+              <img className="w-full h-full object-cover" alt="honeycomb" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPS_B5uW_9CieUiFCWo12hk9u5bDf_Vn6CrrbIhmjUmIXM-wYcxSxW5NAEcERgQ9sw4QL0TQCOUz44RtIW0R9nIb62N6hC3JkI3jBbc5n1TZngP4FjpgFPewmVrfg8a3hu5jsEJesSqqa-VxZKJQIwBJZeEsZ86gBRr-GxGQdBWpmLR0IF88dWkgpFPtS3gnPLAjBkiORFSUm47L5oKbbBatz0sv5TX1DlTIrjac3vITVKkIIF1jtPc9FMieCMmlq0mztrHC6HSPU"/>
+            </div>
+            <div className="relative z-10">
+              <span className="font-headline text-secondary text-xs md:text-sm tracking-[0.3em] mb-4">{t.buzzlabProtocol}</span>
+              <h2 className="font-headline text-3xl md:text-4xl text-secondary mb-8 uppercase text-glow-secondary">{t.title}</h2>
+              <p className="text-on-secondary-container mb-8 leading-relaxed text-sm md:text-base">
+                {t.extDesc} {t.invDesc}
+              </p>
+              <div className="h-1 bg-secondary/20 w-full relative overflow-hidden">
+                <motion.div 
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "30%" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.5, delay: 0.6, ease: "easeOut" }}
+                  className="absolute left-0 top-0 h-full bg-secondary shadow-[0_0_10px_#26fedc]"
+                ></motion.div>
+              </div>
+              <div className="mt-4 text-secondary font-headline text-[10px] md:text-xs tracking-widest">{t.buzzlabLabel}</div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const ArchitectureSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].arch;
+  
+  return (
+    <section className="py-20 md:py-32 overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 items-center gap-12 md:gap-20">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="order-2 md:order-1 relative"
+        >
+          <div className="aspect-square bg-surface-container-highest relative overflow-hidden">
+            <motion.img 
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.7 }}
+              className="w-full h-full object-cover grayscale brightness-75" 
+              alt="wild honeycomb" 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCbTc4W70vpfEFTAlij4x58mcF1oTsSeV2vx9c8v4QnWXwdYterlppiBsoBYpBQu7fEDFXadnyyro9J6ZLPniFbrEm03atIZB5z9V8c_o3PRRQrw_ueX916YjEfVVLN6VaT5c9DZh4dW7ybsljhunJolXosFRF_6qieLohSeerDubJbALE8QMNcUbrxbJCsLGu9bjx8W_VZZjjx4f2uLcq1n2h-LVoGd1EvhC0Wn2C9tuu8-i-wBKm4oPvcawsTq2DYTzf43LB-uK3"
+            />
+            <div className="absolute inset-0 border-[10px] md:border-[20px] border-background pointer-events-none"></div>
+          </div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="absolute -bottom-4 -right-4 md:-bottom-8 md:-right-8 bg-primary p-4 md:p-8 text-on-primary font-headline font-bold text-xl md:text-2xl uppercase tracking-tighter"
+          >
+            FREE_FLOW
+          </motion.div>
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="order-1 md:order-2"
+        >
+          <h2 className="font-headline text-4xl md:text-6xl text-primary mb-8 md:mb-10 leading-none uppercase">{t.title}</h2>
+          <div className="space-y-6 text-on-surface-variant text-base md:text-lg">
+            <p>{t.desc1}</p>
+            <p className="border-l-2 border-secondary pl-4 md:pl-6 py-2 bg-secondary/5 italic">
+              {t.desc2}
+            </p>
+            <p>{t.desc3}</p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+const SmartColmenaSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].smart;
+  
+  return (
+    <section className="py-20 md:py-32 bg-surface-container-lowest">
+      <div className="container mx-auto px-6 md:px-12 text-center mb-12 md:mb-20">
+        <span className="text-secondary font-headline tracking-[0.2em] md:tracking-[0.4em] text-[10px] md:text-xs">HARDWARE INTERFACE v2.4</span>
+        <h2 className="font-headline text-3xl md:text-5xl mt-4 uppercase">{t.title}</h2>
+      </div>
+      <div className="container mx-auto px-6 md:px-12 relative">
+        <div className="max-w-4xl mx-auto relative group">
+          <div className="aspect-video bg-surface-container-low border border-outline-variant/10 flex items-center justify-center p-4 md:p-12 overflow-hidden relative">
+            <img className="w-full h-full object-contain opacity-40 mix-blend-screen" alt="schematic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vTo1ocH7bkusolFdCbwNRGG-tJWdiMbp_7xrASjNZTwvW5IkND8KDt9_lO5y6htx_vREnn9NrS6T4e0Fh3E5a1Y4QLXsXjgaUeOTxLVzwTubTqPv3nw7wcXLIpKWZpktM64pvN0O4aIwn7nPgABdsGtj2re5vu08p89MNsiadI9XiLRGJiMLc-7S5mjK_IEqJiGLeUYQLrxc-Snzzs1qRKofppS3O2TEpx30_ShHIG7jyYyrG_ESQ4O7E4ppxryWA49Z6fH4wZi3"/>
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="absolute top-1/4 left-4 md:left-1/4 bg-glass border border-secondary/30 p-2 md:p-4 animate-pulse hover:animate-none hover:scale-110 transition-transform"
+            >
+              <div className="flex items-center gap-2 md:gap-3">
+                <Thermometer className="text-secondary w-5 h-5 md:w-6 md:h-6" />
+                <div className="text-left">
+                  <p className="text-[8px] md:text-[10px] text-secondary font-headline uppercase">{t.temp}</p>
+                  <p className="text-base md:text-xl text-on-surface font-bold">35.2ºC</p>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="absolute bottom-1/4 right-4 md:right-1/4 bg-glass border border-primary/30 p-2 md:p-4 animate-pulse hover:animate-none hover:scale-110 transition-transform"
+            >
+              <div className="flex items-center gap-2 md:gap-3">
+                <Weight className="text-primary w-5 h-5 md:w-6 md:h-6" />
+                <div className="text-left">
+                  <p className="text-[8px] md:text-[10px] text-primary font-headline uppercase">{t.weight}</p>
+                  <p className="text-base md:text-xl text-on-surface font-bold">48KG</p>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="absolute top-1/2 right-2 md:right-10 bg-glass border border-secondary/30 p-2 md:p-4 hidden sm:block hover:scale-110 transition-transform"
+            >
+              <div className="flex items-center gap-2 md:gap-3">
+                <FileAudio className="text-secondary w-5 h-5 md:w-6 md:h-6" />
+                <div className="text-left">
+                  <p className="text-[8px] md:text-[10px] text-secondary font-headline uppercase">{t.audio}</p>
+                  <p className="text-base md:text-xl text-on-surface font-bold">SIESTA_MODE</p>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="absolute bottom-4 md:bottom-10 left-1/4 md:left-1/3 bg-glass border border-white/30 p-2 md:p-4 hidden sm:block hover:scale-110 transition-transform"
+            >
+              <div className="flex items-center gap-2 md:gap-3">
+                <HomeIcon className="text-on-surface w-5 h-5 md:w-6 md:h-6" />
+                <div className="text-left">
+                  <p className="text-[8px] md:text-[10px] text-on-surface-variant font-headline uppercase">{t.insulation}</p>
+                  <p className="text-base md:text-xl text-on-surface font-bold">ÁTICO DE LUJO</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const GardenCarousel = () => {
+  const { language } = useLanguage();
+  const t = translations[language].garden;
+  
+  return (
+    <section className="py-20 md:py-32 overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-6 md:gap-8">
+        <div className="max-w-2xl">
+          <h2 className="font-headline text-3xl md:text-5xl text-on-surface uppercase mb-4 md:mb-6">{t.title}</h2>
+          <p className="text-on-surface-variant text-sm md:text-base">{t.desc}</p>
+        </div>
+        <div className="flex gap-4">
+          <button className="w-10 h-10 md:w-12 md:h-12 border border-outline-variant flex items-center justify-center hover:bg-white/10 transition-colors">
+            <ArrowLeft className="w-5 h-5" />
+          </button>
+          <button className="w-10 h-10 md:w-12 md:h-12 border border-outline-variant flex items-center justify-center hover:bg-white/10 transition-colors">
+            <ArrowRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+      <div className="flex gap-6 md:gap-8 px-6 md:px-12 overflow-x-auto no-scrollbar pb-10 snap-x">
+        {[
+          {
+            name: t.lavenderName,
+            status: "JUNIO_ACTIVE",
+            desc: t.lavenderDesc,
+            img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB7ebpgDqwgViiIq3WEZ_pgVApktd5i4mqFa-ISPBXwbYyb97sRwH-MSq5l_iiZe3L0cPXzrRm1quWSVBWIGWPTDwYq8UfQOFII8-KgSb4qqH7paTShBwq6Ae6mGqjbdEgC13yfTdqpwz_fXIJ7NFMQFwraFieJ7T95qugF5Q9azlqEBblCwrhnevFGR80y-Wy66HaEIP7dv7pay1OVZ1HwfRqDxTj7AjW-rBVisKdL14JdoyrAPjloJLAEoUWkRiC3GgOA2rYEtdUE"
+          },
+          {
+            name: t.rosemaryName,
+            status: "ABRIL_ACTIVE",
+            desc: t.rosemaryDesc,
+            img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAaXBX6kIar2zeb055q1zopIsukWDdkYssBmlCuyl-87ACfXei_yzc0E4lk_iggdje-uxrWSmgnEvqk63ZikB33N-SShBgHN-VzjVc22PeorA27rlE-1Birl1v1lcVsvvY65So6JDR3VcXiYlwRkV_-M_arsbaIWJxckxMrwf4jP4uLewY94FgNKBbX3iWK8YWRl-mzKcPwXgSdvjD2cGoMbZH35eVgTXRAyO5MCjXf_IxiVwv8l7lhPT8eFlrS8-0WHDJ7Tm2nNMdk"
+          },
+          {
+            name: t.thymeName,
+            status: "MAYO_ACTIVE",
+            desc: t.thymeDesc,
+            img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCPKO4PbeX9BHIYqlfCTg70ZKlIfQxPRQIQno4If9-Ql3ktkmCKIZSrPem420CoYVRQc4cTQUHqMZbaF708UjyWs_F6hJzcXuRqalcVWEVumOStzFbdVltTGSJ_GM3mlNn5Ng0vsbJvXZ1rID6tE_AOLbShPCBsu-zh0ySJW-ZnRHbQaSn8fK9e8oAFWiPAEgBtsJ5WzRdI25CQckGMvHjWvB_FxuoLqFanltZeyMuV-xkYtnG9M1GxYb8HMkfE4axUzXGUfeASqPvQ"
+          }
+        ].map((item, i) => (
+          <motion.div 
+            key={i} 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: i * 0.2 }}
+            className="min-w-[300px] md:min-w-[400px] snap-center bg-surface-container-high group border border-transparent hover:border-secondary transition-colors duration-500"
+          >
+            <div className="h-48 md:h-64 overflow-hidden">
+              <img className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" alt={item.name} src={item.img}/>
+            </div>
+            <div className="p-6 md:p-8">
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="font-headline text-xl md:text-2xl uppercase text-secondary">{item.name}</h3>
+                <span className="text-secondary/50 font-headline text-[10px] md:text-xs">{item.status}</span>
+              </div>
+              <p className="text-xs md:text-sm opacity-60 leading-relaxed">
+                {item.desc}
+              </p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+const SynthesisCycle = () => {
+  const { language } = useLanguage();
+  const t = translations[language].cycle;
+  
+  return (
+    <section className="py-20 md:py-32 bg-[#0e0e0e] border-t border-outline-variant/10">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="mb-16 md:mb-20 text-center">
+          <span className="text-secondary font-headline tracking-[0.2em] md:tracking-[0.4em] text-[10px] md:text-xs">BIOLOGICAL_RUNTIME v1.0</span>
+          <h2 className="font-headline text-3xl md:text-5xl lg:text-6xl mt-4 uppercase text-glow-secondary">{t.title}</h2>
+        </div>
+        <div className="relative max-w-6xl mx-auto">
+          <div className="absolute top-[40px] left-0 w-full h-[2px] bg-secondary/20 hidden md:block"></div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+            {[
+              { icon: Circle, title: t.eggTitle, days: t.eggDays, desc: t.eggDesc, active: false },
+              { icon: Bug, title: t.larvaTitle, days: t.larvaDays, desc: t.larvaDesc, active: false },
+              { icon: Hourglass, title: t.pupaTitle, days: t.pupaDays, desc: t.pupaDesc, active: true },
+              { icon: Plane, title: t.adultTitle, days: t.adultDays, desc: t.adultDesc, active: false }
+            ].map((stage, i) => (
+              <motion.div 
+                key={i} 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.2 }}
+                className="flex flex-col items-center group cursor-pointer"
+              >
+                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-high border-2 flex items-center justify-center mb-6 relative transition-colors duration-300 ${stage.active ? 'border-primary' : 'border-secondary/30 group-hover:border-primary'}`}>
+                  <div className={`absolute inset-0 rounded-full blur-md transition-opacity ${stage.active ? 'bg-primary/20 animate-pulse opacity-100' : 'bg-secondary/10 opacity-0 group-hover:opacity-100'}`}></div>
+                  <stage.icon className={`w-8 h-8 md:w-10 md:h-10 transition-colors ${stage.active ? 'text-primary' : 'text-secondary group-hover:text-primary'}`} />
+                </div>
+                <div className="text-center w-full">
+                  <h3 className={`font-headline text-lg md:text-xl mb-2 transition-colors ${stage.active ? 'text-primary' : 'text-secondary group-hover:text-primary'}`}>{stage.title}</h3>
+                  <p className={`font-body text-[10px] md:text-xs mb-4 tracking-tighter ${stage.active ? 'text-primary/60' : 'text-secondary/60'}`}>{stage.days}</p>
+                  <div className={`bg-surface-container-low p-4 border transition-all ${stage.active ? 'border-primary/40' : 'border-outline-variant/20 group-hover:border-primary/40'}`}>
+                    <p className={`text-xs md:text-sm leading-relaxed ${stage.active ? 'text-on-surface italic' : 'opacity-70'}`}>{stage.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const DroneSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].drone;
+  
+  return (
+    <section className="py-20 md:py-32 bg-surface-container-lowest border-t border-secondary/10">
+      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="space-y-6 md:space-y-8 order-2 md:order-1"
+        >
+          <span className="text-secondary font-headline tracking-[0.2em] md:tracking-[0.4em] text-[10px] md:text-xs uppercase">{t.unit}</span>
+          <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl text-secondary uppercase leading-tight text-glow-secondary">{t.title}</h2>
+          <div className="space-y-4 md:space-y-6 text-on-surface-variant text-base md:text-lg">
+            <p dangerouslySetInnerHTML={{ __html: t.desc1.replace('Varroa', '<span className="text-secondary font-bold">Varroa</span>') }} />
+            <p className="bg-secondary/10 border-l-4 border-secondary p-4 md:p-6 italic text-[#F8F9FA] text-sm md:text-base">
+              {t.desc2}
+            </p>
+            <p>{t.desc3}</p>
+          </div>
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="relative group order-1 md:order-2"
+        >
+          <div className="absolute -inset-1 bg-secondary/20 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative aspect-video bg-black overflow-hidden border border-secondary/30">
+            <img className="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 transition-transform duration-700" alt="drone bee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXGsbTr-86Gi5ypKdm3O7qLB_J3httw-8gkNNfESQmuCp2miWrKUfNhZrvQBcNz9MVOSURPME0xo8a3MauQXRdp0V36LzjAZ9Um5-FZDL8plXzzEHj4plIMoWzc3XQ_WBzmwfTB6ZgVwUXrf5NCGKhF9Mk4wGraINfg0p_Q5ZOOjboJWCFgF42boRUnAGfIypdkwwPrnLmdb1CR5uoHCwsamqbJgL7mho_jb7XTRvnfqlByn_sIQ3gkmtCTbfD6tLsoA715immVYpt"/>
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-black to-transparent">
+              <div className="flex items-center gap-2">
+                <motion.span 
+                  animate={{ opacity: [1, 0.2, 1], backgroundColor: ["#26fedc", "#ff003c", "#26fedc"] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                  className="w-2 h-2 rounded-full"
+                ></motion.span>
+                <motion.span 
+                  animate={{ opacity: [1, 0.4, 1], color: ["#26fedc", "#ff003c", "#26fedc"] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                  className="font-headline text-[8px] md:text-[10px] tracking-widest"
+                >
+                  DRONE_METRIC: VARROA_BAIT_ACTIVE
+                </motion.span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+const ScarcitySection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].scarcity;
+  
+  return (
+    <section className="py-32 md:py-48 bg-surface-container-lowest border-y border-primary/10 relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+        <motion.div 
+          animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          className="w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-primary/5 rounded-full blur-[80px] md:blur-[120px]"
+        ></motion.div>
+      </div>
+      <div className="container mx-auto px-6 md:px-12 text-center relative z-10">
+        <motion.h2 
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 100, damping: 10 }}
+          className="font-headline text-5xl md:text-7xl lg:text-9xl text-primary uppercase tracking-tighter mb-4 leading-none italic"
+        >
+          {t.title}
+        </motion.h2>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="mb-12 md:mb-16 font-headline text-lg md:text-2xl text-secondary tracking-widest animate-pulse"
+        >
+          // STOCK_REMAINING_0031
+        </motion.div>
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="text-base md:text-xl text-[#F8F9FA] max-w-xl mx-auto mb-12 md:mb-16 opacity-100 font-medium leading-relaxed"
+        >
+          {t.desc}
+        </motion.p>
+        <motion.button 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfT-MYwHHnIwwVyJP7fwHJJR50StGJL-NfUpnOSVGcEV9yaKw/viewform?usp=header', '_blank')}
+          className="bg-primary text-on-primary font-headline font-bold text-lg md:text-2xl px-8 md:px-16 py-6 md:py-8 uppercase tracking-widest hover:bg-primary-dim transition-colors duration-300 w-full md:w-auto"
+        >
+          {t.btn}
+        </motion.button>
+      </div>
+    </section>
+  );
+};
+
+export const Home = () => {
+  return (
+    <>
+      <Hero />
+      <PactSection />
+      <ArchitectureSection />
+      <SmartColmenaSection />
+      <GardenCarousel />
+      <SynthesisCycle />
+      <DroneSection />
+      <ScarcitySection />
+    </>
+  );
+};
