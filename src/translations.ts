@@ -1,5 +1,8 @@
 export const translations = {
   es: {
+    whatsapp: {
+      message: "¿Quieres hablar con la abeja reina? 🐝👑"
+    },
     nav: {
       home: 'INICIO',
       lab: 'LABORATORIO',
@@ -228,6 +231,9 @@ export const translations = {
     }
   },
   en: {
+    whatsapp: {
+      message: "Want to talk to the Queen Bee? 🐝👑"
+    },
     nav: {
       home: 'HOME',
       lab: 'LAB',
@@ -456,6 +462,9 @@ export const translations = {
     }
   },
   it: {
+    whatsapp: {
+      message: "Vuoi parlare con l'Ape Regina? 🐝👑"
+    },
     nav: {
       home: 'INIZIO',
       lab: 'LABORATORIO',

@@ -2,6 +2,8 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { WhatsAppButton } from './components/WhatsAppButton';
+import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import { Analysis } from './pages/Analysis';
 import { Sanctuary } from './pages/Sanctuary';
@@ -12,6 +14,7 @@ export default function App() {
   return (
     <LanguageProvider>
       <Router>
+        <ScrollToTop />
         <div className="bg-background text-on-background font-body selection:bg-primary selection:text-background overflow-x-hidden">
           <Navbar />
           <Routes>
@@ -21,6 +24,7 @@ export default function App() {
             <Route path="/contacto" element={<Contact />} />
           </Routes>
           <Footer />
+          <WhatsAppButton />
         </div>
       </Router>
     </LanguageProvider>
