@@ -9,7 +9,7 @@ const SanctuaryHero = () => {
   const t = translations[language].sanctuary.hero;
 
   return (
-    <header className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden">
+    <header className="relative min-h-[80vh] flex flex-col justify-center pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
           className="w-full h-full object-cover opacity-40 grayscale-[30%] brightness-[0.6]" 

@@ -7,7 +7,7 @@ const ContactHero = () => {
   const t = translations[language].contact.hero;
 
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
+    <section className="relative pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1587049352847-4d4b137a4e47?q=80&w=1920" 

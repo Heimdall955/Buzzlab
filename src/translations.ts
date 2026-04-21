@@ -1,5 +1,6 @@
 export const translations = {
   es: {
+    banner: "COSECHA LUNAR: QUEDAN 12/31 BOTES DISPONIBLES",
     whatsapp: {
       message: "¿Quieres hablar con la abeja reina? 🐝👑"
     },
@@ -9,7 +10,25 @@ export const translations = {
       sanctuary: 'SANTUARIO',
       contact: 'CONTACTO'
     },
+    footer: {
+      desc: "Ingeniería biológica, extracción ética y datos de polinización. No estamos aquí para venderte sirope, sino para reprogramar el ecosistema.",
+      copyright: "© 2026 BUZZLAB. Miel extraída con el consentimiento de las Obreras.",
+      navTitle: "NAVEGACIÓN_RAPIDA",
+      socialTitle: "REDES_INTERESPECIE"
+    },
+    product: {
+      title: "EL HARDWARE ORGÁNICO",
+      subtitle: "[ BOTE DE EDICIÓN LIMITADA ]",
+      desc: "Este no es un tarro de supermercado. Es una cápsula de tiempo biológica de la floración actual. Nuestra miel cruda no se calienta, no se filtra y su extracción está restringida. Cada unidad tiene un identificador que rastrea su origen floral exacto.",
+      label: "LOTE ACTUAL: 12 DE 31",
+      btn: "RESERVAR EXTRACTO"
+    },
     hero: {
+      supertitle: "[ MIEL CRUDA BIOMONITORIZADA ]",
+      badge1: "EXTRACCIÓN ÉTICA (30%)",
+      badge2: "DATA LAB 24/7",
+      badge3: "ULTRA-LIMITADO",
+      btnMicro: "*Reserva uno de los 31 nodos disponibles",
       subtitle: "EL SANTUARIO DONDE",
       title: "LAS ABEJAS TIENEN SINDICATO",
       desc: "Mucha gente cría abejas para quitarles todo... En BuzzLab invertimos el flujo: ellas son las dueñas, nosotros solo el soporte técnico.",
@@ -231,6 +250,7 @@ export const translations = {
     }
   },
   en: {
+    banner: "LUNAR HARVEST: 12/31 JARS AVAILABLE",
     whatsapp: {
       message: "Want to talk to the Queen Bee? 🐝👑"
     },
@@ -240,7 +260,25 @@ export const translations = {
       sanctuary: 'SANCTUARY',
       contact: 'CONTACT'
     },
+    footer: {
+      desc: "Biological engineering, ethical extraction, and pollination data. We are not here to sell you syrup, but to reprogram the ecosystem.",
+      copyright: "© 2026 BUZZLAB. Honey extracted with the consent of the Worker Bees.",
+      navTitle: "QUICK_NAVIGATION",
+      socialTitle: "INTERSPECIES_SOCIALS"
+    },
+    product: {
+      title: "THE ORGANIC HARDWARE",
+      subtitle: "[ LIMITED EDITION JAR ]",
+      desc: "This is not a supermarket jar. It is a biological time capsule of the current bloom. Our raw honey is unheated, unfiltered, and its extraction strictly limited. Each unit has a unique identifier tracking its exact floral origin.",
+      label: "CURRENT BATCH: 12 OF 31",
+      btn: "RESERVE EXTRACT"
+    },
     hero: {
+      supertitle: "[ BIO-MONITORED RAW HONEY ]",
+      badge1: "ETHICAL EXTRACTION (30%)",
+      badge2: "DATA LAB 24/7",
+      badge3: "ULTRA-LIMITED",
+      btnMicro: "*Reserve one of the 31 available nodes",
       subtitle: "THE SANCTUARY WHERE",
       title: "BEES HAVE A UNION",
       desc: "Many people keep bees to take everything from them... At BuzzLab we invert the flow: they are the owners, we are just the tech support.",
@@ -462,6 +500,7 @@ export const translations = {
     }
   },
   it: {
+    banner: "RACCOLTO LUNARE: 12/31 VASETTI DISPONIBILI",
     whatsapp: {
       message: "Vuoi parlare con l'Ape Regina? 🐝👑"
     },
@@ -471,7 +510,25 @@ export const translations = {
       sanctuary: 'SANTUARIO',
       contact: 'CONTATTO'
     },
+    footer: {
+      desc: "Ingegneria biologica, estrazione etica e dati di impollinazione. Non siamo qui per venderti sciroppo, ma per riprogrammare l'ecosistema.",
+      copyright: "© 2026 BUZZLAB. Miele estratto con il consenso delle Api Operaie.",
+      navTitle: "NAVIGAZIONE_VELOCE",
+      socialTitle: "SOCIAL_INTERSPECIE"
+    },
+    product: {
+      title: "L'HARDWARE ORGANICO",
+      subtitle: "[ VASETTO EDIZIONE LIMITATA ]",
+      desc: "Questo non è un vasetto da supermercato. È una capsula del tempo biologica dell'attuale fioritura. Il nostro miele grezzo non è riscaldato, non è filtrato e la sua estrazione è limitata. Ogni unità ha un identificatore unico che traccia la sua origine floreale esatta.",
+      label: "LOTTO ATTUALE: 12 DI 31",
+      btn: "PRENOTA ESTRATTO"
+    },
     hero: {
+      supertitle: "[ MIELE GREZZO BIOMONITORATO ]",
+      badge1: "ESTRAZIONE ETICA (30%)",
+      badge2: "DATA LAB 24/7",
+      badge3: "ULTRA-LIMITATO",
+      btnMicro: "*Prenota uno dei 31 nodi disponibili",
       subtitle: "IL SANTUARIO DOVE",
       title: "LE API HANNO UN SINDACATO",
       desc: "Molte persone allevano api per togliere loro tutto... Al BuzzLab invertiamo il flusso: loro sono le proprietarie, noi siamo solo il supporto tecnico.",

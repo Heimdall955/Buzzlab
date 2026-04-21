@@ -1,5 +1,6 @@
 import React from 'react';
-import { Thermometer, Weight, FileAudio, Home as HomeIcon, ArrowLeft, ArrowRight, Circle, Bug, Hourglass, Plane } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Thermometer, Weight, FileAudio, Home as HomeIcon, ArrowLeft, ArrowRight, Circle, Bug, Hourglass, Plane, Droplet, Activity, FlaskConical, Target, ShieldCheck } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
@@ -7,9 +8,10 @@ import { translations } from '../translations';
 const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language].hero;
+  const navigate = useNavigate();
   
   return (
-    <header className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <header className="relative min-h-screen flex flex-col justify-center pt-32 pb-20 md:pt-48 md:pb-24 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <motion.img 
           initial={{ scale: 1 }}
@@ -21,34 +23,75 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
       </div>
-      <div className="relative z-10 container mx-auto px-6 md:px-12 text-center max-w-6xl">
+      <div className="relative z-10 container mx-auto px-6 md:px-12 text-center max-w-6xl flex flex-col items-center">
+        
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="mb-8"
+        >
+          <span className="font-headline text-primary text-sm md:text-base tracking-[0.3em] font-bold border border-primary/50 px-4 py-2 bg-background/50 backdrop-blur-sm rounded-none">
+            {t.supertitle}
+          </span>
+        </motion.div>
+
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           className="font-headline text-4xl md:text-6xl lg:text-7xl font-black text-primary uppercase tracking-tighter mb-8 leading-tight text-glow-primary"
         >
           BUZZLAB: {t.subtitle} <br className="hidden md:block" /> {t.title}
         </motion.h1>
+        
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-lg md:text-2xl text-[#F8F9FA] max-w-3xl mx-auto mb-12 opacity-100 leading-relaxed font-medium"
+          className="text-lg md:text-2xl text-[#F8F9FA] max-w-3xl mx-auto mb-10 opacity-100 leading-relaxed font-medium"
         >
           {t.desc}
         </motion.p>
-        <motion.button 
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfT-MYwHHnIwwVyJP7fwHJJR50StGJL-NfUpnOSVGcEV9yaKw/viewform?usp=header', '_blank')}
-          className="bg-primary text-on-primary font-headline font-bold text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 uppercase tracking-widest border-glow-primary"
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          className="flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center mb-12 w-full max-w-3xl"
         >
-          {t.btn}
-        </motion.button>
+          <div className="flex items-center gap-2 text-white/90 bg-white/5 border border-white/10 px-4 py-2 backdrop-blur-md w-full md:w-auto justify-center">
+            <Droplet className="w-4 h-4 text-primary" />
+            <span className="font-headline text-[10px] tracking-widest uppercase">{t.badge1}</span>
+          </div>
+          <div className="flex items-center gap-2 text-white/90 bg-white/5 border border-white/10 px-4 py-2 backdrop-blur-md w-full md:w-auto justify-center">
+            <Activity className="w-4 h-4 text-primary" />
+            <span className="font-headline text-[10px] tracking-widest uppercase">{t.badge2}</span>
+          </div>
+          <div className="flex items-center gap-2 text-white/90 bg-white/5 border border-white/10 px-4 py-2 backdrop-blur-md w-full md:w-auto justify-center">
+            <FlaskConical className="w-4 h-4 text-primary" />
+            <span className="font-headline text-[10px] tracking-widest uppercase">{t.badge3}</span>
+          </div>
+        </motion.div>
+
+        <motion.div
+           initial={{ opacity: 0, scale: 0.9 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{ duration: 0.5, delay: 0.4 }}
+           className="flex flex-col items-center gap-3"
+        >
+          <motion.button 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => navigate('/contacto')}
+            className="bg-primary text-on-primary font-headline font-bold text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 uppercase tracking-widest border-glow-primary"
+          >
+            {t.btn}
+          </motion.button>
+          <span className="text-primary/70 font-headline text-[10px] md:text-xs tracking-widest uppercase mt-2">
+            {t.btnMicro}
+          </span>
+        </motion.div>
       </div>
     </header>
   );
@@ -480,7 +523,7 @@ const ScarcitySection = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfT-MYwHHnIwwVyJP7fwHJJR50StGJL-NfUpnOSVGcEV9yaKw/viewform?usp=header', '_blank')}
+          onClick={() => navigate('/contacto')}
           className="bg-primary text-on-primary font-headline font-bold text-lg md:text-2xl px-8 md:px-16 py-6 md:py-8 uppercase tracking-widest hover:bg-primary-dim transition-colors duration-300 w-full md:w-auto"
         >
           {t.btn}
@@ -490,10 +533,109 @@ const ScarcitySection = () => {
   );
 };
 
+const ProductSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].product;
+  const navigate = useNavigate();
+
+  return (
+    <section className="py-20 md:py-32 bg-surface-container-lowest relative z-10 overflow-hidden">
+      <div className="absolute top-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <motion.div
+           initial={{ opacity: 0, scale: 0.9, rotateY: 15 }}
+           whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+           viewport={{ once: true, margin: "-100px" }}
+           transition={{ duration: 0.8 }}
+           className="relative aspect-square md:aspect-[4/5] flex items-center justify-center p-8 lg:p-16"
+        >
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent opacity-60"></div>
+          
+          <div className="w-full h-full border border-primary/20 bg-background/50 backdrop-blur-md relative flex flex-col items-center justify-center shadow-[0_0_50px_rgba(255,184,0,0.15)] group">
+            <div className="absolute top-4 left-4 border-l-2 border-t-2 border-primary/50 w-8 h-8"></div>
+            <div className="absolute bottom-4 right-4 border-r-2 border-b-2 border-primary/50 w-8 h-8"></div>
+            <div className="absolute top-0 right-1/2 translate-x-1/2 w-1/2 h-[1px] bg-primary/40 block"></div>
+            
+            <div className="relative w-3/4 max-w-[280px] aspect-[1/1.3] group-hover:scale-105 transition-transform duration-700">
+               {/* Jar Simulation using CSS shapes - a sleek minimal block */}
+               <div className="absolute inset-0 bg-[#0e0e0e] shadow-2xl overflow-hidden rounded-[2px] flex flex-col">
+                  {/* Cap */}
+                  <div className="h-[20%] w-[90%] mx-auto bg-[#1a1a1a] border-b border-white/10 mt-2 rounded-t flex items-center justify-center">
+                    <div className="w-full h-[2px] bg-[#050505] repeating-linear-gradient-45"></div>
+                  </div>
+                  {/* Body with honey tint */}
+                  <div className="flex-1 bg-gradient-to-b from-[#111] to-[#2a2205] relative overflow-hidden flex flex-col items-center justify-center px-6">
+                    <span className="font-headline text-primary text-[8px] tracking-[0.3em] uppercase absolute top-6 left-1/2 -translate-x-1/2 whitespace-nowrap">BUZZLAB EXTRACT</span>
+                    
+                    {/* The label */}
+                    <div className="bg-[#f0f0f0] w-full py-8 mt-4 flex flex-col items-center justify-center shadow-inner relative">
+                      <ShieldCheck className="w-4 h-4 text-[#0a0a0a] mb-2" />
+                      <span className="font-headline text-[#0a0a0a] font-bold text-xs md:text-sm tracking-widest text-center">HONEY_OS</span>
+                      <span className="font-mono text-[8px] text-[#333] mt-2 tracking-widest">BATCH: 12/31</span>
+                      <div className="absolute bottom-2 right-2 flex gap-1">
+                        <div className="w-1 h-3 bg-[#0a0a0a]"></div><div className="w-2 h-3 bg-[#0a0a0a]"></div><div className="w-0.5 h-3 bg-[#0a0a0a]"></div>
+                      </div>
+                    </div>
+
+                    <div className="absolute bottom-4 w-full px-6 flex justify-between items-end">
+                      <span className="font-mono text-primary/40 text-[6px]">100% RAW</span>
+                      <span className="font-mono text-primary/40 text-[6px]">500G</span>
+                    </div>
+                  </div>
+               </div>
+            </div>
+            
+            {/* Glow backing */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-primary/20 blur-3xl rounded-full -z-10 group-hover:bg-primary/30 transition-colors duration-700"></div>
+          </div>
+        </motion.div>
+
+        <motion.div
+           initial={{ opacity: 0, x: 50 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           viewport={{ once: true, margin: "-100px" }}
+           transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <div className="inline-flex items-center gap-2 mb-6 border border-primary/50 px-3 py-1 bg-primary/10">
+            <span className="font-headline text-primary text-[10px] tracking-widest uppercase">{t.subtitle}</span>
+          </div>
+          <h2 className="font-headline text-4xl md:text-5xl lg:text-7xl text-[#F8F9FA] mb-8 uppercase leading-tight font-black tracking-tighter text-glow-primary">
+            {t.title}
+          </h2>
+          <p className="text-white/80 font-body text-base md:text-lg max-w-xl mb-10 leading-relaxed">
+            {t.desc}
+          </p>
+
+          <div className="bg-[#0a0a0a] border border-white/5 p-6 mb-10 flex items-center justify-between group hover:border-primary/30 transition-colors">
+             <div>
+               <p className="font-headline text-white/50 text-[10px] tracking-widest uppercase mb-1">AVAILABILITY</p>
+               <p className="font-headline text-primary font-bold tracking-widest">{t.label}</p>
+             </div>
+             <motion.div animate={{ rotate: 360 }} transition={{ duration: 10, repeat: Infinity, ease: "linear" }}>
+               <Target className="w-6 h-6 text-primary group-hover:scale-125 transition-transform" />
+             </motion.div>
+          </div>
+
+          <motion.button 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => navigate('/contacto')}
+            className="w-full sm:w-auto bg-primary text-[#0a0a0a] font-headline font-bold text-sm md:text-base px-8 py-4 uppercase tracking-widest flex items-center justify-center gap-3"
+          >
+            {t.btn}
+            <ArrowRight className="w-4 h-4" />
+          </motion.button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
 export const Home = () => {
   return (
     <>
       <Hero />
+      <ProductSection />
       <PactSection />
       <ArchitectureSection />
       <SmartColmenaSection />

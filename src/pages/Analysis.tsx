@@ -9,7 +9,7 @@ const AnalysisHero = () => {
   const t = translations[language].lab.hero;
 
   return (
-    <header className="relative min-h-[60vh] flex items-center justify-center pt-20 overflow-hidden">
+    <header className="relative min-h-[60vh] flex flex-col justify-center pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img className="w-full h-full object-cover opacity-60 grayscale-[20%] brightness-[0.4] scale-105" alt="honeybee close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkxa5YVh4G41xi1jdfn1frHkN3uQz3qhOguxp0z9DK-X7xPmdvvj4k7ac94bJ-HwVr-4yEii-MVyyJnQKOIglTMgD7q6P23_viBQbQCaONqFthNom6PTBK2F8vYWB87Iaw7PuUICkWrA5f87HxfP4_S3anrsFYYeqSWohXYLb93Y0aIF8E56-YzXP48UemVuomVRJvP1dz42SOuYSlv_uuiuc30_J1C5YH4MQcODJlL6v3lC3auZWLRaHas2sM_Bb3SUDZx4TZ5MiE"/>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
@@ -28,6 +28,26 @@ const AnalysisHero = () => {
   );
 };
 
+const LiveAudioWave = () => {
+  return (
+    <div className="flex items-center gap-1 h-8 mt-2">
+      {[...Array(12)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="w-1.5 bg-primary/80 rounded-full"
+          animate={{ height: ['20%', '100%', '30%', '80%', '20%'] }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: i * 0.1
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+
 const MonitorSection = () => {
   const { language } = useLanguage();
   const t = translations[language].lab.monitor;
@@ -35,7 +55,13 @@ const MonitorSection = () => {
   return (
     <section className="py-20 bg-background relative z-10">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        <div className="relative group">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="relative group"
+        >
           <div className="absolute -inset-1 bg-secondary/20 blur opacity-50 group-hover:opacity-100 transition duration-1000"></div>
           <div className="relative aspect-square bg-surface-container-lowest border border-secondary/30 overflow-hidden p-4">
             <motion.div 
@@ -47,59 +73,71 @@ const MonitorSection = () => {
             </motion.div>
             <img className="w-full h-full object-cover grayscale brightness-110 contrast-125" alt="bee scan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vTo1ocH7bkusolFdCbwNRGG-tJWdiMbp_7xrASjNZTwvW5IkND8KDt9_lO5y6htx_vREnn9NrS6T4e0Fh3E5a1Y4QLXsXjgaUeOTxLVzwTubTqPv3nw7wcXLIpKWZpktM64pvN0O4aIwn7nPgABdsGtj2re5vu08p89MNsiadI9XiLRGJiMLc-7S5mjK_IEqJiGLeUYQLrxc-Snzzs1qRKofppS3O2TEpx30_ShHIG7jyYyrG_ESQ4O7E4ppxryWA49Z6fH4wZi3"/>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        
+        <motion.div
+           initial={{ opacity: 0, x: 50 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           viewport={{ once: true, margin: "-100px" }}
+           transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <h2 className="font-headline text-3xl md:text-4xl text-[#F8F9FA] mb-12 uppercase tracking-widest">
             {t.title1}<br/>{t.title2}
           </h2>
           <div className="space-y-4">
-            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex items-start gap-6">
-              <Thermometer className="text-primary w-6 h-6 shrink-0 mt-1" />
-              <div>
-                <h3 className="font-headline text-primary text-[10px] tracking-widest mb-1">{t.tempTitle}</h3>
-                <motion.div 
-                  animate={{ opacity: [1, 0.4, 1] }} 
-                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                  className="flex items-center gap-2 mb-1"
-                >
-                  <div className="w-2 h-2 rounded-full bg-primary"></div>
-                  <p className="text-xl font-bold text-[#F8F9FA]">{t.tempValue}</p>
-                </motion.div>
-                <p className="text-secondary font-headline text-[10px] tracking-widest">{t.tempDesc}</p>
+            {/* Temp Sensor */}
+            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex flex-col items-start gap-4 hover:border-primary/30 transition-colors">
+              <div className="flex items-center gap-4 w-full">
+                <Thermometer className="text-primary w-6 h-6 shrink-0" />
+                <div className="flex-1">
+                  <h3 className="font-headline text-primary text-[10px] tracking-widest mb-1">{t.tempTitle}</h3>
+                  <div className="flex justify-between items-end">
+                    <p className="text-2xl font-bold text-[#F8F9FA] tabular-nums">
+                      35.<motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ duration: 2, repeat: Infinity }}>2</motion.span>ºC
+                    </p>
+                    <p className="text-secondary font-headline text-[10px] tracking-widest">{t.tempDesc}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-1 bg-white/5 overflow-hidden">
+                 <motion.div className="h-full bg-primary" animate={{ width: ['40%', '42%', '40%'] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} />
               </div>
             </div>
-            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex items-start gap-6">
-              <Weight className="text-secondary w-6 h-6 shrink-0 mt-1" />
-              <div>
-                <h3 className="font-headline text-secondary text-[10px] tracking-widest mb-1">{t.weightTitle}</h3>
-                <motion.div 
-                  animate={{ opacity: [1, 0.4, 1] }} 
-                  transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                  className="flex items-center gap-2 mb-1"
-                >
-                  <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                  <p className="text-xl font-bold text-[#F8F9FA]">{t.weightValue}</p>
-                </motion.div>
-                <p className="text-secondary font-headline text-[10px] tracking-widest">{t.weightDesc}</p>
+
+            {/* Weight Sensor */}
+            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex flex-col items-start gap-4 hover:border-secondary/30 transition-colors">
+              <div className="flex items-center gap-4 w-full">
+                <Weight className="text-secondary w-6 h-6 shrink-0" />
+                <div className="flex-1">
+                  <h3 className="font-headline text-secondary text-[10px] tracking-widest mb-1">{t.weightTitle}</h3>
+                  <div className="flex justify-between items-end">
+                    <p className="text-xl md:text-2xl font-bold text-[#F8F9FA] uppercase tabular-nums">
+                      <motion.span animate={{ opacity: [1, 0.8, 1] }} transition={{ duration: 3, repeat: Infinity }}>{t.weightValue}</motion.span>
+                    </p>
+                    <p className="text-secondary font-headline text-[10px] tracking-widest">{t.weightDesc}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-1 bg-white/5 overflow-hidden flex">
+                 <motion.div className="h-full bg-secondary" animate={{ width: ['60%', '64%', '60%'] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} />
               </div>
             </div>
-            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex items-start gap-6">
-              <FileAudio className="text-primary w-6 h-6 shrink-0 mt-1" />
-              <div>
-                <h3 className="font-headline text-primary text-[10px] tracking-widest mb-1">{t.audioTitle}</h3>
-                <motion.div 
-                  animate={{ opacity: [1, 0.4, 1] }} 
-                  transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-                  className="flex items-center gap-2 mb-1"
-                >
-                  <div className="w-2 h-2 rounded-full bg-primary"></div>
-                  <p className="text-xl font-bold text-[#F8F9FA]">{t.audioValue}</p>
-                </motion.div>
-                <p className="text-secondary font-headline text-[10px] tracking-widest">{t.audioDesc}</p>
+
+            {/* Audio Sensor */}
+            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex flex-col items-start gap-4 hover:border-primary/30 transition-colors">
+              <div className="flex items-center gap-4 w-full">
+                <FileAudio className="text-primary w-6 h-6 shrink-0" />
+                <div className="flex-1 space-y-2">
+                  <div className="flex justify-between items-start">
+                    <h3 className="font-headline text-primary text-[10px] tracking-widest">{t.audioTitle}</h3>
+                    <p className="text-secondary font-headline text-[10px] tracking-widest">{t.audioDesc}</p>
+                  </div>
+                  <LiveAudioWave />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
