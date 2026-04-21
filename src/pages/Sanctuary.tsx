@@ -3,6 +3,7 @@ import { ArrowRight, Scale } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { motion } from 'motion/react';
+import { SEO } from '../components/SEO';
 
 const SanctuaryHero = () => {
   const { language } = useLanguage();
@@ -13,6 +14,9 @@ const SanctuaryHero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           className="w-full h-full object-cover opacity-40 grayscale-[30%] brightness-[0.6]" 
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
           src="https://images.unsplash.com/photo-1585936529565-1871537209e3?q=80&w=1920" 
           alt="Soil layers and trees" 
         />
@@ -196,6 +200,7 @@ const CommunitySection = () => {
 export const Sanctuary = () => {
   return (
     <>
+      <SEO page="sanctuary" />
       <SanctuaryHero />
       <DiplomacySection />
       <RightsSection />

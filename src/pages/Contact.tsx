@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import { SEO } from '../components/SEO';
 
 const ContactHero = () => {
   const { language } = useLanguage();
@@ -12,6 +13,9 @@ const ContactHero = () => {
         <img 
           src="https://images.unsplash.com/photo-1587049352847-4d4b137a4e47?q=80&w=1920" 
           alt="Bee macro" 
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
           className="w-full h-full object-cover opacity-20 grayscale"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
@@ -272,6 +276,7 @@ const MapSection = () => {
 export const Contact = () => {
   return (
     <>
+      <SEO page="contact" />
       <ContactHero />
       <ContactForm />
       <MapSection />

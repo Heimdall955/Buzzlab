@@ -1,5 +1,12 @@
 export const translations = {
   es: {
+    seo: {
+      home: { title: "BuzzLab // Ingeniería Biológica & Miel", desc: "Miel RAW extraída con el consentimiento de las obreras. Ingeniería biológica y datos de polinización para reprogramar el ecosistema." },
+      lab: { title: "BuzzLab // Laboratorio de Datos", desc: "El Lab de Datos de BuzzLab. Monitoreo predictivo y biometría en tiempo real de nuestras colmenas inteligentes." },
+      sanctuary: { title: "BuzzLab // El Santuario Central", desc: "Instalación de bioprotección de BuzzLab. Estructuras defensivas para abejas con temperatura constante y sin estrés." },
+      network: { title: "BuzzLab // La Red (Hive-Mind)", desc: "Únete a La Red de BuzzLab. Aprende nuestro protocolo, intercambia datos y adquiere un Nodo Smart-Core para tu propio jardín." },
+      contact: { title: "BuzzLab // Contacto", desc: "Contacta con el núcleo estratégico de BuzzLab. Solicita audiencias y comunícate directamente con la colmena." }
+    },
     banner: "COSECHA LUNAR: QUEDAN 12/31 BOTES DISPONIBLES",
     whatsapp: {
       message: "¿Quieres hablar con la abeja reina? 🐝👑"
@@ -9,7 +16,8 @@ export const translations = {
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
       contact: 'CONTACTO',
-      network: 'LA RED'
+      network: 'LA RED',
+      login: 'INICIAR SESIÓN'
     },
     footer: {
       desc: "Ingeniería biológica, extracción ética y datos de polinización. No estamos aquí para venderte sirope, sino para reprogramar el ecosistema.",
@@ -288,6 +296,13 @@ export const translations = {
     }
   },
   en: {
+    seo: {
+      home: { title: "BuzzLab // Biological Engineering & Honey", desc: "RAW honey extracted with the consent of the workers. Biological engineering and pollination data to reprogram the ecosystem." },
+      lab: { title: "BuzzLab // Data Lab", desc: "The BuzzLab Data Lab. Predictive monitoring and real-time biometrics from our smart hives." },
+      sanctuary: { title: "BuzzLab // Central Sanctuary", desc: "BuzzLab's bioprotection facility. Defensive structures for bees with constant temperature and zero stress." },
+      network: { title: "BuzzLab // The Network (Hive-Mind)", desc: "Join The BuzzLab Network. Learn our protocol, exchange data, and acquire a Smart-Core Node for your own garden." },
+      contact: { title: "BuzzLab // Contact", desc: "Contact the strategic core of BuzzLab. Request audiences and communicate directly with the hive." }
+    },
     banner: "LUNAR HARVEST: 12/31 JARS AVAILABLE",
     whatsapp: {
       message: "Want to talk to the Queen Bee? 🐝👑"
@@ -297,7 +312,8 @@ export const translations = {
       lab: 'LAB',
       sanctuary: 'SANCTUARY',
       contact: 'CONTACT',
-      network: 'THE NETWORK'
+      network: 'THE NETWORK',
+      login: 'SYSTEM LOGIN'
     },
     footer: {
       desc: "Biological engineering, ethical extraction, and pollination data. We are not here to sell you syrup, but to reprogram the ecosystem.",
@@ -576,6 +592,13 @@ export const translations = {
     }
   },
   it: {
+    seo: {
+      home: { title: "BuzzLab // Ingegneria Biologica & Miele", desc: "Miele RAW estratto con il consenso delle operaie. Ingegneria biologica e dati di impollinazione per riprogrammare l'ecosistema." },
+      lab: { title: "BuzzLab // Laboratorio Dati", desc: "Il Lab Dati di BuzzLab. Monitoraggio predittivo e biometria in tempo reale dai nostri alveari intelligenti." },
+      sanctuary: { title: "BuzzLab // Il Santuario Centrale", desc: "Struttura di bioprotezione BuzzLab. Strutture difensive per api con temperatura costante e zero stress." },
+      network: { title: "BuzzLab // La Rete (Hive-Mind)", desc: "Unisciti a La Rete di BuzzLab. Impara il nostro protocollo, scambia dati e acquista un Nodo Smart-Core per il tuo giardino." },
+      contact: { title: "BuzzLab // Contatto", desc: "Contatta il nucleo strategico di BuzzLab. Richiedi udienze e comunica direttamente con l'alveare." }
+    },
     banner: "RACCOLTO LUNARE: 12/31 VASETTI DISPONIBILI",
     whatsapp: {
       message: "Vuoi parlare con l'Ape Regina? 🐝👑"
@@ -585,7 +608,8 @@ export const translations = {
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
       contact: 'CONTATTO',
-      network: 'LA RETE'
+      network: 'LA RETE',
+      login: 'ACCESSO NODO'
     },
     footer: {
       desc: "Ingegneria biologica, estrazione etica e dati di impollinazione. Non siamo qui per venderti sciroppo, ma per riprogrammare l'ecosistema.",

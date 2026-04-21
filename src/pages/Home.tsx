@@ -4,6 +4,7 @@ import { Thermometer, Weight, FileAudio, Home as HomeIcon, ArrowLeft, ArrowRight
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import { SEO } from '../components/SEO';
 
 const Hero = () => {
   const { language } = useLanguage();
@@ -19,6 +20,9 @@ const Hero = () => {
           transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
           className="w-full h-full object-cover opacity-70 grayscale-[10%] brightness-[0.5]" 
           alt="honeybee" 
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkxa5YVh4G41xi1jdfn1frHkN3uQz3qhOguxp0z9DK-X7xPmdvvj4k7ac94bJ-HwVr-4yEii-MVyyJnQKOIglTMgD7q6P23_viBQbQCaONqFthNom6PTBK2F8vYWB87Iaw7PuUICkWrA5f87HxfP4_S3anrsFYYeqSWohXYLb93Y0aIF8E56-YzXP48UemVuomVRJvP1dz42SOuYSlv_uuiuc30_J1C5YH4MQcODJlL6v3lC3auZWLRaHas2sM_Bb3SUDZx4TZ5MiE"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
@@ -230,7 +234,7 @@ const SmartColmenaSection = () => {
       <div className="container mx-auto px-6 md:px-12 relative">
         <div className="max-w-4xl mx-auto relative group">
           <div className="aspect-video bg-surface-container-low border border-outline-variant/10 flex items-center justify-center p-4 md:p-12 overflow-hidden relative">
-            <img className="w-full h-full object-contain opacity-40 mix-blend-screen" alt="schematic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vTo1ocH7bkusolFdCbwNRGG-tJWdiMbp_7xrASjNZTwvW5IkND8KDt9_lO5y6htx_vREnn9NrS6T4e0Fh3E5a1Y4QLXsXjgaUeOTxLVzwTubTqPv3nw7wcXLIpKWZpktM64pvN0O4aIwn7nPgABdsGtj2re5vu08p89MNsiadI9XiLRGJiMLc-7S5mjK_IEqJiGLeUYQLrxc-Snzzs1qRKofppS3O2TEpx30_ShHIG7jyYyrG_ESQ4O7E4ppxryWA49Z6fH4wZi3"/>
+            <img className="w-full h-full object-contain opacity-40 mix-blend-screen" loading="lazy" decoding="async" alt="schematic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vTo1ocH7bkusolFdCbwNRGG-tJWdiMbp_7xrASjNZTwvW5IkND8KDt9_lO5y6htx_vREnn9NrS6T4e0Fh3E5a1Y4QLXsXjgaUeOTxLVzwTubTqPv3nw7wcXLIpKWZpktM64pvN0O4aIwn7nPgABdsGtj2re5vu08p89MNsiadI9XiLRGJiMLc-7S5mjK_IEqJiGLeUYQLrxc-Snzzs1qRKofppS3O2TEpx30_ShHIG7jyYyrG_ESQ4O7E4ppxryWA49Z6fH4wZi3"/>
             
             <motion.div 
               initial={{ opacity: 0, scale: 0.8 }}
@@ -451,7 +455,7 @@ const DroneSection = () => {
         >
           <div className="absolute -inset-1 bg-secondary/20 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative aspect-video bg-black overflow-hidden border border-secondary/30">
-            <img className="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 transition-transform duration-700" alt="drone bee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXGsbTr-86Gi5ypKdm3O7qLB_J3httw-8gkNNfESQmuCp2miWrKUfNhZrvQBcNz9MVOSURPME0xo8a3MauQXRdp0V36LzjAZ9Um5-FZDL8plXzzEHj4plIMoWzc3XQ_WBzmwfTB6ZgVwUXrf5NCGKhF9Mk4wGraINfg0p_Q5ZOOjboJWCFgF42boRUnAGfIypdkwwPrnLmdb1CR5uoHCwsamqbJgL7mho_jb7XTRvnfqlByn_sIQ3gkmtCTbfD6tLsoA715immVYpt"/>
+            <img className="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" alt="drone bee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXGsbTr-86Gi5ypKdm3O7qLB_J3httw-8gkNNfESQmuCp2miWrKUfNhZrvQBcNz9MVOSURPME0xo8a3MauQXRdp0V36LzjAZ9Um5-FZDL8plXzzEHj4plIMoWzc3XQ_WBzmwfTB6ZgVwUXrf5NCGKhF9Mk4wGraINfg0p_Q5ZOOjboJWCFgF42boRUnAGfIypdkwwPrnLmdb1CR5uoHCwsamqbJgL7mho_jb7XTRvnfqlByn_sIQ3gkmtCTbfD6tLsoA715immVYpt"/>
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-black to-transparent">
               <div className="flex items-center gap-2">
                 <motion.span 
@@ -634,6 +638,7 @@ const ProductSection = () => {
 export const Home = () => {
   return (
     <>
+      <SEO page="home" />
       <Hero />
       <ProductSection />
       <PactSection />

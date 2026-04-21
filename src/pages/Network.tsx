@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { useNavigate } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 
 const NetworkHero = () => {
   const { language } = useLanguage();
@@ -265,6 +266,7 @@ const PricingSection = () => {
 export const Network = () => {
   return (
     <>
+      <SEO page="network" />
       <NetworkHero />
       <CommunitySection />
       <HardwareSection />

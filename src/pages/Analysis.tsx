@@ -3,6 +3,7 @@ import { Thermometer, Weight, FileAudio, Lock } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { motion } from 'motion/react';
+import { SEO } from '../components/SEO';
 
 const AnalysisHero = () => {
   const { language } = useLanguage();
@@ -11,7 +12,7 @@ const AnalysisHero = () => {
   return (
     <header className="relative min-h-[60vh] flex flex-col justify-center pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img className="w-full h-full object-cover opacity-60 grayscale-[20%] brightness-[0.4] scale-105" alt="honeybee close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkxa5YVh4G41xi1jdfn1frHkN3uQz3qhOguxp0z9DK-X7xPmdvvj4k7ac94bJ-HwVr-4yEii-MVyyJnQKOIglTMgD7q6P23_viBQbQCaONqFthNom6PTBK2F8vYWB87Iaw7PuUICkWrA5f87HxfP4_S3anrsFYYeqSWohXYLb93Y0aIF8E56-YzXP48UemVuomVRJvP1dz42SOuYSlv_uuiuc30_J1C5YH4MQcODJlL6v3lC3auZWLRaHas2sM_Bb3SUDZx4TZ5MiE"/>
+        <img className="w-full h-full object-cover opacity-60 grayscale-[20%] brightness-[0.4] scale-105" fetchPriority="high" loading="eager" decoding="sync" alt="honeybee close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkxa5YVh4G41xi1jdfn1frHkN3uQz3qhOguxp0z9DK-X7xPmdvvj4k7ac94bJ-HwVr-4yEii-MVyyJnQKOIglTMgD7q6P23_viBQbQCaONqFthNom6PTBK2F8vYWB87Iaw7PuUICkWrA5f87HxfP4_S3anrsFYYeqSWohXYLb93Y0aIF8E56-YzXP48UemVuomVRJvP1dz42SOuYSlv_uuiuc30_J1C5YH4MQcODJlL6v3lC3auZWLRaHas2sM_Bb3SUDZx4TZ5MiE"/>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
       </div>
       <div className="relative z-10 container mx-auto px-6 md:px-12 max-w-6xl">
@@ -231,7 +232,7 @@ const ArchitectureSection = () => {
         </div>
         <div className="order-1 lg:order-2 relative">
           <div className="aspect-square border border-outline-variant/20 flex items-center justify-center p-8 bg-surface-container-lowest">
-            <img className="w-full h-full object-contain opacity-80 mix-blend-screen" alt="honeycomb structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPS_B5uW_9CieUiFCWo12hk9u5bDf_Vn6CrrbIhmjUmIXM-wYcxSxW5NAEcERgQ9sw4QL0TQCOUz44RtIW0R9nIb62N6hC3JkI3jBbc5n1TZngP4FjpgFPewmVrfg8a3hu5jsEJesSqqa-VxZKJQIwBJZeEsZ86gBRr-GxGQdBWpmLR0IF88dWkgpFPtS3gnPLAjBkiORFSUm47L5oKbbBatz0sv5TX1DlTIrjac3vITVKkIIF1jtPc9FMieCMmlq0mztrHC6HSPU"/>
+            <img className="w-full h-full object-contain opacity-80 mix-blend-screen" loading="lazy" decoding="async" alt="honeycomb structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPS_B5uW_9CieUiFCWo12hk9u5bDf_Vn6CrrbIhmjUmIXM-wYcxSxW5NAEcERgQ9sw4QL0TQCOUz44RtIW0R9nIb62N6hC3JkI3jBbc5n1TZngP4FjpgFPewmVrfg8a3hu5jsEJesSqqa-VxZKJQIwBJZeEsZ86gBRr-GxGQdBWpmLR0IF88dWkgpFPtS3gnPLAjBkiORFSUm47L5oKbbBatz0sv5TX1DlTIrjac3vITVKkIIF1jtPc9FMieCMmlq0mztrHC6HSPU"/>
           </div>
         </div>
       </div>
@@ -346,6 +347,7 @@ const FooterCTA = () => {
 export const Analysis = () => {
   return (
     <>
+      <SEO page="lab" />
       <AnalysisHero />
       <MonitorSection />
       <ImmunityReport />

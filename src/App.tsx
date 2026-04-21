@@ -9,12 +9,17 @@ import { Analysis } from './pages/Analysis';
 import { Sanctuary } from './pages/Sanctuary';
 import { Contact } from './pages/Contact';
 import { Network } from './pages/Network';
+import { Login } from './pages/Login';
 import { LanguageProvider } from './context/LanguageContext';
+import { AuthProvider } from './context/AuthContext';
+import { HelmetProvider } from 'react-helmet-async';
 
 export default function App() {
   return (
-    <LanguageProvider>
-      <Router>
+    <HelmetProvider>
+      <LanguageProvider>
+        <AuthProvider>
+          <Router>
         <ScrollToTop />
         <div className="bg-background text-on-background font-body selection:bg-primary selection:text-background overflow-x-hidden">
           <Navbar />
@@ -24,11 +29,14 @@ export default function App() {
             <Route path="/santuario" element={<Sanctuary />} />
             <Route path="/red" element={<Network />} />
             <Route path="/contacto" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />
           <WhatsAppButton />
         </div>
-      </Router>
-    </LanguageProvider>
+        </Router>
+        </AuthProvider>
+      </LanguageProvider>
+    </HelmetProvider>
   );
 }
