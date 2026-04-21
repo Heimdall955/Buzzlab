@@ -47,6 +47,7 @@ export const Navbar = () => {
           <Link to="/" className={`font-headline font-bold uppercase tracking-widest text-[10px] md:text-xs transition-all duration-300 ${location.pathname === '/' ? 'text-primary border-b-2 border-primary pb-1' : 'text-white/60 hover:text-primary'}`}>{t.home}</Link>
           <Link to="/analisis" className={`font-headline font-bold uppercase tracking-widest text-[10px] md:text-xs transition-all duration-300 ${location.pathname === '/analisis' ? 'text-primary border-b-2 border-primary pb-1' : 'text-white/60 hover:text-primary'}`}>{t.lab}</Link>
           <Link to="/santuario" className={`font-headline font-bold uppercase tracking-widest text-[10px] md:text-xs transition-all duration-300 ${location.pathname === '/santuario' ? 'text-primary border-b-2 border-primary pb-1' : 'text-white/60 hover:text-primary'}`}>{t.sanctuary}</Link>
+          <Link to="/red" className={`font-headline font-bold uppercase tracking-widest text-[10px] md:text-xs transition-all duration-300 ${location.pathname === '/red' ? 'text-primary border-b-2 border-primary pb-1' : 'text-white/60 hover:text-primary'}`}>{t.network}</Link>
           <Link to="/contacto" className={`font-headline font-bold uppercase tracking-widest text-[10px] md:text-xs transition-all duration-300 ${location.pathname === '/contacto' ? 'text-primary border-b-2 border-primary pb-1' : 'text-white/60 hover:text-primary'}`}>{t.contact}</Link>
         </div>
 
@@ -96,6 +97,7 @@ export const Navbar = () => {
             <Link to="/" onClick={closeMobileMenu} className={`font-headline font-bold uppercase tracking-widest text-sm transition-all duration-300 ${location.pathname === '/' ? 'text-primary' : 'text-white/60 hover:text-primary'}`}>{t.home}</Link>
             <Link to="/analisis" onClick={closeMobileMenu} className={`font-headline font-bold uppercase tracking-widest text-sm transition-all duration-300 ${location.pathname === '/analisis' ? 'text-primary' : 'text-white/60 hover:text-primary'}`}>{t.lab}</Link>
             <Link to="/santuario" onClick={closeMobileMenu} className={`font-headline font-bold uppercase tracking-widest text-sm transition-all duration-300 ${location.pathname === '/santuario' ? 'text-primary' : 'text-white/60 hover:text-primary'}`}>{t.sanctuary}</Link>
+            <Link to="/red" onClick={closeMobileMenu} className={`font-headline font-bold uppercase tracking-widest text-sm transition-all duration-300 ${location.pathname === '/red' ? 'text-primary' : 'text-white/60 hover:text-primary'}`}>{t.network}</Link>
             <Link to="/contacto" onClick={closeMobileMenu} className={`font-headline font-bold uppercase tracking-widest text-sm transition-all duration-300 ${location.pathname === '/contacto' ? 'text-primary' : 'text-white/60 hover:text-primary'}`}>{t.contact}</Link>
           </div>
         )}

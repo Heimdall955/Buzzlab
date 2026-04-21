@@ -8,6 +8,7 @@ import { Home } from './pages/Home';
 import { Analysis } from './pages/Analysis';
 import { Sanctuary } from './pages/Sanctuary';
 import { Contact } from './pages/Contact';
+import { Network } from './pages/Network';
 import { LanguageProvider } from './context/LanguageContext';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/analisis" element={<Analysis />} />
             <Route path="/santuario" element={<Sanctuary />} />
+            <Route path="/red" element={<Network />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
           <Footer />

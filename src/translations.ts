@@ -8,7 +8,8 @@ export const translations = {
       home: 'INICIO',
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
-      contact: 'CONTACTO'
+      contact: 'CONTACTO',
+      network: 'LA RED'
     },
     footer: {
       desc: "Ingeniería biológica, extracción ética y datos de polinización. No estamos aquí para venderte sirope, sino para reprogramar el ecosistema.",
@@ -247,6 +248,43 @@ export const translations = {
         linkedinTitle: "BZZZ-LINKEDIN",
         linkedinDesc: "Networking interespecie y CVs de zánganos optimizados."
       }
+    },
+    network: {
+      hero: {
+        supertitle: "[ SISTEMA DESCENTRALIZADO ABIERTO ]",
+        title: "DEJA DE PASTOREAR, EMPIEZA A CREAR RED.",
+        subtitle: "No vendemos cursos, transferimos el código fuente.",
+        desc: "La apicultura tradicional es un sistema cerrado basado en la explotación a ciegas. En BuzzLab operamos la Mente Colmena (Hive-Mind). Unimos hardware cuántico, análisis biológico y a humanos dispuestos a aprender un protocolo en el que manda el ecosistema."
+      },
+      community: {
+        supertitle: "01 // ARCHIVOS BÁSICOS E INTELIGENCIA COLECTIVA",
+        title: "LA MENTE COLMENA (EL CLUB PRIVADO)",
+        desc: "Más que un curso, es un acceso a la Sala de Máquinas. Te enseñamos nuestro protocolo desde cero: agricultura regenerativa, biomonitoreo, inmunidad por polinización cruzada y cómo olvidarte para siempre del agua con azúcar. Aprende con nosotros, intercambia datos con otros operadores de nodos y conéctate directo con los fundadores.",
+        item1: "ACCESO AL ARCHIVO DE CAPACITACIÓN (Aprende el Método BuzzLab)",
+        item2: "AUDIENCIAS PRIVADAS SEMANALES (Habla directo con el Laboratorio Central)",
+        item3: "RED DE ALERTAS TEMPRANAS (Los operadores comparten datos de floración y amenazas locales en tiempo real)",
+        item4: "CÓDIGO FUENTE EVOLUTIVO (La información y los manuales se actualizan con cada ciclo lunar)",
+        btn: "[ INICIAR DESCARGA_ // UNIRSE A LA COMUNIDAD ]"
+      },
+      hardware: {
+        supertitle: "02 // DESPLIEGUE EN FASE FÍSICA",
+        title: "KIT DE NODO SMART-CORE",
+        desc: "Si ya tienes el código en la cabeza, necesitas servidores físicos en el jardín. No compres una caja de pino estándar que ahogará tu enjambre. Te enviamos la infraestructura técnica de BuzzLab, lista para bootear.",
+        item1: "ESTRUCTURA TERMODINÁMICA MODULAR (Diseño para estrés cero y defensa pasiva)",
+        item2: "MATRIZ DE SENSORES v2.4 (Módulo de peso, temperatura y micrófonos de frecuencia integrados)",
+        item3: "CELDAS CÉNTRICAS PARA ZÁNGANOS (Reclamo táctico orgánico contra Varroa, tu cortafuegos natural)",
+        item4: "CONEXIÓN AL HONEY_OS (Envío de datos directamente a tu panel de control, fin al estrés visual del destapado manual)",
+        btn: "[ SOLICITAR DESPLIEGUE DEL HARDWARE ]"
+      },
+      pricing: {
+        title: "PROTOCOLO DE ACCESO",
+        dataTitle: "PAQUETE DATA / HIVE-MIND",
+        dataPrice: "ABONO MENSUAL",
+        dataDesc: "Acceso a La Mente Colmena. Para aquellos que quieren operar un nodo con el código BuzzLab o re-diseñar su infraestructura actual.",
+        hwTitle: "PAQUETE HARDWARE / SMART-NODE",
+        hwPrice: "BAJO SOLICITUD",
+        hwDesc: "Envío de un nodo completo con sensores a tus coordenadas. Requiere autorización y haber completado la fase 1 de aprendizaje."
+      }
     }
   },
   en: {
@@ -258,7 +296,8 @@ export const translations = {
       home: 'HOME',
       lab: 'LAB',
       sanctuary: 'SANCTUARY',
-      contact: 'CONTACT'
+      contact: 'CONTACT',
+      network: 'THE NETWORK'
     },
     footer: {
       desc: "Biological engineering, ethical extraction, and pollination data. We are not here to sell you syrup, but to reprogram the ecosystem.",
@@ -497,6 +536,43 @@ export const translations = {
         linkedinTitle: "BZZZ-LINKEDIN",
         linkedinDesc: "Interspecies networking and optimized drone CVs."
       }
+    },
+    network: {
+      hero: {
+        supertitle: "[ OPEN DECENTRALIZED SYSTEM ]",
+        title: "STOP HERDING, START NETWORKING.",
+        subtitle: "We don't sell courses, we transfer the source code.",
+        desc: "Traditional beekeeping is a closed system based on blind exploitation. At BuzzLab, we operate the Hive-Mind. We unite quantum hardware, biological analysis, and humans willing to learn a protocol where the ecosystem rules."
+      },
+      community: {
+        supertitle: "01 // CORE FILES AND COLLECTIVE INTELLIGENCE",
+        title: "THE HIVE-MIND (PRIVATE CLUB)",
+        desc: "More than a course, it's access to the Engine Room. We teach you our protocol from scratch: regenerative agriculture, biomonitoring, cross-pollination immunity, and how to forget about sugar water forever. Learn with us, exchange data with other node operators, and connect directly with the founders.",
+        item1: "TRAINING ARCHIVE ACCESS (Learn the BuzzLab Method)",
+        item2: "WEEKLY PRIVATE AUDIENCES (Talk directly with the Central Lab)",
+        item3: "EARLY WARNING NETWORK (Operators share bloom data and local threats in real-time)",
+        item4: "EVOLVING SOURCE CODE (Info and manuals are updated with every lunar cycle)",
+        btn: "[ INITIATE DOWNLOAD_ // JOIN THE COMMUNITY ]"
+      },
+      hardware: {
+        supertitle: "02 // PHYSICAL PHASE DEPLOYMENT",
+        title: "SMART-CORE NODE KIT",
+        desc: "If you already have the code in your head, you need physical servers in the garden. Don't buy a standard pine box that will drown your swarm. We send you BuzzLab's technical infrastructure, ready to boot.",
+        item1: "MODULAR THERMODYNAMIC STRUCTURE (Design for zero stress and passive defense)",
+        item2: "SENSOR MATRIX v2.4 (Integrated weight, temperature, and frequency microphone module)",
+        item3: "CENTRIC DRONE CELLS (Organic tactical decoy against Varroa, your natural firewall)",
+        item4: "HONEY_OS CONNECTION (Data sent directly to your dashboard, end the visual stress of manual un-capping)",
+        btn: "[ REQUEST HARDWARE DEPLOYMENT ]"
+      },
+      pricing: {
+        title: "ACCESS PROTOCOL",
+        dataTitle: "DATA PACKAGE / HIVE-MIND",
+        dataPrice: "MONTHLY SUBSCRIPTION",
+        dataDesc: "Access to The Hive-Mind. For those who want to operate a node with the BuzzLab code or redesign their current infrastructure.",
+        hwTitle: "HARDWARE PACKAGE / SMART-NODE",
+        hwPrice: "UPON REQUEST",
+        hwDesc: "Shipping of a complete node with sensors to your coordinates. Requires authorization and completion of phase 1 training."
+      }
     }
   },
   it: {
@@ -508,7 +584,8 @@ export const translations = {
       home: 'INIZIO',
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
-      contact: 'CONTATTO'
+      contact: 'CONTATTO',
+      network: 'LA RETE'
     },
     footer: {
       desc: "Ingegneria biologica, estrazione etica e dati di impollinazione. Non siamo qui per venderti sciroppo, ma per riprogrammare l'ecosistema.",
@@ -746,6 +823,43 @@ export const translations = {
         instaDesc: "Foto delle nostre regine senza filtri e propaganda mellifera.",
         linkedinTitle: "BZZZ-LINKEDIN",
         linkedinDesc: "Networking interspecie e CV di fuchi ottimizzati."
+      }
+    },
+    network: {
+      hero: {
+        supertitle: "[ SISTEMA DECENTRALIZZATO APERTO ]",
+        title: "SMETTI DI PASCOLARE, INIZIA A FARE RETE.",
+        subtitle: "Non vendiamo corsi, trasferiamo il codice sorgente.",
+        desc: "L'apicoltura tradizionale è un sistema chiuso basato sullo sfruttamento alla cieca. In BuzzLab operiamo l'Alveare-Mente (Hive-Mind). Uniamo hardware quantistico, analisi biologica e umani disposti a imparare un protocollo in cui l'ecosistema comanda."
+      },
+      community: {
+        supertitle: "01 // FILE BASE E INTELLIGENZA COLLETTIVA",
+        title: "LA MENTE DELL'ALVEARE (IL CLUB PRIVATO)",
+        desc: "Più che un corso, è un accesso alla Sala Macchine. Ti insegniamo il nostro protocollo da zero: agricoltura rigenerativa, biomonitoraggio, immunità da impollinazione incrociata e come dimenticarti per sempre di acqua e zucchero. Impara con noi, scambia dati con altri operatori di nodi e connettiti direttamente con i fondatori.",
+        item1: "ACCESSO ALL'ARCHIVIO DI FORMAZIONE (Impara il Metodo BuzzLab)",
+        item2: "UDIENZE PRIVATE SETTIMANALI (Parla direttamente con il Laboratorio Centrale)",
+        item3: "RETE DI ALLERTA PRECOCE (Gli operatori condividono dati sulle fioriture e minacce locali in tempo reale)",
+        item4: "CODICE SORGENTE EVOLUTIVO (Info e manuali si aggiornano ad ogni ciclo lunare)",
+        btn: "[ AVVIA IL DOWNLOAD_ // UNISCITI ALLA COMUNITÀ ]"
+      },
+      hardware: {
+        supertitle: "02 // DISTRIBUZIONE NELLA FASE FISICA",
+        title: "KIT NODO SMART-CORE",
+        desc: "Se hai già il codice in testa, hai bisogno di server fisici in giardino. Non comprare una scatola di pino standard che annegherà il tuo sciame. Ti inviamo l'infrastruttura tecnica di BuzzLab, pronta per il boot.",
+        item1: "STRUTTURA TERMODINAMICA MODULARE (Design per zero stress e difesa passiva)",
+        item2: "MATRICE DI SENSORI v2.4 (Modulo peso, temperatura e microfoni di frequenza integrati)",
+        item3: "CELLE CENTRICHE PER I FUCHI (Richiamo tattico organico contro la Varroa, il tuo firewall naturale)",
+        item4: "CONNESSIONE ALL'HONEY_OS (Dati inviati direttamente alla tua dashboard, fine allo stress visivo dell'apertura manuale)",
+        btn: "[ RICHIEDI DISTRIBUZIONE HARDWARE ]"
+      },
+      pricing: {
+        title: "PROTOCOLLO DI ACCESSO",
+        dataTitle: "PACCHETTO DATA / HIVE-MIND",
+        dataPrice: "ABBONAMENTO MENSILE",
+        dataDesc: "Accesso alla Mente dell'Alveare. Per chi vuole operare un nodo con il codice BuzzLab o riprogettare la propria infrastruttura attuale.",
+        hwTitle: "PACCHETTO HARDWARE / SMART-NODE",
+        hwPrice: "SU RICHIESTA",
+        hwDesc: "Spedizione di un nodo completo con sensori alle tue coordinate. Richiede autorizzazione e il completamento della fase 1 di formazione."
       }
     }
   }

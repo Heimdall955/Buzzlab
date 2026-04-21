@@ -31,6 +31,7 @@ export const Footer = () => {
               <li><Link to="/" className="text-white/60 hover:text-primary transition-colors hover:pl-2 duration-300 inline-block">{tNav.home}</Link></li>
               <li><Link to="/analisis" className="text-white/60 hover:text-primary transition-colors hover:pl-2 duration-300 inline-block">{tNav.lab}</Link></li>
               <li><Link to="/santuario" className="text-white/60 hover:text-primary transition-colors hover:pl-2 duration-300 inline-block">{tNav.sanctuary}</Link></li>
+              <li><Link to="/red" className="text-white/60 hover:text-primary transition-colors hover:pl-2 duration-300 inline-block">{tNav.network}</Link></li>
               <li><Link to="/contacto" className="text-white/60 hover:text-primary transition-colors hover:pl-2 duration-300 inline-block">{tNav.contact}</Link></li>
             </ul>
           </div>
