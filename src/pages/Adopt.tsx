@@ -52,9 +52,14 @@ const DifferenceSection = ({ t }: { t: any }) => {
   return (
     <section className="py-24 bg-background border-t border-outline-variant/10">
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="font-headline text-3xl md:text-5xl text-secondary uppercase tracking-widest mb-16 text-center">
+        <motion.h2 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="font-headline text-3xl md:text-5xl text-secondary uppercase tracking-widest mb-16 text-center"
+        >
           {t.title}
-        </h2>
+        </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {[
@@ -64,13 +69,19 @@ const DifferenceSection = ({ t }: { t: any }) => {
           ].map((item, idx) => (
             <motion.div 
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.2 }}
-              className="bg-[#0a0a0a] border border-secondary/20 p-8 group hover:border-secondary transition-colors"
+              transition={{ delay: idx * 0.2, duration: 0.6 }}
+              whileHover={{ y: -5 }}
+              className="bg-[#0a0a0a] border border-secondary/20 p-8 group hover:border-secondary transition-all shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(38,254,220,0.15)]"
             >
-              <Hexagon className="w-8 h-8 text-secondary mb-6 group-hover:scale-110 transition-transform" />
+              <motion.div
+                whileHover={{ rotate: 90 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Hexagon className="w-8 h-8 text-secondary mb-6 group-hover:scale-110 transition-transform" />
+              </motion.div>
               <h3 className="font-headline text-xl text-[#F8F9FA] uppercase mb-4 tracking-wide">{item.sub}</h3>
               <p className="text-on-surface-variant text-sm font-mono leading-relaxed">{item.desc}</p>
             </motion.div>
@@ -85,27 +96,39 @@ const StatsSection = ({ t }: { t: any }) => {
   return (
     <section className="py-20 bg-surface-container-lowest border-y border-outline-variant/10">
       <div className="container mx-auto px-6 md:px-12 max-w-4xl text-center">
-        <h2 className="font-headline text-2xl md:text-4xl text-primary uppercase tracking-widest mb-12">
+        <motion.h2 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="font-headline text-2xl md:text-4xl text-primary uppercase tracking-widest mb-12"
+        >
           {t.title}
-        </h2>
+        </motion.h2>
         <div className="space-y-4 mb-12 text-left">
           {t.items.map((item: any, i: number) => (
             <motion.div 
               key={i}
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="flex items-center gap-4 bg-[#0a0a0a] border border-white/5 p-4 mx-auto max-w-2xl hover:border-primary/50 transition-colors"
+              transition={{ delay: i * 0.15, type: 'spring', stiffness: 100 }}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-center gap-4 bg-[#0a0a0a] border border-white/5 p-4 mx-auto max-w-2xl hover:border-primary/50 transition-colors shadow-[0_0_10px_rgba(0,0,0,0.3)] hover:shadow-[0_0_20px_rgba(255,179,0,0.1)]"
             >
               <span className="text-2xl">{item.icon}</span>
               <p className="font-mono text-sm md:text-base text-on-surface">{item.text}</p>
             </motion.div>
           ))}
         </div>
-        <div className="inline-block bg-primary/10 border border-primary/30 py-3 px-6 text-primary font-headline tracking-widest uppercase">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="inline-block bg-primary/10 border border-primary/30 py-3 px-6 text-primary font-headline tracking-widest uppercase hover:bg-primary/20 transition-colors cursor-default"
+        >
           {t.footer}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
@@ -121,7 +144,14 @@ const PricingSection = ({ t }: { t: any }) => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {t.b2c.map((plan: any, i: number) => (
-            <div key={i} className={`flex flex-col bg-[#0a0a0a] border ${plan.badge ? 'border-primary shadow-[0_0_30px_rgba(255,179,0,0.15)] relative scale-105 z-10' : 'border-white/10'} p-8`}>
+            <motion.div 
+              key={i} 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.2, duration: 0.6 }}
+              className={`flex flex-col bg-[#0a0a0a] border ${plan.badge ? 'border-primary shadow-[0_0_30px_rgba(255,179,0,0.15)] relative scale-105 z-10' : 'border-white/10'} p-8 hover:border-primary/50 transition-colors`}
+            >
               {plan.badge && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-background font-headline text-[10px] tracking-widest px-4 py-1 uppercase font-bold">
                   {plan.badge}
@@ -153,16 +183,28 @@ const PricingSection = ({ t }: { t: any }) => {
                   </Link>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <h2 className="font-headline text-2xl md:text-3xl text-secondary text-center uppercase tracking-widest mb-12">
+        <motion.h2 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="font-headline text-2xl md:text-3xl text-secondary text-center uppercase tracking-widest mb-12"
+        >
           {t.b2bTitle}
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
            {t.b2b.map((plan: any, i: number) => (
-             <div key={i} className="bg-[#0a0a0a] border border-secondary/30 p-8">
+             <motion.div 
+               key={i} 
+               initial={{ opacity: 0, x: i === 0 ? -30 : 30 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true }}
+               transition={{ delay: 0.2, duration: 0.6 }}
+               className="bg-[#0a0a0a] border border-secondary/30 p-8 hover:border-secondary transition-colors"
+             >
                <h3 className="font-headline text-xl text-secondary uppercase tracking-wide mb-2">{plan.name}</h3>
                <div className="text-[#F8F9FA] font-headline text-lg mb-8">{plan.price}</div>
                <ul className="space-y-3">
@@ -173,7 +215,7 @@ const PricingSection = ({ t }: { t: any }) => {
                   </li>
                 ))}
               </ul>
-             </div>
+             </motion.div>
            ))}
         </div>
         <div className="text-center">
@@ -191,32 +233,123 @@ const ExclusiveSection = ({ t }: { t: any }) => {
     <section className="py-24 bg-background border-t border-outline-variant/10">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 className="font-headline text-3xl md:text-4xl text-primary uppercase tracking-widest mb-4">
+          <motion.h2 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="font-headline text-3xl md:text-4xl text-primary uppercase tracking-widest mb-4"
+          >
             {t.title}
-          </h2>
-          <p className="font-headline text-secondary text-xl mb-12">{t.subtitle}</p>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="font-headline text-secondary text-xl mb-12"
+          >{t.subtitle}</motion.p>
           <div className="space-y-8">
             {t.items.map((item: any, i: number) => (
-              <div key={i} className="border-l-2 border-primary/30 pl-6 hover:border-primary transition-colors">
+              <motion.div 
+                key={i} 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 + i * 0.1 }}
+                className="border-l-2 border-primary/30 pl-6 hover:border-primary transition-colors"
+              >
                 <h3 className="font-headline text-[#F8F9FA] uppercase tracking-wide mb-2">{item.title}</h3>
                 <p className="text-on-surface-variant font-mono text-sm leading-relaxed">{item.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
-          <div className="mt-12 p-6 bg-primary/5 border border-primary/20 inline-block font-headline text-primary text-sm tracking-widest uppercase">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            className="mt-12 p-6 bg-primary/5 border border-primary/20 inline-block font-headline text-primary text-sm tracking-widest uppercase"
+          >
             {t.footer}
-          </div>
+          </motion.div>
         </div>
-        <div className="relative aspect-square">
-          <div className="absolute inset-4 border border-secondary/30 z-10"></div>
-          <div className="absolute inset-0 bg-[#0a0a0a]">
-            <img 
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="relative aspect-square"
+        >
+          <div className="absolute inset-4 border border-secondary/30 z-10 transition-transform hover:scale-105 duration-500"></div>
+          <div className="absolute inset-0 bg-[#0a0a0a] overflow-hidden">
+            <motion.img 
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.7 }}
               src="https://images.pexels.com/photos/33260/honey-sweet-syrup-organic.jpg?auto=compress&cs=tinysrgb&w=1000" 
               alt="Premium Honey" 
               className="w-full h-full object-cover opacity-80 grayscale-[10%] brightness-[0.9]"
               loading="lazy"
             />
           </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+const PolicySection = ({ t }: { t: any }) => {
+  return (
+    <section className="py-24 bg-[#0a0a0a] border-t border-outline-variant/10">
+      <div className="container mx-auto px-6 md:px-12 max-w-4xl text-center">
+        <motion.div
+          initial={{ opacity: 0, rotate: -30 }}
+          whileInView={{ opacity: 0.5, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <Hexagon className="w-8 h-8 text-primary mx-auto mb-8" />
+        </motion.div>
+        <motion.h2 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="font-headline text-3xl md:text-4xl text-primary uppercase tracking-widest mb-16"
+        >
+          {t.title}
+        </motion.h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02 }}
+            className="border border-white/5 bg-background p-8 hover:border-primary/20 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(255,179,0,0.1)]"
+          >
+            <h3 className="font-headline text-xl text-[#F8F9FA] uppercase tracking-wide mb-4 flex items-center gap-3">
+              <span className="w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_rgba(255,179,0,0.8)]"></span>
+              {t.shipping.title}
+            </h3>
+            <p className="text-on-surface-variant font-mono text-sm leading-relaxed">
+              {t.shipping.desc}
+            </p>
+          </motion.div>
+          
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02 }}
+            className="border border-white/5 bg-background p-8 hover:border-primary/20 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(255,179,0,0.1)]"
+          >
+            <h3 className="font-headline text-xl text-[#F8F9FA] uppercase tracking-wide mb-4 flex items-center gap-3">
+              <span className="w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_rgba(255,179,0,0.8)]"></span>
+              {t.ethics.title}
+            </h3>
+            <p className="text-on-surface-variant font-mono text-sm leading-relaxed">
+              {t.ethics.desc}
+            </p>
+          </motion.div>
         </div>
       </div>
     </section>
@@ -229,14 +362,26 @@ const FAQSection = ({ t }: { t: any }) => {
   return (
     <section className="py-24 bg-surface-container-lowest border-t border-outline-variant/10">
       <div className="container mx-auto px-6 md:px-12 max-w-3xl">
-        <h2 className="font-headline text-3xl md:text-4xl text-[#F8F9FA] text-center uppercase tracking-widest mb-16">
+        <motion.h2 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="font-headline text-3xl md:text-4xl text-[#F8F9FA] text-center uppercase tracking-widest mb-16"
+        >
           {t.title}
-        </h2>
+        </motion.h2>
         <div className="space-y-4">
           {t.items.map((faq: any, i: number) => (
-            <div key={i} className="border border-white/10 bg-[#0a0a0a]">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              key={i} 
+              className="border border-white/10 bg-[#0a0a0a]"
+            >
               <button 
-                className="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none"
+                className="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hover:bg-white/5 transition-colors"
                 onClick={() => setOpenIdx(openIdx === i ? null : i)}
               >
                 <span className="font-headline text-[#F8F9FA] tracking-wide text-sm">{faq.q}</span>
@@ -256,7 +401,7 @@ const FAQSection = ({ t }: { t: any }) => {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -269,14 +414,26 @@ const CTAFinal = ({ t }: { t: any }) => {
     <section className="py-32 bg-[#050505] relative overflow-hidden text-center">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-background to-background opacity-50"></div>
       <div className="relative z-10 container mx-auto px-6">
-        <h2 className="font-headline text-3xl md:text-5xl font-black text-[#F8F9FA] uppercase tracking-tighter mb-12 leading-tight">
+        <motion.h2 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="font-headline text-3xl md:text-5xl font-black text-[#F8F9FA] uppercase tracking-tighter mb-12 leading-tight"
+        >
           {t.l1}<br/>
           <span className="text-primary">{t.l2}</span><br/>
           {t.l3}
-        </h2>
-        <Link to="/contacto" className="inline-block bg-primary text-background font-headline font-bold text-lg px-10 py-6 uppercase tracking-widest hover:bg-secondary hover:text-background transition-colors duration-300 shadow-[0_0_30px_rgba(255,179,0,0.3)] hover:shadow-[0_0_50px_rgba(38,254,220,0.5)]">
-          {t.btn}
-        </Link>
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
+          <Link to="/contacto" className="inline-block bg-primary text-background font-headline font-bold text-lg px-10 py-6 uppercase tracking-widest hover:bg-secondary hover:text-background transition-colors duration-300 shadow-[0_0_30px_rgba(255,179,0,0.3)] hover:shadow-[0_0_50px_rgba(38,254,220,0.5)]">
+            {t.btn}
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
@@ -299,6 +456,7 @@ export const Adopt = () => {
         <StatsSection t={t.stats} />
         <PricingSection t={t.pricing} />
         <ExclusiveSection t={t.exclusive} />
+        <PolicySection t={t.policy} />
         <FAQSection t={t.faq} />
         <CTAFinal t={t.ctaFinal} />
       </main>

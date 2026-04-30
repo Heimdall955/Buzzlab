@@ -121,6 +121,17 @@ export const adoptTranslations = {
       ],
       footer: "Esto no es miel de supermercado con una etiqueta bonita. Es miel que cambia algo en el mundo."
     },
+    policy: {
+      title: "NUESTRA FILOSOFÍA DE COSECHA Y ENVÍO",
+      shipping: {
+        title: "Envíos desde el Santuario",
+        desc: "El coste del envío se calcula aparte y se pagará en el momento del envío según tu país. Toda nuestra miel viaja directamente desde el Santuario en Molise, Italia. Pagas el coste real de llevar el tesoro de las abejas a tu casa."
+      },
+      ethics: {
+        title: "El Pacto del 30%",
+        desc: "Nuestra ética es inquebrantable: dejamos el 70% de la miel para que las abejas pasen el invierno, y extraemos como máximo el 30%. Si un año la naturaleza es impredecible y no hay tanta floración, la cosecha (sea poca o mucha) se repartirá proporcionalmente entre todos los protectores. Adoptar significa aceptar los ritmos de la naturaleza, acompañarlos y no forzarlos."
+      }
+    },
     faq: {
       title: "PREGUNTAS FRECUENTES",
       items: [
@@ -261,6 +272,17 @@ export const adoptTranslations = {
       ],
       footer: "This is not supermarket honey with a pretty label. This is honey that changes the world."
     },
+    policy: {
+      title: "OUR HARVEST & SHIPPING PHILOSOPHY",
+      shipping: {
+        title: "Shipping from the Sanctuary",
+        desc: "Shipping costs are calculated separately and will be paid at the time of shipment, based on your country. All our honey travels directly from the Sanctuary in Molise, Italy. You pay the real cost of bringing the bees' treasure to your home."
+      },
+      ethics: {
+        title: "The 30% Pact",
+        desc: "Our ethics are unwavering: we leave 70% of the honey for the bees to spend the winter, extracting a maximum of 30%. If nature is unpredictable one year and there is less blooming, the harvest (whether small or bountiful) will be equitably shared among all protectors. Adopting means accepting nature's rhythms, accompanying them, not forcing them."
+      }
+    },
     faq: {
       title: "FREQUENTLY ASKED QUESTIONS",
       items: [
@@ -398,6 +420,17 @@ export const adoptTranslations = {
         { title: "Tracciabilità reale.", desc: "Ogni vasetto ha un nome. Trasparenza totale." }
       ],
       footer: "Questo non è miele da supermercato. È miele che cambia il mondo."
+    },
+    policy: {
+      title: "LA NOSTRA FILOSOFIA DI RACCOLTO E SPEDIZIONE",
+      shipping: {
+        title: "Spedizioni dal Santuario",
+        desc: "Il costo di spedizione è calcolato a parte e verrà pagato al momento della spedizione in base alla tua nazione. Tutto il nostro miele viaggia direttamente dal Santuario in Molise, Italia. Paghi il vero costo per portare il tesoro delle api a casa tua."
+      },
+      ethics: {
+        title: "Il Patto del 30%",
+        desc: "La nostra etica è irremovibile: lasciamo il 70% del miele alle api per l'inverno, estraendo al massimo il 30%. Se un anno la natura è imprevedibile e ci sono meno fioriture, il raccolto disponibile (poco o tanto che sia) verrà diviso proporzionalmente tra tutti i protettori. Adottare significa accettare i ritmi della natura, assecondarli e non forzarli."
+      }
     },
     faq: {
       title: "DOMANDE FREQUENTI",
