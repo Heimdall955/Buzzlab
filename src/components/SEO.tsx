@@ -18,7 +18,7 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
     : { title: title || 'BuzzLab', desc: description || 'Biological Engineering & Honey' };
 
   // Base URL (Update if deployed to custom domain)
-  const siteUrl = 'https://buzzlab.com';
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://buzzlab.com';
   
   // Create page specific URL mapping
   const pathMap: Record<string, string> = {
@@ -63,12 +63,14 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
       <meta property="og:title" content={seoData.title} />
       <meta property="og:description" content={seoData.desc} />
       <meta property="og:site_name" content="BuzzLab" />
+      <meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPS_B5uW_9CieUiFCWo12hk9u5bDf_Vn6CrrbIhmjUmIXM-wYcxSxW5NAEcERgQ9sw4QL0TQCOUz44RtIW0R9nIb62N6hC3JkI3jBbc5n1TZngP4FjpgFPewmVrfg8a3hu5jsEJesSqqa-VxZKJQIwBJZeEsZ86gBRr-GxGQdBWpmLR0IF88dWkgpFPtS3gnPLAjBkiORFSUm47L5oKbbBatz0sv5TX1DlTIrjac3vITVKkIIF1jtPc9FMieCMmlq0mztrHC6HSPU" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={currentUrl} />
       <meta property="twitter:title" content={seoData.title} />
       <meta property="twitter:description" content={seoData.desc} />
+      <meta property="twitter:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPS_B5uW_9CieUiFCWo12hk9u5bDf_Vn6CrrbIhmjUmIXM-wYcxSxW5NAEcERgQ9sw4QL0TQCOUz44RtIW0R9nIb62N6hC3JkI3jBbc5n1TZngP4FjpgFPewmVrfg8a3hu5jsEJesSqqa-VxZKJQIwBJZeEsZ86gBRr-GxGQdBWpmLR0IF88dWkgpFPtS3gnPLAjBkiORFSUm47L5oKbbBatz0sv5TX1DlTIrjac3vITVKkIIF1jtPc9FMieCMmlq0mztrHC6HSPU" />
 
       {/* Language Alternates (Hreflang) */}
       <link rel="alternate" href={currentUrl} hrefLang="es" />

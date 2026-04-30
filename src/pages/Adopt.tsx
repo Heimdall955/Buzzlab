@@ -14,6 +14,8 @@ const AdoptHero = ({ t }: { t: any }) => {
           src="https://images.pexels.com/photos/1118121/pexels-photo-1118121.jpeg?auto=compress&cs=tinysrgb&w=1920" 
           alt="Beekeeper and bees" 
           className="w-full h-full object-cover opacity-30 grayscale-[50%] brightness-[0.7]"
+          fetchPriority="high"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent mix-blend-screen"></div>
