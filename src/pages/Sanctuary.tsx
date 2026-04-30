@@ -4,6 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { motion } from 'motion/react';
 import { SEO } from '../components/SEO';
+import { Link } from 'react-router-dom';
 
 const SanctuaryHero = () => {
   const { language } = useLanguage();
@@ -184,12 +185,12 @@ const CommunitySection = () => {
           <div className="bg-primary p-8 md:p-12 flex-grow flex flex-col justify-center">
             <h3 className="font-headline text-3xl md:text-4xl text-background uppercase mb-4 tracking-tighter">{t.ctaTitle}</h3>
             <p className="text-background/80 font-mono text-sm mb-10">{t.ctaDesc}</p>
-            <button 
-              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfT-MYwHHnIwwVyJP7fwHJJR50StGJL-NfUpnOSVGcEV9yaKw/viewform?usp=header', '_blank')}
-              className="bg-[#0a0a0a] text-primary font-headline font-bold text-sm md:text-base px-6 py-4 uppercase tracking-widest hover:bg-black transition-colors w-full border border-primary/20"
+            <Link 
+              to="/contacto"
+              className="bg-[#0a0a0a] text-primary font-headline font-bold text-sm md:text-base px-6 py-4 uppercase tracking-widest hover:bg-black transition-colors w-full border border-primary/20 text-center block"
             >
               {t.ctaBtn}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

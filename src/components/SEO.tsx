@@ -4,26 +4,34 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 
 interface SEOProps {
-  page: 'home' | 'lab' | 'sanctuary' | 'network' | 'contact';
+  page?: 'home' | 'lab' | 'sanctuary' | 'network' | 'contact' | 'adopt' | 'login';
+  title?: string;
+  description?: string;
 }
 
-export const SEO: React.FC<SEOProps> = ({ page }) => {
+export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
   const { language } = useLanguage();
-  const seoData = translations[language].seo[page];
+  
+  // Try to get from translations if page is provided and exists
+  const seoData = page && translations[language]?.seo?.[page as keyof typeof translations['es']['seo']] 
+    ? translations[language].seo[page as keyof typeof translations['es']['seo']] 
+    : { title: title || 'BuzzLab', desc: description || 'Biological Engineering & Honey' };
 
   // Base URL (Update if deployed to custom domain)
   const siteUrl = 'https://buzzlab.com';
   
   // Create page specific URL mapping
-  const pathMap = {
+  const pathMap: Record<string, string> = {
     home: '',
     lab: '/analisis',
     sanctuary: '/santuario',
     network: '/red',
-    contact: '/contacto'
+    contact: '/contacto',
+    adopt: '/adopta',
+    login: '/login'
   };
   
-  const currentUrl = `${siteUrl}${pathMap[page]}`;
+  const currentUrl = `${siteUrl}${page ? pathMap[page] : ''}`;
 
   const defaultSchema = {
     "@context": "https://schema.org",

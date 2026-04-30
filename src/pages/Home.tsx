@@ -482,6 +482,7 @@ const DroneSection = () => {
 const ScarcitySection = () => {
   const { language } = useLanguage();
   const t = translations[language].scarcity;
+  const navigate = useNavigate();
   
   return (
     <section className="py-32 md:py-48 bg-surface-container-lowest border-y border-primary/10 relative overflow-hidden">

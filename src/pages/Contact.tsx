@@ -11,7 +11,7 @@ const ContactHero = () => {
     <section className="relative pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1587049352847-4d4b137a4e47?q=80&w=1920" 
+          src="https://images.pexels.com/photos/1487515/pexels-photo-1487515.jpeg?auto=compress&cs=tinysrgb&w=1920" 
           alt="Bee macro" 
           fetchPriority="high"
           loading="eager"

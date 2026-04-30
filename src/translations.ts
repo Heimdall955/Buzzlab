@@ -16,7 +16,7 @@ export const translations = {
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
       contact: 'CONTACTO',
-      network: 'LA RED',
+      adopt: 'ADOPTA',
       login: 'INICIAR SESIÓN'
     },
     footer: {
@@ -312,7 +312,7 @@ export const translations = {
       lab: 'LAB',
       sanctuary: 'SANCTUARY',
       contact: 'CONTACT',
-      network: 'THE NETWORK',
+      adopt: 'ADOPT',
       login: 'SYSTEM LOGIN'
     },
     footer: {
@@ -608,7 +608,7 @@ export const translations = {
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
       contact: 'CONTATTO',
-      network: 'LA RETE',
+      adopt: 'ADOTTA',
       login: 'ACCESSO NODO'
     },
     footer: {

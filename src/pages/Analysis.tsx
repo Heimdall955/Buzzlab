@@ -4,6 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { motion } from 'motion/react';
 import { SEO } from '../components/SEO';
+import { Link } from 'react-router-dom';
 
 const AnalysisHero = () => {
   const { language } = useLanguage();
@@ -327,12 +328,12 @@ const FooterCTA = () => {
         <h2 className="font-headline text-5xl md:text-7xl font-black text-[#F8F9FA] uppercase tracking-tighter mb-12">
           {t.title}
         </h2>
-        <button 
-          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfT-MYwHHnIwwVyJP7fwHJJR50StGJL-NfUpnOSVGcEV9yaKw/viewform?usp=header', '_blank')}
-          className="bg-primary text-on-primary font-headline font-bold text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 uppercase tracking-widest hover:bg-primary-dim transition-colors duration-300 mb-8 border-glow-primary"
+        <Link 
+          to="/contacto"
+          className="inline-block bg-primary text-on-primary font-headline font-bold text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 uppercase tracking-widest hover:bg-primary-dim transition-colors duration-300 mb-8 border-glow-primary"
         >
           {t.btn}
-        </button>
+        </Link>
         <div>
           <a href="#" className="inline-flex items-center gap-2 border border-secondary text-secondary font-headline text-[10px] px-4 py-2 tracking-widest hover:bg-secondary/10 transition-colors">
             <Lock className="w-3 h-3" />
