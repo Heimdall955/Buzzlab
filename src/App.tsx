@@ -9,6 +9,7 @@ import { Analysis } from './pages/Analysis';
 import { Sanctuary } from './pages/Sanctuary';
 import { Contact } from './pages/Contact';
 import { Adopt } from './pages/Adopt';
+import { Network } from './pages/Network';
 import { Login } from './pages/Login';
 import { LanguageProvider } from './context/LanguageContext';
 import { AuthProvider } from './context/AuthContext';
@@ -28,6 +29,7 @@ export default function App() {
                 <Route path="/analisis" element={<Analysis />} />
                 <Route path="/santuario" element={<Sanctuary />} />
                 <Route path="/adopta" element={<Adopt />} />
+                <Route path="/red" element={<Network />} />
                 <Route path="/contacto" element={<Contact />} />
                 <Route path="/login" element={<Login />} />
               </Routes>

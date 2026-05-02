@@ -14,8 +14,15 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const langQuery = searchParams.get('lang') as Language;
   
-  // Initial language: query param > localStorage > browser language > 'es'
+  // Initial language: path prefix > query param > localStorage > browser language > 'es'
   const getInitialLanguage = (): Language => {
+    // 1. Check URL path (e.g. /en/something)
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname;
+      if (path.startsWith('/en/') || path === '/en') return 'en';
+      if (path.startsWith('/it/') || path === '/it') return 'it';
+    }
+
     if (langQuery && ['es', 'en', 'it'].includes(langQuery)) return langQuery;
     const stored = localStorage.getItem('buzzlab_lang') as Language;
     if (stored && ['es', 'en', 'it'].includes(stored)) return stored;

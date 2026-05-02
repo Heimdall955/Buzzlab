@@ -446,10 +446,7 @@ export const Adopt = () => {
 
   return (
     <>
-      <SEO 
-        title={`BuzzLab // ${t.hero.title1.replace('.', '')}`} 
-        description={t.hero.desc} 
-      />
+      <SEO page="adopt" />
       <main className="bg-background min-h-screen">
         <AdoptHero t={t.hero} />
         <DifferenceSection t={t.different} />

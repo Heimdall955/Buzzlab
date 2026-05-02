@@ -17,8 +17,8 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
     ? translations[language].seo[page as keyof typeof translations['es']['seo']] 
     : { title: title || 'BuzzLab', desc: description || 'Biological Engineering & Honey' };
 
-  // Base URL (Update if deployed to custom domain)
-  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://buzzlab.com';
+  // Base URL
+  const siteUrl = 'https://buzzlab.online';
   
   // Create page specific URL mapping
   const pathMap: Record<string, string> = {
@@ -31,22 +31,38 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
     login: '/login'
   };
   
-  const currentUrl = `${siteUrl}${page ? pathMap[page] : ''}`;
+  const basePath = page ? pathMap[page] : '';
+  const currentUrl = `${siteUrl}${basePath}`;
 
-  const defaultSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "BuzzLab",
-    "url": siteUrl,
-  };
-
+  // Organization Schema (Home)
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "BuzzLab",
-    "url": siteUrl,
-    "logo": `${siteUrl}/logo.svg`,
-    "description": "Biological engineering, ethical extraction, and pollination data.",
+    "url": "https://buzzlab.online",
+    "description": "Santuario de abejas con IA. Apicultura ética, monitoreo, certificación.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Roccavivara",
+      "addressRegion": "Molise",
+      "addressCountry": "IT"
+    }
+  };
+
+  // Product Schema (Adopt)
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Adopta una Colmena",
+    "brand": {
+      "@type": "Organization",
+      "name": "BuzzLab"
+    },
+    "offers": [
+      { "@type": "Offer", "name": "Guardián", "price": "79", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Protector", "price": "149", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Patrón", "price": "249", "priceCurrency": "EUR" }
+    ]
   };
 
   return (
@@ -73,14 +89,14 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
       <meta property="twitter:image" content="https://images.pexels.com/photos/1118121/pexels-photo-1118121.jpeg?auto=compress&cs=tinysrgb&w=1200" />
 
       {/* Language Alternates (Hreflang) */}
-      <link rel="alternate" href={`${currentUrl}?lang=es`} hrefLang="es" />
-      <link rel="alternate" href={`${currentUrl}?lang=en`} hrefLang="en" />
-      <link rel="alternate" href={`${currentUrl}?lang=it`} hrefLang="it" />
-      <link rel="alternate" href={currentUrl} hrefLang="x-default" />
+      <link rel="alternate" href={`${siteUrl}${basePath}`} hrefLang="es" />
+      <link rel="alternate" href={`${siteUrl}/en${basePath}`} hrefLang="en" />
+      <link rel="alternate" href={`${siteUrl}/it${basePath}`} hrefLang="it" />
+      <link rel="alternate" href={`${siteUrl}${basePath}`} hrefLang="x-default" />
 
       {/* Structured Data (JSON-LD) */}
       <script type="application/ld+json">
-        {JSON.stringify(page === 'home' ? [defaultSchema, orgSchema] : defaultSchema)}
+        {JSON.stringify(page === 'home' ? orgSchema : page === 'adopt' ? productSchema : null)}
       </script>
     </Helmet>
   );

@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://buzzlab.com/sitemap.xml
+Sitemap: https://buzzlab.online/sitemap.xml

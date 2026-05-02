@@ -1,11 +1,12 @@
 export const translations = {
   es: {
     seo: {
-      home: { title: "BuzzLab // Ingeniería Biológica & Miel", desc: "Miel RAW extraída con el consentimiento de las obreras. Ingeniería biológica y datos de polinización para reprogramar el ecosistema." },
-      lab: { title: "BuzzLab // Laboratorio de Datos", desc: "El Lab de Datos de BuzzLab. Monitoreo predictivo y biometría en tiempo real de nuestras colmenas inteligentes." },
-      sanctuary: { title: "BuzzLab // El Santuario Central", desc: "Instalación de bioprotección de BuzzLab. Estructuras defensivas para abejas con temperatura constante y sin estrés." },
-      network: { title: "BuzzLab // La Red (Hive-Mind)", desc: "Únete a La Red de BuzzLab. Aprende nuestro protocolo, intercambia datos y adquiere un Nodo Smart-Core para tu propio jardín." },
-      contact: { title: "BuzzLab // Contacto", desc: "Contacta con el núcleo estratégico de BuzzLab. Solicita audiencias y comunícate directamente con la colmena." }
+      home: { title: "BuzzLab — Santuario de Abejas con IA | Apicultura Ética", desc: "BuzzLab transforma la apicultura con IA. Monitoreo de colmenas, certificación ética, adopción de colmenas. Las abejas son soberanas." },
+      lab: { title: "Análisis IA Colmenas — BuzzLab", desc: "Monitoreo con IA. Detección Varroa, análisis acústico, alertas tiempo real." },
+      sanctuary: { title: "El Santuario — BuzzLab | Abejas Soberanas", desc: "Santuario en Roccavivara, Molise. 2 hectáreas a 650m donde las abejas gobiernan." },
+      network: { title: "Red BuzzLab | Comunidad Apicultura Ética", desc: "Red de apicultores éticos. Datos, certificación, consulting biodiversidad." },
+      contact: { title: "BuzzLab // Contacto", desc: "Contacta con el núcleo estratégico de BuzzLab. Solicita audiencias y comunícate directamente con la colmena." },
+      adopt: { title: "Adopta una Colmena — BuzzLab | Desde €79/año", desc: "Adopta una colmena real en Italia. Certificado personalizado, miel artesanal, fotos trimestrales. Las abejas son dueñas." }
     },
     banner: "COSECHA LUNAR: QUEDAN 12/31 BOTES DISPONIBLES",
     whatsapp: {
@@ -15,8 +16,9 @@ export const translations = {
       home: 'INICIO',
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
-      contact: 'CONTACTO',
       adopt: 'ADOPTA',
+      network: 'RED',
+      contact: 'CONTACTO',
       login: 'INICIAR SESIÓN'
     },
     footer: {
@@ -297,11 +299,12 @@ export const translations = {
   },
   en: {
     seo: {
-      home: { title: "BuzzLab // Biological Engineering & Honey", desc: "RAW honey extracted with the consent of the workers. Biological engineering and pollination data to reprogram the ecosystem." },
-      lab: { title: "BuzzLab // Data Lab", desc: "The BuzzLab Data Lab. Predictive monitoring and real-time biometrics from our smart hives." },
-      sanctuary: { title: "BuzzLab // Central Sanctuary", desc: "BuzzLab's bioprotection facility. Defensive structures for bees with constant temperature and zero stress." },
-      network: { title: "BuzzLab // The Network (Hive-Mind)", desc: "Join The BuzzLab Network. Learn our protocol, exchange data, and acquire a Smart-Core Node for your own garden." },
-      contact: { title: "BuzzLab // Contact", desc: "Contact the strategic core of BuzzLab. Request audiences and communicate directly with the hive." }
+      home: { title: "BuzzLab — AI Bee Sanctuary | Ethical Beekeeping", desc: "BuzzLab transforms beekeeping with AI. Hive monitoring, ethical certification, hive adoption. The bees are sovereign." },
+      lab: { title: "AI Hive Analysis — BuzzLab", desc: "AI-powered monitoring. Varroa detection, acoustic analysis, real-time alerts." },
+      sanctuary: { title: "The Sanctuary — BuzzLab | Sovereign Bees", desc: "Sanctuary in Roccavivara, Molise. 2 hectares at 650m where bees rule." },
+      network: { title: "BuzzLab Network | Ethical Beekeeping Community", desc: "Network of ethical beekeepers. Data, certification, biodiversity consulting." },
+      contact: { title: "BuzzLab // Contact", desc: "Contact the strategic core of BuzzLab. Request audiences and communicate directly with the hive." },
+      adopt: { title: "Adopt a Hive — BuzzLab | From €79/year", desc: "Adopt a real hive in Italy. Personalized certificate, artisanal honey, quarterly photos. The bees are the owners." }
     },
     banner: "LUNAR HARVEST: 12/31 JARS AVAILABLE",
     whatsapp: {
@@ -311,8 +314,9 @@ export const translations = {
       home: 'HOME',
       lab: 'LAB',
       sanctuary: 'SANCTUARY',
-      contact: 'CONTACT',
       adopt: 'ADOPT',
+      network: 'NETWORK',
+      contact: 'CONTACT',
       login: 'SYSTEM LOGIN'
     },
     footer: {
@@ -593,11 +597,12 @@ export const translations = {
   },
   it: {
     seo: {
-      home: { title: "BuzzLab // Ingegneria Biologica & Miele", desc: "Miele RAW estratto con il consenso delle operaie. Ingegneria biologica e dati di impollinazione per riprogrammare l'ecosistema." },
-      lab: { title: "BuzzLab // Laboratorio Dati", desc: "Il Lab Dati di BuzzLab. Monitoraggio predittivo e biometria in tempo reale dai nostri alveari intelligenti." },
-      sanctuary: { title: "BuzzLab // Il Santuario Centrale", desc: "Struttura di bioprotezione BuzzLab. Strutture difensive per api con temperatura costante e zero stress." },
-      network: { title: "BuzzLab // La Rete (Hive-Mind)", desc: "Unisciti a La Rete di BuzzLab. Impara il nostro protocollo, scambia dati e acquista un Nodo Smart-Core per il tuo giardino." },
-      contact: { title: "BuzzLab // Contatto", desc: "Contatta il nucleo strategico di BuzzLab. Richiedi udienze e comunica direttamente con l'alveare." }
+      home: { title: "BuzzLab — Santuario delle Api con IA | Apicoltura Etica", desc: "BuzzLab trasforma l'apicoltura con l'IA. Monitoraggio alveari, certificazione etica, adozione alveari. Le api sono sovrane." },
+      lab: { title: "Analisi IA Alveari — BuzzLab", desc: "Monitoraggio basato sull'IA. Rilevamento Varroa, analisi acustica, avvisi in tempo real." },
+      sanctuary: { title: "Il Santuario — BuzzLab | Api Sovrane", desc: "Santuario a Roccavivara, Molise. 2 ettari a 650m dove le api governano." },
+      network: { title: "Rete BuzzLab | Comunità di Apicoltura Etica", desc: "Rete di apicoltori etici. Dati, certificazione, consulenza biodiversità." },
+      contact: { title: "BuzzLab // Contatto", desc: "Contatta il nucleo strategico di BuzzLab. Richiedi udienze e comunica direttamente con l'alveare." },
+      adopt: { title: "Adotta un Alveare — BuzzLab | Da €79/anno", desc: "Adotta un vero alveare in Italia. Certificato personalizzato, miele artigianale, foto trimestrali. Le api sono le proprietarie." }
     },
     banner: "RACCOLTO LUNARE: 12/31 VASETTI DISPONIBILI",
     whatsapp: {
@@ -607,8 +612,9 @@ export const translations = {
       home: 'INIZIO',
       lab: 'LABORATORIO',
       sanctuary: 'SANTUARIO',
-      contact: 'CONTATTO',
       adopt: 'ADOTTA',
+      network: 'RETE',
+      contact: 'CONTATTO',
       login: 'ACCESSO NODO'
     },
     footer: {
