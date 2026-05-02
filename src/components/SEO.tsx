@@ -50,7 +50,7 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
   };
 
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: language }}>
       {/* Primary Meta Tags */}
       <title>{seoData.title}</title>
       <meta name="title" content={seoData.title} />
@@ -73,9 +73,9 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
       <meta property="twitter:image" content="https://images.pexels.com/photos/1118121/pexels-photo-1118121.jpeg?auto=compress&cs=tinysrgb&w=1200" />
 
       {/* Language Alternates (Hreflang) */}
-      <link rel="alternate" href={currentUrl} hrefLang="es" />
-      <link rel="alternate" href={currentUrl} hrefLang="en" />
-      <link rel="alternate" href={currentUrl} hrefLang="it" />
+      <link rel="alternate" href={`${currentUrl}?lang=es`} hrefLang="es" />
+      <link rel="alternate" href={`${currentUrl}?lang=en`} hrefLang="en" />
+      <link rel="alternate" href={`${currentUrl}?lang=it`} hrefLang="it" />
       <link rel="alternate" href={currentUrl} hrefLang="x-default" />
 
       {/* Structured Data (JSON-LD) */}
