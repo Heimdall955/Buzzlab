@@ -31,7 +31,7 @@ const AdoptHero = ({ t }: { t: any }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="font-headline text-secondary tracking-widest text-sm mb-6 block uppercase">BUZZLAB // HIVE GUARDIAN</span>
+          <span className="font-headline text-secondary tracking-widest text-sm mb-6 block uppercase">BuzzNature // HIVE GUARDIAN</span>
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-black text-primary uppercase tracking-tighter mb-6 leading-none text-glow-primary">
             {t.title1}<br/>
             <span className="text-[#F8F9FA] text-glow-none">{t.title2}</span>

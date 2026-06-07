@@ -139,7 +139,7 @@ export const adoptTranslations = {
         { q: "¿Pagar 12€ por un zángano vale la pena?", a: "Es menos que el coste de dos cafés al mes. Ese dinero se usa para regenerar hábitats y sembrar floración para millones de abejas." },
         { q: "¿Puedo comprar la Miel de los Olvidados de forma individual?", a: "No. Solo se obtiene alcanzando el nivel 'Fundador de los Olvidados'. Nunca estará a la venta en tiendas." },
         { q: "¿Cómo renuevo mi suscripción?", a: "Es anual. Te enviaremos un recordatorio cuando esté por finalizar tu ciclo para seguir protegiendo a los zánganos." },
-        { q: "¿Por qué el zángano y no la reina?", a: "Porque todo el mundo habla de la reina, pero sin el zángano no hay siguiente generación. Proteger lo que otros olvidan es la esencia de BuzzLab." },
+        { q: "¿Por qué el zángano y no la reina?", a: "Porque todo el mundo habla de la reina, pero sin el zángano no hay siguiente generación. Proteger lo que otros olvidan es la esencia de BuzzNature." },
         { q: "¿Qué reciben las empresas?", a: "Fotos reales de la biodiversidad que están protegiendo y contenido para compartir el impacto ecosistémico con sus audiencias y empleados." }
       ]
     },
@@ -290,7 +290,7 @@ export const adoptTranslations = {
         { q: "Is paying €12 for a drone worth it?", a: "It's less than two coffees a month. That money regenerates habitats and sows flora for millions of bees." },
         { q: "Can I buy the Honey of the Forgotten individually?", a: "No. You can only get it by reaching the 'Founder of the Forgotten' tier. It will never be sold." },
         { q: "How do I renew my subscription?", a: "It's annual. We will send you a reminder when your cycle is about to end so you can continue protecting drones." },
-        { q: "Why the drone and not the queen?", a: "Because everyone talks about the queen, but without the drone there is no next generation. Protecting what others forget is BuzzLab's essence." },
+        { q: "Why the drone and not the queen?", a: "Because everyone talks about the queen, but without the drone there is no next generation. Protecting what others forget is BuzzNature's essence." },
         { q: "What do companies receive?", a: "Real photos of the biodiversity they are protecting and content to share the ecosystem impact with their audiences." }
       ]
     },

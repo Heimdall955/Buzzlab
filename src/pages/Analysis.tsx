@@ -56,90 +56,99 @@ const MonitorSection = () => {
 
   return (
     <section className="py-20 bg-background relative z-10">
-      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        <motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="relative group"
-        >
-          <div className="absolute -inset-1 bg-secondary/20 blur opacity-50 group-hover:opacity-100 transition duration-1000"></div>
-          <div className="relative aspect-square bg-surface-container-lowest border border-secondary/30 overflow-hidden p-4">
-            <motion.div 
-              animate={{ opacity: [1, 0.3, 1] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-4 right-4 z-20 border border-primary text-primary font-headline text-[10px] px-2 py-1 tracking-widest bg-background/80 backdrop-blur-sm"
-            >
-              {t.sysOk}
-            </motion.div>
-            <img className="w-full h-full object-cover grayscale brightness-110 contrast-125" alt="bee scan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vTo1ocH7bkusolFdCbwNRGG-tJWdiMbp_7xrASjNZTwvW5IkND8KDt9_lO5y6htx_vREnn9NrS6T4e0Fh3E5a1Y4QLXsXjgaUeOTxLVzwTubTqPv3nw7wcXLIpKWZpktM64pvN0O4aIwn7nPgABdsGtj2re5vu08p89MNsiadI9XiLRGJiMLc-7S5mjK_IEqJiGLeUYQLrxc-Snzzs1qRKofppS3O2TEpx30_ShHIG7jyYyrG_ESQ4O7E4ppxryWA49Z6fH4wZi3"/>
-          </div>
-        </motion.div>
-        
-        <motion.div
-           initial={{ opacity: 0, x: 50 }}
-           whileInView={{ opacity: 1, x: 0 }}
-           viewport={{ once: true, margin: "-100px" }}
-           transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <h2 className="font-headline text-3xl md:text-4xl text-[#F8F9FA] mb-12 uppercase tracking-widest">
-            {t.title1}<br/>{t.title2}
-          </h2>
-          <div className="space-y-4">
-            {/* Temp Sensor */}
-            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex flex-col items-start gap-4 hover:border-primary/30 transition-colors">
-              <div className="flex items-center gap-4 w-full">
-                <Thermometer className="text-primary w-6 h-6 shrink-0" />
-                <div className="flex-1">
-                  <h3 className="font-headline text-primary text-[10px] tracking-widest mb-1">{t.tempTitle}</h3>
-                  <div className="flex justify-between items-end">
-                    <p className="text-2xl font-bold text-[#F8F9FA] tabular-nums">
-                      35.<motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ duration: 2, repeat: Infinity }}>2</motion.span>ºC
-                    </p>
-                    <p className="text-secondary font-headline text-[10px] tracking-widest">{t.tempDesc}</p>
-                  </div>
+      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-3 gap-6 relative">
+          
+          {/* Main Terminal View */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-2 bg-[#050505] border border-primary/20 rounded-lg overflow-hidden flex flex-col font-mono relative shadow-[0_0_30px_rgba(38,254,220,0.05)]"
+          >
+            {/* Window Header */}
+            <div className="bg-[#111] border-b border-primary/20 p-3 flex justify-between items-center">
+               <div className="flex gap-2">
+                 <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                 <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                 <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+               </div>
+               <span className="text-[10px] text-primary/60 tracking-widest uppercase">HONEY_OS // ROOT TERMINAL</span>
+            </div>
+            
+            {/* Content area */}
+            <div className="p-6 relative flex-1 flex flex-col">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none"></div>
+              
+              <div className="flex flex-col sm:flex-row gap-6 items-start mb-8 relative z-10">
+                <div className="w-32 h-32 border border-primary/30 rounded overflow-hidden relative shrink-0">
+                   <img className="w-full h-full object-cover opacity-60 mix-blend-screen grayscale brightness-110 contrast-125" alt="bee scan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vTo1ocH7bkusolFdCbwNRGG-tJWdiMbp_7xrASjNZTwvW5IkND8KDt9_lO5y6htx_vREnn9NrS6T4e0Fh3E5a1Y4QLXsXjgaUeOTxLVzwTubTqPv3nw7wcXLIpKWZpktM64pvN0O4aIwn7nPgABdsGtj2re5vu08p89MNsiadI9XiLRGJiMLc-7S5mjK_IEqJiGLeUYQLrxc-Snzzs1qRKofppS3O2TEpx30_ShHIG7jyYyrG_ESQ4O7E4ppxryWA49Z6fH4wZi3" />
+                   <div className="absolute inset-0 ring-1 ring-primary/40 inset-ring animate-pulse"></div>
+                </div>
+                <div className="flex-1 w-full">
+                   <p className="text-primary font-bold text-lg mb-2">{'>'} SYSTEM_BOOT_SEQUENCE</p>
+                   <p className="text-primary/70 text-xs md:text-sm mb-2 uppercase">{t.title1} {t.title2}</p>
+                   <p className="text-primary/70 text-xs md:text-sm mb-2">INITIALIZING NODE: <span className="text-white">BZ-NODE-77</span></p>
+                   <p className="text-primary/70 text-xs md:text-sm mb-2">STATUS: <span className="text-green-400">{t.sysOk}</span></p>
+                   <p className="text-primary/70 text-xs md:text-sm flex items-center gap-2">CONNECTING TO HIVE-MIND... <span className="w-2 h-2 bg-primary rounded-full animate-pulse inline-block"></span></p>
                 </div>
               </div>
-              <div className="w-full h-1 bg-white/5 overflow-hidden">
-                 <motion.div className="h-full bg-primary" animate={{ width: ['40%', '42%', '40%'] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} />
-              </div>
-            </div>
 
-            {/* Weight Sensor */}
-            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex flex-col items-start gap-4 hover:border-secondary/30 transition-colors">
-              <div className="flex items-center gap-4 w-full">
-                <Weight className="text-secondary w-6 h-6 shrink-0" />
-                <div className="flex-1">
-                  <h3 className="font-headline text-secondary text-[10px] tracking-widest mb-1">{t.weightTitle}</h3>
-                  <div className="flex justify-between items-end">
-                    <p className="text-xl md:text-2xl font-bold text-[#F8F9FA] uppercase tabular-nums">
-                      <motion.span animate={{ opacity: [1, 0.8, 1] }} transition={{ duration: 3, repeat: Infinity }}>{t.weightValue}</motion.span>
-                    </p>
-                    <p className="text-secondary font-headline text-[10px] tracking-widest">{t.weightDesc}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full h-1 bg-white/5 overflow-hidden flex">
-                 <motion.div className="h-full bg-secondary" animate={{ width: ['60%', '64%', '60%'] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} />
-              </div>
-            </div>
-
-            {/* Audio Sensor */}
-            <div className="bg-[#0a0a0a] border border-white/5 p-6 flex flex-col items-start gap-4 hover:border-primary/30 transition-colors">
-              <div className="flex items-center gap-4 w-full">
-                <FileAudio className="text-primary w-6 h-6 shrink-0" />
-                <div className="flex-1 space-y-2">
-                  <div className="flex justify-between items-start">
-                    <h3 className="font-headline text-primary text-[10px] tracking-widest">{t.audioTitle}</h3>
-                    <p className="text-secondary font-headline text-[10px] tracking-widest">{t.audioDesc}</p>
-                  </div>
-                  <LiveAudioWave />
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-auto">
+                 <div className="border border-white/5 p-4 bg-[#0a0a0a] hover:border-primary/30 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center gap-3">
+                        <Thermometer className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                        <span className="text-[10px] md:text-xs text-primary/60 tracking-widest uppercase">{t.tempTitle}</span>
+                      </div>
+                      <span className="text-[10px] text-secondary tracking-widest">{t.tempDesc}</span>
+                    </div>
+                    <div className="text-2xl md:text-3xl text-white">35.<motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ duration: 2, repeat: Infinity }}>2</motion.span><span className="text-sm md:text-base text-white/40">ºC</span></div>
+                    <div className="w-full h-1 mt-3 bg-white/5 overflow-hidden">
+                       <motion.div initial={{ width: 0 }} whileInView={{ width: "85%" }} transition={{ duration: 1, delay: 0.5 }} className="h-full bg-primary"></motion.div>
+                    </div>
+                 </div>
+                 
+                 <div className="border border-white/5 p-4 bg-[#0a0a0a] hover:border-secondary/30 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                       <div className="flex items-center gap-3">
+                         <Weight className="w-4 h-4 md:w-5 md:h-5 text-secondary" />
+                         <span className="text-[10px] md:text-xs text-secondary/60 tracking-widest uppercase">{t.weightTitle}</span>
+                       </div>
+                       <span className="text-[10px] text-secondary tracking-widest">{t.weightDesc}</span>
+                    </div>
+                    <div className="text-2xl md:text-3xl text-white uppercase"><motion.span animate={{ opacity: [1, 0.8, 1] }} transition={{ duration: 3, repeat: Infinity }}>{t.weightValue}</motion.span></div>
+                    <div className="w-full h-1 mt-3 bg-white/5 overflow-hidden">
+                       <motion.div initial={{ width: 0 }} whileInView={{ width: "65%" }} transition={{ duration: 1, delay: 0.7 }} className="h-full bg-secondary"></motion.div>
+                    </div>
+                 </div>
               </div>
             </div>
+          </motion.div>
+          
+          {/* Side Telemetry */}
+          <div className="flex flex-col gap-6 lg:col-span-1">
+             <motion.div 
+               initial={{ opacity: 0, x: 20 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true, margin: "-100px" }}
+               transition={{ duration: 0.6, delay: 0.3 }}
+               className="bg-[#050505] border border-white/5 p-6 flex-1 rounded-lg font-mono relative overflow-hidden group hover:border-primary/30 transition-colors"
+             >
+                <div className="absolute top-0 left-0 w-1 h-full bg-primary/50"></div>
+                <div className="flex items-center justify-between mb-4">
+                   <div className="flex items-center gap-3">
+                     <FileAudio className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                     <span className="text-[10px] md:text-xs text-primary/80 tracking-widest uppercase">{t.audioTitle}</span>
+                   </div>
+                   <span className="text-[10px] text-secondary tracking-widest text-right">{t.audioDesc}</span>
+                </div>
+                <div className="my-6">
+                   <LiveAudioWave />
+                </div>
+                <div className="text-lg md:text-xl text-white font-bold mt-auto">NORMAL <span className="text-xs md:text-sm font-normal text-primary/60">FREQ: 240Hz</span></div>
+             </motion.div>
           </div>
-        </motion.div>
       </div>
     </section>
   );

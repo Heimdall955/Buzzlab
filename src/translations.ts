@@ -1,12 +1,12 @@
 export const translations = {
   es: {
     seo: {
-      home: { title: "BuzzLab — Rescate de Abejas con IA | Apicultura Ética", desc: "Las abejas están desapareciendo. BuzzLab transforma la apicultura con Smart-Hives y software para protegerlas. Adopta un zángano y únete a la resistencia." },
-      lab: { title: "Análisis IA Colmenas — BuzzLab", desc: "Monitoreo con IA. Detección Varroa, análisis acústico, alertas tiempo real." },
-      sanctuary: { title: "El Santuario — BuzzLab | Abejas Soberanas", desc: "Santuario en Roccavivara, Molise. 2 hectáreas a 650m donde las abejas gobiernan." },
-      network: { title: "Red BuzzLab | Comunidad Apicultura Ética", desc: "Red de apicultores éticos. Datos, certificación, consulting biodiversidad." },
-      contact: { title: "BuzzLab // Contacto", desc: "Contacta con el núcleo estratégico de BuzzLab. Solicita audiencias y comunícate directamente con la colmena." },
-      adopt: { title: "Adopta una Colmena — BuzzLab | Desde €79/año", desc: "Adopta un zángano en Italia. Certificado personalizado, miel artesanal, tu propio dashboard. Las abejas son dueñas." }
+      home: { title: "BuzzNature — Rescate de Abejas con IA | Apicultura Ética", desc: "Las abejas están desapareciendo. BuzzNature transforma la apicultura con Smart-Hives y software para protegerlas. Adopta un zángano y únete a la resistencia." },
+      lab: { title: "Análisis IA Colmenas — BuzzNature", desc: "Monitoreo con IA. Detección Varroa, análisis acústico, alertas tiempo real." },
+      sanctuary: { title: "El Santuario — BuzzNature | Abejas Soberanas", desc: "Santuario en Roccavivara, Molise. 2 hectáreas a 650m donde las abejas gobiernan." },
+      network: { title: "Red BuzzNature | Comunidad Apicultura Ética", desc: "Red de apicultores éticos. Datos, certificación, consulting biodiversidad." },
+      contact: { title: "BuzzNature // Contacto", desc: "Contacta con el núcleo estratégico de BuzzNature. Solicita audiencias y comunícate directamente con la colmena." },
+      adopt: { title: "Adopta una Colmena — BuzzNature | Desde €79/año", desc: "Adopta un zángano en Italia. Certificado personalizado, miel artesanal, tu propio dashboard. Las abejas son dueñas." }
     },
     banner: "ALERTA DE SISTEMA: ECOSISTEMA EN PELIGRO CRÍTICO",
     whatsapp: {
@@ -14,7 +14,7 @@ export const translations = {
     },
     nav: {
       home: 'INICIO',
-      lab: 'EL OS',
+      lab: 'HONEY_OS (TELEMETRÍA)',
       sanctuary: 'SANTUARIO',
       adopt: 'ADOPTA',
       network: 'RED',
@@ -23,7 +23,7 @@ export const translations = {
     },
     footer: {
       desc: "Ingeniería biológica, hardware propietario y datos de polinización. Escalamos el impacto ecológico con tecnología.",
-      copyright: "© 2026 BUZZLAB. Datos extraídos bajo la normativa Honey_OS.",
+      copyright: "© 2026 BuzzNature. Datos extraídos bajo la normativa Honey_OS.",
       navTitle: "NAVEGACIÓN_RAPIDA",
       socialTitle: "REDES_INTERESPECIE"
     },
@@ -42,7 +42,7 @@ export const translations = {
       btnMicro: "*Ayuda desde casa: patrocina nuestro escudo biológico",
       subtitle: "ALERTA GLOBAL",
       title: "LAS ABEJAS SE ESTÁN APAGANDO",
-      desc: "Pesticidas, cambio climático y una apicultura prehistórica que les roba todo y las estresa hasta matarlas. Resultado: colapso. En BuzzLab usamos IA y Smart-Colmenas para blindarlas. Ellas viven como reinas, y tú puedes ayudarnos adoptando al miembro más vago (y vital) de la familia.",
+      desc: "Pesticidas, cambio climático y una apicultura prehistórica que les roba todo y las estresa hasta matarlas. Resultado: colapso. En BuzzNature usamos IA y Smart-Colmenas para blindarlas. Ellas viven como reinas, y tú puedes ayudarnos adoptando al miembro más vago (y vital) de la familia.",
       btn: "ADOPTA UN ZÁNGANO AHORA"
     },
     pact: {
@@ -50,8 +50,8 @@ export const translations = {
       standardTitle: "APICULTURA TÓXICA Y OBSOLETA",
       standardDesc: "Roban el 100% de su reserva de invierno y les dan agua con azúcar. Abren las colmenas a ciegas, provocando hipotermia. La industria las trata como fábricas desechables. Resultado: muerte.",
       standardLabel: "RUDIMENTARIO, ESTRÉS EXTREMO Y LETAL",
-      buzzlabProtocol: "LA SOLUCIÓN BUZZLAB",
-      buzzlabLabel: "MONITORIZACIÓN 24/7 NO INVASIVA",
+      BuzzNatureProtocol: "LA SOLUCIÓN BuzzNature",
+      BuzzNatureLabel: "MONITORIZACIÓN 24/7 NO INVASIVA",
       title: "CÓMO ESTAMOS ARREGLANDO EL BUG",
       extTitle: "EXTRACCIÓN ÉTICA",
       extDesc: "Solo tomamos un 30% del excedente... si es que sobra. Su miel es su sistema inmunológico y no somos ladrones.",
@@ -92,7 +92,7 @@ export const translations = {
       larvaDesc: "Crecimiento de su diminuto hardware, requiere temperatura sin estrés.",
       pupaTitle: "PUPA",
       pupaDays: "Día 10-20",
-      pupaDesc: "Metamorfosis. Donde la IA de Buzzlab previene el ataque de ácaros.",
+      pupaDesc: "Metamorfosis. Donde la IA de BuzzNature previene el ataque de ácaros.",
       adultTitle: "ADULTA",
       adultDays: "Día 21+",
       adultDesc: "Activación del protocolo al ecosistema exterior."
@@ -134,7 +134,7 @@ export const translations = {
       immunity: {
         title: "INFORME DE INMUNIDAD",
         tag1: "VIBRANTE // FUERTE",
-        bee1: "ABEJA BUZZLAB",
+        bee1: "ABEJA BuzzNature",
         stat1: "INMUNIDAD SUPERIOR",
         desc1Title: "CONCENTRACIÓN DE ÁCIDO P-CUMÁRICO: ÓPTIMA",
         desc1: "Nuestra arquitectura permite una dieta basada exclusivamente en polen real, resultando en niveles críticos de ácido p-cumárico que activan los genes de desintoxicación y defensa inmunológica.",
@@ -161,7 +161,7 @@ export const translations = {
       quotes: {
         tradTitle: "TRADICIONAL: \"LA FÁBRICA\"",
         tradDesc: "\"Abejas estresadas, alimentadas con azúcar, viviendo en cajas estandarizadas que ignoran su biología. Básicamente un call-center de los años 90 pero con aguijones.\"",
-        buzzTitle: "BUZZLAB: \"EL RESORT\"",
+        buzzTitle: "BuzzNature: \"EL RESORT\"",
         buzzDesc: "\"Ingenieras biológicas con autonomía total, sensores cuánticos y dieta gourmet. Producen menos cantidad, pero su valor sistémico es incalculable.\""
       },
       cta: {
@@ -196,7 +196,7 @@ export const translations = {
       rights: {
         title1: "DE OBJETOS A",
         title2: "SERES LIBRES",
-        lawTitle: "LA LEY BUZZLAB",
+        lawTitle: "LA LEY BuzzNature",
         lawDesc: "SUJETOS DE DERECHO: LAS ABEJAS COMO ENTIDADES LEGALES SOBERANAS.",
         desc: "Inspirados en la jurisprudencia de Perú, reconocemos a la abeja no como un recurso, sino como un habitante primordial.",
         link: "LEER MÁS SOBRE LOS DERECHOS DE LAS ABEJAS"
@@ -264,13 +264,13 @@ export const translations = {
         supertitle: "[ SISTEMA DESCENTRALIZADO ABIERTO ]",
         title: "DEJA DE PASTOREAR, EMPIEZA A CREAR RED.",
         subtitle: "No vendemos cursos, transferimos el código fuente.",
-        desc: "La apicultura tradicional es un sistema cerrado basado en la explotación a ciegas. En BuzzLab operamos la Mente Colmena (Hive-Mind). Unimos hardware cuántico, análisis biológico y a humanos dispuestos a aprender un protocolo en el que manda el ecosistema."
+        desc: "La apicultura tradicional es un sistema cerrado basado en la explotación a ciegas. En BuzzNature operamos la Mente Colmena (Hive-Mind). Unimos hardware cuántico, análisis biológico y a humanos dispuestos a aprender un protocolo en el que manda el ecosistema."
       },
       community: {
         supertitle: "01 // ARCHIVOS BÁSICOS E INTELIGENCIA COLECTIVA",
         title: "LA MENTE COLMENA (EL CLUB PRIVADO)",
         desc: "Más que un curso, es un acceso a la Sala de Máquinas. Te enseñamos nuestro protocolo desde cero: agricultura regenerativa, biomonitoreo, inmunidad por polinización cruzada y cómo olvidarte para siempre del agua con azúcar. Aprende con nosotros, intercambia datos con otros operadores de nodos y conéctate directo con los fundadores.",
-        item1: "ACCESO AL ARCHIVO DE CAPACITACIÓN (Aprende el Método BuzzLab)",
+        item1: "ACCESO AL ARCHIVO DE CAPACITACIÓN (Aprende el Método BuzzNature)",
         item2: "AUDIENCIAS PRIVADAS SEMANALES (Habla directo con el Laboratorio Central)",
         item3: "RED DE ALERTAS TEMPRANAS (Los operadores comparten datos de floración y amenazas locales en tiempo real)",
         item4: "CÓDIGO FUENTE EVOLUTIVO (La información y los manuales se actualizan con cada ciclo lunar)",
@@ -279,7 +279,7 @@ export const translations = {
       hardware: {
         supertitle: "02 // DESPLIEGUE EN FASE FÍSICA",
         title: "KIT DE NODO SMART-CORE",
-        desc: "Si ya tienes el código en la cabeza, necesitas servidores físicos en el jardín. No compres una caja de pino estándar que ahogará tu enjambre. Te enviamos la infraestructura técnica de BuzzLab, lista para bootear.",
+        desc: "Si ya tienes el código en la cabeza, necesitas servidores físicos en el jardín. No compres una caja de pino estándar que ahogará tu enjambre. Te enviamos la infraestructura técnica de BuzzNature, lista para bootear.",
         item1: "ESTRUCTURA TERMODINÁMICA MODULAR (Diseño para estrés cero y defensa pasiva)",
         item2: "MATRIZ DE SENSORES v2.4 (Módulo de peso, temperatura y micrófonos de frecuencia integrados)",
         item3: "CELDAS CÉNTRICAS PARA ZÁNGANOS (Reclamo táctico orgánico contra Varroa, tu cortafuegos natural)",
@@ -290,7 +290,7 @@ export const translations = {
         title: "PROTOCOLO DE ACCESO",
         dataTitle: "PAQUETE DATA / HIVE-MIND",
         dataPrice: "ABONO MENSUAL",
-        dataDesc: "Acceso a La Mente Colmena. Para aquellos que quieren operar un nodo con el código BuzzLab o re-diseñar su infraestructura actual.",
+        dataDesc: "Acceso a La Mente Colmena. Para aquellos que quieren operar un nodo con el código BuzzNature o re-diseñar su infraestructura actual.",
         hwTitle: "PAQUETE HARDWARE / SMART-NODE",
         hwPrice: "BAJO SOLICITUD",
         hwDesc: "Envío de un nodo completo con sensores a tus coordenadas. Requiere autorización y haber completado la fase 1 de aprendizaje."
@@ -299,12 +299,12 @@ export const translations = {
   },
   en: {
     seo: {
-      home: { title: "BuzzLab — AI Bee Rescue | Ethical Beekeeping", desc: "Bees are disappearing. BuzzLab transforms beekeeping with Smart-Hives and software to protect them. Adopt a drone and join the resistance." },
-      lab: { title: "AI Hive Analysis — BuzzLab", desc: "AI-powered monitoring. Varroa detection, acoustic analysis, real-time alerts." },
-      sanctuary: { title: "The Sanctuary — BuzzLab | Sovereign Bees", desc: "Sanctuary in Roccavivara, Molise. 2 hectares at 650m where bees rule." },
-      network: { title: "BuzzLab Network | Ethical Beekeeping Community", desc: "Network of ethical beekeepers. Data, certification, biodiversity consulting." },
-      contact: { title: "BuzzLab // Contact", desc: "Contact the strategic core of BuzzLab. Request audiences and communicate directly with the hive." },
-      adopt: { title: "Adopt a Hive — BuzzLab | From €79/year", desc: "Adopt a drone in Italy. Personalized certificate, artisanal honey, quarterly photos. The bees are the owners." }
+      home: { title: "BuzzNature — AI Bee Rescue | Ethical Beekeeping", desc: "Bees are disappearing. BuzzNature transforms beekeeping with Smart-Hives and software to protect them. Adopt a drone and join the resistance." },
+      lab: { title: "AI Hive Analysis — BuzzNature", desc: "AI-powered monitoring. Varroa detection, acoustic analysis, real-time alerts." },
+      sanctuary: { title: "The Sanctuary — BuzzNature | Sovereign Bees", desc: "Sanctuary in Roccavivara, Molise. 2 hectares at 650m where bees rule." },
+      network: { title: "BuzzNature Network | Ethical Beekeeping Community", desc: "Network of ethical beekeepers. Data, certification, biodiversity consulting." },
+      contact: { title: "BuzzNature // Contact", desc: "Contact the strategic core of BuzzNature. Request audiences and communicate directly with the hive." },
+      adopt: { title: "Adopt a Hive — BuzzNature | From €79/year", desc: "Adopt a drone in Italy. Personalized certificate, artisanal honey, quarterly photos. The bees are the owners." }
     },
     banner: "SYSTEM ALERT: ECOSYSTEM IN CRITICAL DANGER",
     whatsapp: {
@@ -312,7 +312,7 @@ export const translations = {
     },
     nav: {
       home: 'HOME',
-      lab: 'THE OS',
+      lab: 'HONEY_OS (TELEMETRY)',
       sanctuary: 'SANCTUARY',
       adopt: 'ADOPT',
       network: 'NETWORK',
@@ -321,7 +321,7 @@ export const translations = {
     },
     footer: {
       desc: "Biological engineering, proprietary hardware, and pollination data. We scale ecological impact with technology.",
-      copyright: "© 2026 BUZZLAB. Data extracted under Honey_OS regulations.",
+      copyright: "© 2026 BuzzNature. Data extracted under Honey_OS regulations.",
       navTitle: "QUICK_NAVIGATION",
       socialTitle: "INTERSPECIES_SOCIALS"
     },
@@ -340,7 +340,7 @@ export const translations = {
       btnMicro: "*Help from home: sponsor our biological shield",
       subtitle: "GLOBAL ALERT",
       title: "THE BEES ARE LOGGING OFF",
-      desc: "Pesticides, climate change, and prehistoric beekeeping that steals all their honey and destroys their microclimate. Result: collapse. At BuzzLab we use AI and Smart-Hives to shield them. They live like queens, and you can help by adopting the laziest (and most vital) member of the family.",
+      desc: "Pesticides, climate change, and prehistoric beekeeping that steals all their honey and destroys their microclimate. Result: collapse. At BuzzNature we use AI and Smart-Hives to shield them. They live like queens, and you can help by adopting the laziest (and most vital) member of the family.",
       btn: "ADOPT A DRONE NOW"
     },
     pact: {
@@ -348,8 +348,8 @@ export const translations = {
       standardTitle: "TOXIC & OBSOLETE BEEKEEPING",
       standardDesc: "They steal 100% of their honey, replacing it with sugar water in winter. They aggressively open hives causing hypothermia and stress. The industry treats them like disposable factories. Result: death.",
       standardLabel: "RUDIMENTARY, EXTREME STRESS & LETHAL",
-      buzzlabProtocol: "THE BUZZLAB SOLUTION",
-      buzzlabLabel: "NON-INVASIVE 24/7 MONITORING",
+      BuzzNatureProtocol: "THE BuzzNature SOLUTION",
+      BuzzNatureLabel: "NON-INVASIVE 24/7 MONITORING",
       title: "HOW WE'RE FIXING THE BUG",
       extTitle: "ETHICAL EXTRACTION",
       extDesc: "We only take 30% of the surplus, when available. Their honey is their immune system and we won't take it from them.",
@@ -390,7 +390,7 @@ export const translations = {
       larvaDesc: "Hardware growth, requires a stress-free thermal environment.",
       pupaTitle: "PUPA",
       pupaDays: "Day 10-20",
-      pupaDesc: "Metamorphosis. Where Buzzlab AI prevents mite attacks.",
+      pupaDesc: "Metamorphosis. Where BuzzNature AI prevents mite attacks.",
       adultTitle: "ADULT",
       adultDays: "Day 21+",
       adultDesc: "Outdoor ecosystem protocol activation."
@@ -432,7 +432,7 @@ export const translations = {
       immunity: {
         title: "IMMUNITY REPORT",
         tag1: "VIBRANT // STRONG",
-        bee1: "BUZZLAB BEE",
+        bee1: "BuzzNature BEE",
         stat1: "SUPERIOR IMMUNITY",
         desc1Title: "P-COUMARIC ACID CONCENTRATION: OPTIMAL",
         desc1: "Our architecture allows a diet based exclusively on real pollen, resulting in critical levels of p-coumaric acid that activate detoxification and immune defense genes.",
@@ -459,7 +459,7 @@ export const translations = {
       quotes: {
         tradTitle: "TRADITIONAL: \"THE FACTORY\"",
         tradDesc: "\"Stressed bees, fed with sugar, living in standardized boxes that ignore their biology. Basically a 90s call-center but with stingers.\"",
-        buzzTitle: "BUZZLAB: \"THE RESORT\"",
+        buzzTitle: "BuzzNature: \"THE RESORT\"",
         buzzDesc: "\"Biological engineers with total autonomy, quantum sensors and a gourmet diet. They produce less quantity, but their systemic value is incalculable.\""
       },
       cta: {
@@ -494,7 +494,7 @@ export const translations = {
       rights: {
         title1: "FROM OBJECTS TO",
         title2: "FREE BEINGS",
-        lawTitle: "THE BUZZLAB LAW",
+        lawTitle: "THE BuzzNature LAW",
         lawDesc: "SUBJECTS OF RIGHTS: BEES AS SOVEREIGN LEGAL ENTITIES.",
         desc: "Inspired by Peruvian jurisprudence, we recognize the bee not as a resource, but as a primordial inhabitant.",
         link: "READ MORE ABOUT BEE RIGHTS"
@@ -562,13 +562,13 @@ export const translations = {
         supertitle: "[ OPEN DECENTRALIZED SYSTEM ]",
         title: "STOP HERDING, START NETWORKING.",
         subtitle: "We don't sell courses, we transfer the source code.",
-        desc: "Traditional beekeeping is a closed system based on blind exploitation. At BuzzLab, we operate the Hive-Mind. We unite quantum hardware, biological analysis, and humans willing to learn a protocol where the ecosystem rules."
+        desc: "Traditional beekeeping is a closed system based on blind exploitation. At BuzzNature, we operate the Hive-Mind. We unite quantum hardware, biological analysis, and humans willing to learn a protocol where the ecosystem rules."
       },
       community: {
         supertitle: "01 // CORE FILES AND COLLECTIVE INTELLIGENCE",
         title: "THE HIVE-MIND (PRIVATE CLUB)",
         desc: "More than a course, it's access to the Engine Room. We teach you our protocol from scratch: regenerative agriculture, biomonitoring, cross-pollination immunity, and how to forget about sugar water forever. Learn with us, exchange data with other node operators, and connect directly with the founders.",
-        item1: "TRAINING ARCHIVE ACCESS (Learn the BuzzLab Method)",
+        item1: "TRAINING ARCHIVE ACCESS (Learn the BuzzNature Method)",
         item2: "WEEKLY PRIVATE AUDIENCES (Talk directly with the Central Lab)",
         item3: "EARLY WARNING NETWORK (Operators share bloom data and local threats in real-time)",
         item4: "EVOLVING SOURCE CODE (Info and manuals are updated with every lunar cycle)",
@@ -577,7 +577,7 @@ export const translations = {
       hardware: {
         supertitle: "02 // PHYSICAL PHASE DEPLOYMENT",
         title: "SMART-CORE NODE KIT",
-        desc: "If you already have the code in your head, you need physical servers in the garden. Don't buy a standard pine box that will drown your swarm. We send you BuzzLab's technical infrastructure, ready to boot.",
+        desc: "If you already have the code in your head, you need physical servers in the garden. Don't buy a standard pine box that will drown your swarm. We send you BuzzNature's technical infrastructure, ready to boot.",
         item1: "MODULAR THERMODYNAMIC STRUCTURE (Design for zero stress and passive defense)",
         item2: "SENSOR MATRIX v2.4 (Integrated weight, temperature, and frequency microphone module)",
         item3: "CENTRIC DRONE CELLS (Organic tactical decoy against Varroa, your natural firewall)",
@@ -588,7 +588,7 @@ export const translations = {
         title: "ACCESS PROTOCOL",
         dataTitle: "DATA PACKAGE / HIVE-MIND",
         dataPrice: "MONTHLY SUBSCRIPTION",
-        dataDesc: "Access to The Hive-Mind. For those who want to operate a node with the BuzzLab code or redesign their current infrastructure.",
+        dataDesc: "Access to The Hive-Mind. For those who want to operate a node with the BuzzNature code or redesign their current infrastructure.",
         hwTitle: "HARDWARE PACKAGE / SMART-NODE",
         hwPrice: "UPON REQUEST",
         hwDesc: "Shipping of a complete node with sensors to your coordinates. Requires authorization and completion of phase 1 training."
@@ -597,12 +597,12 @@ export const translations = {
   },
   it: {
     seo: {
-      home: { title: "BuzzLab — Salvataggio Api con IA | Apicoltura Etica", desc: "Le api stanno scomparendo. BuzzLab trasforma l'apicoltura con Smart-Hives e software per proteggerle. Adotta un fuco e unisciti alla resistenza." },
-      lab: { title: "Analisi IA Alveari — BuzzLab", desc: "Monitoraggio basato sull'IA. Rilevamento Varroa, analisi acustica, avvisi in tempo real." },
-      sanctuary: { title: "Il Santuario — BuzzLab | Api Sovrane", desc: "Santuario a Roccavivara, Molise. 2 ettari a 650m dove le api governano." },
-      network: { title: "Rete BuzzLab | Comunità di Apicoltura Etica", desc: "Rete di apicoltori etici. Dati, certificazione, consulenza biodiversità." },
-      contact: { title: "BuzzLab // Contatto", desc: "Contatta il nucleo strategico di BuzzLab. Richiedi udienze e comunica direttamente con l'alveare." },
-      adopt: { title: "Adotta un Alveare — BuzzLab | Da €79/anno", desc: "Adotta un fuco in Italia. Certificato personalizzato, miele artigianale, foto trimestrali. Le api sono le proprietarie." }
+      home: { title: "BuzzNature — Salvataggio Api con IA | Apicoltura Etica", desc: "Le api stanno scomparendo. BuzzNature trasforma l'apicoltura con Smart-Hives e software per proteggerle. Adotta un fuco e unisciti alla resistenza." },
+      lab: { title: "Analisi IA Alveari — BuzzNature", desc: "Monitoraggio basato sull'IA. Rilevamento Varroa, analisi acustica, avvisi in tempo real." },
+      sanctuary: { title: "Il Santuario — BuzzNature | Api Sovrane", desc: "Santuario a Roccavivara, Molise. 2 ettari a 650m dove le api governano." },
+      network: { title: "Rete BuzzNature | Comunità di Apicoltura Etica", desc: "Rete di apicoltori etici. Dati, certificazione, consulenza biodiversità." },
+      contact: { title: "BuzzNature // Contatto", desc: "Contatta il nucleo strategico di BuzzNature. Richiedi udienze e comunica direttamente con l'alveare." },
+      adopt: { title: "Adotta un Alveare — BuzzNature | Da €79/anno", desc: "Adotta un fuco in Italia. Certificato personalizzato, miele artigianale, foto trimestrali. Le api sono le proprietarie." }
     },
     banner: "ALLARME DI SISTEMA: ECOSISTEMA IN PERICOLO CRITICO",
     whatsapp: {
@@ -610,7 +610,7 @@ export const translations = {
     },
     nav: {
       home: 'INIZIO',
-      lab: 'L\'OS',
+      lab: 'HONEY_OS (TELEMETRIA)',
       sanctuary: 'SANTUARIO',
       adopt: 'ADOTTA',
       network: 'RETE',
@@ -619,7 +619,7 @@ export const translations = {
     },
     footer: {
       desc: "Ingegneria biologica, hardware proprietario e dati di impollinazione. Scaliamo l'impatto ecologico tramite la tecnologia.",
-      copyright: "© 2026 BUZZLAB. Dati estratti sotto normativa Honey_OS.",
+      copyright: "© 2026 BuzzNature. Dati estratti sotto normativa Honey_OS.",
       navTitle: "NAVIGAZIONE_VELOCE",
       socialTitle: "SOCIAL_INTERSPECIE"
     },
@@ -638,7 +638,7 @@ export const translations = {
       btnMicro: "*Aiuto da casa: sponsorizza il nostro scudo biologico",
       subtitle: "ALLARME GLOBALE",
       title: "LE API SI STANNO SPEGNENDO",
-      desc: "Pesticidi, cambiamento climatico e un'apicoltura preistorica che ruba loro tutto il miele e distrugge il loro microclima. Risultato: collasso. Al BuzzLab usiamo IA e Smart-Hives per blindarle. Vivono come regine, e tu puoi aiutarci adottando il membro più pigro (e vitale) della famiglia.",
+      desc: "Pesticidi, cambiamento climatico e un'apicoltura preistorica che ruba loro tutto il miele e distrugge il loro microclima. Risultato: collasso. Al BuzzNature usiamo IA e Smart-Hives per blindarle. Vivono come regine, e tu puoi aiutarci adottando il membro più pigro (e vitale) della famiglia.",
       btn: "ADOTTA UN FUCO ORA"
     },
     pact: {
@@ -646,8 +646,8 @@ export const translations = {
       standardTitle: "APICOLTURA TOSSICA E OBSOLETA",
       standardDesc: "Rubano il 100% del loro miele, sostituendolo con acqua e zucchero in inverno. Aprono le arnie in modo aggressivo, causando ipotermia e stress. L'industria le tratta come fabbriche usa e getta. Risultato: morte.",
       standardLabel: "RUDIMENTALE, STRESS ESTREMO E LETALE",
-      buzzlabProtocol: "LA SOLUZIONE BUZZLAB",
-      buzzlabLabel: "MONITORAGGIO 24/7 NON INVASIVO",
+      BuzzNatureProtocol: "LA SOLUZIONE BuzzNature",
+      BuzzNatureLabel: "MONITORAGGIO 24/7 NON INVASIVO",
       title: "COME STIAMO RISOLVENDO IL BUG",
       extTitle: "ESTRAZIONE ETICA",
       extDesc: "Prendiamo solo il 30% del surplus, quando possibile. Il loro miele è il loro sistema immunitario e non glielo toglieremo.",
@@ -688,7 +688,7 @@ export const translations = {
       larvaDesc: "Crescita dell'hardware, richiede un ambiente termico privo di stress.",
       pupaTitle: "PUPA",
       pupaDays: "Giorno 10-20",
-      pupaDesc: "Metamorfosi. Dove l'IA di Buzzlab previene gli attacchi degli acari.",
+      pupaDesc: "Metamorfosi. Dove l'IA di BuzzNature previene gli attacchi degli acari.",
       adultTitle: "ADULTA",
       adultDays: "Giorno 21+",
       adultDesc: "Attivazione del protocollo di ecosistema esterno."
@@ -730,7 +730,7 @@ export const translations = {
       immunity: {
         title: "RAPPORTO DI IMMUNITÀ",
         tag1: "VIBRANTE // FORTE",
-        bee1: "APE BUZZLAB",
+        bee1: "APE BuzzNature",
         stat1: "IMMUNITÀ SUPERIORE",
         desc1Title: "CONCENTRAZIONE DI ACIDO P-CUMARICO: OTTIMALE",
         desc1: "La nostra architettura consente una dieta basata esclusivamente su vero polline, risultando in livelli critici di acido p-cumarico che attivano i geni di disintossicazione e difesa immunitaria.",
@@ -757,7 +757,7 @@ export const translations = {
       quotes: {
         tradTitle: "TRADIZIONALE: \"LA FABBRICA\"",
         tradDesc: "\"Api stressate, nutrite con zucchero, che vivono in scatole standardizzate che ignorano la loro biologia. Fondamentalmente un call-center degli anni '90 ma con i pungiglioni.\"",
-        buzzTitle: "BUZZLAB: \"IL RESORT\"",
+        buzzTitle: "BuzzNature: \"IL RESORT\"",
         buzzDesc: "\"Ingegneri biologici con totale autonomia, sensori quantistici e dieta gourmet. Producono meno quantità, ma il loro valore sistemico è incalcolabile.\""
       },
       cta: {
@@ -792,7 +792,7 @@ export const translations = {
       rights: {
         title1: "DA OGGETTI A",
         title2: "ESSERI LIBERI",
-        lawTitle: "LA LEGGE BUZZLAB",
+        lawTitle: "LA LEGGE BuzzNature",
         lawDesc: "SOGGETTI DI DIRITTO: LE API COME ENTITÀ LEGALI SOVRANE.",
         desc: "Ispirati dalla giurisprudenza peruviana, riconosciamo l'ape non come una risorsa, ma come un abitante primordiale.",
         link: "LEGGI DI PIÙ SUI DIRITTI DELLE API"
@@ -860,13 +860,13 @@ export const translations = {
         supertitle: "[ SISTEMA DECENTRALIZZATO APERTO ]",
         title: "SMETTI DI PASCOLARE, INIZIA A FARE RETE.",
         subtitle: "Non vendiamo corsi, trasferiamo il codice sorgente.",
-        desc: "L'apicoltura tradizionale è un sistema chiuso basato sullo sfruttamento alla cieca. In BuzzLab operiamo l'Alveare-Mente (Hive-Mind). Uniamo hardware quantistico, analisi biologica e umani disposti a imparare un protocollo in cui l'ecosistema comanda."
+        desc: "L'apicoltura tradizionale è un sistema chiuso basato sullo sfruttamento alla cieca. In BuzzNature operiamo l'Alveare-Mente (Hive-Mind). Uniamo hardware quantistico, analisi biologica e umani disposti a imparare un protocollo in cui l'ecosistema comanda."
       },
       community: {
         supertitle: "01 // FILE BASE E INTELLIGENZA COLLETTIVA",
         title: "LA MENTE DELL'ALVEARE (IL CLUB PRIVATO)",
         desc: "Più che un corso, è un accesso alla Sala Macchine. Ti insegniamo il nostro protocollo da zero: agricoltura rigenerativa, biomonitoraggio, immunità da impollinazione incrociata e come dimenticarti per sempre di acqua e zucchero. Impara con noi, scambia dati con altri operatori di nodi e connettiti direttamente con i fondatori.",
-        item1: "ACCESSO ALL'ARCHIVIO DI FORMAZIONE (Impara il Metodo BuzzLab)",
+        item1: "ACCESSO ALL'ARCHIVIO DI FORMAZIONE (Impara il Metodo BuzzNature)",
         item2: "UDIENZE PRIVATE SETTIMANALI (Parla direttamente con il Laboratorio Centrale)",
         item3: "RETE DI ALLERTA PRECOCE (Gli operatori condividono dati sulle fioriture e minacce locali in tempo reale)",
         item4: "CODICE SORGENTE EVOLUTIVO (Info e manuali si aggiornano ad ogni ciclo lunare)",
@@ -875,7 +875,7 @@ export const translations = {
       hardware: {
         supertitle: "02 // DISTRIBUZIONE NELLA FASE FISICA",
         title: "KIT NODO SMART-CORE",
-        desc: "Se hai già il codice in testa, hai bisogno di server fisici in giardino. Non comprare una scatola di pino standard che annegherà il tuo sciame. Ti inviamo l'infrastruttura tecnica di BuzzLab, pronta per il boot.",
+        desc: "Se hai già il codice in testa, hai bisogno di server fisici in giardino. Non comprare una scatola di pino standard che annegherà il tuo sciame. Ti inviamo l'infrastruttura tecnica di BuzzNature, pronta per il boot.",
         item1: "STRUTTURA TERMODINAMICA MODULARE (Design per zero stress e difesa passiva)",
         item2: "MATRICE DI SENSORI v2.4 (Modulo peso, temperatura e microfoni di frequenza integrati)",
         item3: "CELLE CENTRICHE PER I FUCHI (Richiamo tattico organico contro la Varroa, il tuo firewall naturale)",
@@ -886,7 +886,7 @@ export const translations = {
         title: "PROTOCOLLO DI ACCESSO",
         dataTitle: "PACCHETTO DATA / HIVE-MIND",
         dataPrice: "ABBONAMENTO MENSILE",
-        dataDesc: "Accesso alla Mente dell'Alveare. Per chi vuole operare un nodo con il codice BuzzLab o riprogettare la propria infrastruttura attuale.",
+        dataDesc: "Accesso alla Mente dell'Alveare. Per chi vuole operare un nodo con il codice BuzzNature o riprogettare la propria infrastruttura attuale.",
         hwTitle: "PACCHETTO HARDWARE / SMART-NODE",
         hwPrice: "SU RICHIESTA",
         hwDesc: "Spedizione di un nodo completo con sensori alle tue coordinate. Richiede autorizzazione e il completamento della fase 1 di formazione."

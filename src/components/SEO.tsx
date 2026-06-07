@@ -15,10 +15,10 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
   // Try to get from translations if page is provided and exists
   const seoData = page && translations[language]?.seo?.[page as keyof typeof translations['es']['seo']] 
     ? translations[language].seo[page as keyof typeof translations['es']['seo']] 
-    : { title: title || 'BuzzLab', desc: description || 'Biological Engineering & Honey' };
+    : { title: title || 'BuzzNature', desc: description || 'Biological Engineering & Honey' };
 
   // Base URL
-  const siteUrl = 'https://buzzlab.online';
+  const siteUrl = 'https://BuzzNature.online';
   
   // Create page specific URL mapping
   const pathMap: Record<string, string> = {
@@ -38,8 +38,8 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "BuzzLab",
-    "url": "https://buzzlab.online",
+    "name": "BuzzNature",
+    "url": "https://BuzzNature.online",
     "description": "Santuario de abejas con IA. Apicultura ética, monitoreo, certificación.",
     "address": {
       "@type": "PostalAddress",
@@ -56,7 +56,7 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
     "name": "Adopta una Colmena",
     "brand": {
       "@type": "Organization",
-      "name": "BuzzLab"
+      "name": "BuzzNature"
     },
     "offers": [
       { "@type": "Offer", "name": "Guardián", "price": "79", "priceCurrency": "EUR" },
@@ -78,7 +78,7 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
       <meta property="og:url" content={currentUrl} />
       <meta property="og:title" content={seoData.title} />
       <meta property="og:description" content={seoData.desc} />
-      <meta property="og:site_name" content="BuzzLab" />
+      <meta property="og:site_name" content="BuzzNature" />
       <meta property="og:image" content="https://images.unsplash.com/photo-1555626906-f410d4654536?auto=format&fit=crop&q=80&w=1200" />
 
       {/* Twitter */}

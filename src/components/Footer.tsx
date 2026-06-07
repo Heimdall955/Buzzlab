@@ -15,7 +15,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <Link to="/" className="inline-block mb-6 hover:scale-105 transition-transform duration-300">
-              <img src="/logo.svg" alt="BuzzLab Logo" className="h-10 w-auto object-contain" />
+              <img src="/logo.svg" alt="BuzzNature Logo" className="h-10 w-auto object-contain" />
             </Link>
             <p className="text-white/50 text-sm font-body max-w-sm">
               {t.desc}

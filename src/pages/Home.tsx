@@ -60,7 +60,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           className="font-headline text-4xl md:text-6xl lg:text-7xl font-black text-primary uppercase tracking-tighter mb-8 leading-tight text-glow-primary"
         >
-          BUZZLAB: {t.subtitle} <br className="hidden md:block" /> {t.title}
+          BuzzNature: {t.subtitle} <br className="hidden md:block" /> {t.title}
         </motion.h1>
         
         <motion.p 
@@ -157,7 +157,7 @@ const PactSection = () => {
               <img className="w-full h-full object-cover" alt="honeycomb" src={techHoneycombImg}/>
             </div>
             <div className="relative z-10">
-              <span className="font-headline text-secondary text-xs md:text-sm tracking-[0.3em] mb-4">{t.buzzlabProtocol}</span>
+              <span className="font-headline text-secondary text-xs md:text-sm tracking-[0.3em] mb-4">{t.BuzzNatureProtocol}</span>
               <h2 className="font-headline text-3xl md:text-4xl text-secondary mb-8 uppercase text-glow-secondary">{t.title}</h2>
               <p className="text-on-secondary-container mb-8 leading-relaxed text-sm md:text-base">
                 {t.extDesc} {t.invDesc}
@@ -171,7 +171,7 @@ const PactSection = () => {
                   className="absolute left-0 top-0 h-full bg-secondary shadow-[0_0_10px_#26fedc]"
                 ></motion.div>
               </div>
-              <div className="mt-4 text-secondary font-headline text-[10px] md:text-xs tracking-widest">{t.buzzlabLabel}</div>
+              <div className="mt-4 text-secondary font-headline text-[10px] md:text-xs tracking-widest">{t.BuzzNatureLabel}</div>
             </div>
           </motion.div>
         </div>
@@ -246,74 +246,113 @@ const SmartColmenaSection = () => {
         <h2 className="font-headline text-3xl md:text-5xl mt-4 uppercase">{t.title}</h2>
       </div>
       <div className="container mx-auto px-6 md:px-12 relative">
-        <div className="max-w-4xl mx-auto relative group">
-          <div className="aspect-video bg-surface-container-low border border-outline-variant/10 flex items-center justify-center p-4 md:p-12 overflow-hidden relative">
-            <img className="w-full h-full object-cover opacity-30 mix-blend-screen" loading="lazy" decoding="async" alt="schematic" src={smartHiveImg}/>
+        
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 relative">
+          
+          {/* Main Terminal View */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-2 bg-[#050505] border border-primary/20 rounded-lg overflow-hidden flex flex-col font-mono relative shadow-[0_0_30px_rgba(38,254,220,0.05)]"
+          >
+            {/* Window Header */}
+            <div className="bg-[#111] border-b border-primary/20 p-3 flex justify-between items-center">
+               <div className="flex gap-2">
+                 <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                 <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                 <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+               </div>
+               <span className="text-[10px] text-primary/60 tracking-widest uppercase">HONEY_OS // ROOT TERMINAL</span>
+            </div>
             
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="absolute top-1/4 left-4 md:left-1/4 bg-glass border border-secondary/30 p-2 md:p-4 animate-pulse hover:animate-none hover:scale-110 transition-transform"
-            >
-              <div className="flex items-center gap-2 md:gap-3">
-                <Thermometer className="text-secondary w-5 h-5 md:w-6 md:h-6" />
-                <div className="text-left">
-                  <p className="text-[8px] md:text-[10px] text-secondary font-headline uppercase">{t.temp}</p>
-                  <p className="text-base md:text-xl text-on-surface font-bold">35.2ºC</p>
+            {/* Content area */}
+            <div className="p-6 relative flex-1 flex flex-col">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none"></div>
+              
+              <div className="flex flex-col sm:flex-row gap-6 items-start mb-8 relative z-10">
+                <div className="w-32 h-32 border border-primary/30 rounded overflow-hidden relative shrink-0">
+                   <img className="w-full h-full object-cover opacity-60 mix-blend-screen" alt="schematic bg" src={smartHiveImg} />
+                   <div className="absolute inset-0 ring-1 ring-primary/40 inset-ring animate-pulse"></div>
+                </div>
+                <div className="flex-1 w-full">
+                   <p className="text-primary font-bold text-lg mb-2">{'>'} SYSTEM_BOOT_SEQUENCE</p>
+                   <p className="text-primary/70 text-xs md:text-sm mb-2">INITIALIZING NODE: <span className="text-white">BZ-NODE-77</span></p>
+                   <p className="text-primary/70 text-xs md:text-sm mb-2">STATUS: <span className="text-green-400">ONLINE & SECURE</span></p>
+                   <p className="text-primary/70 text-xs md:text-sm flex items-center gap-2">CONNECTING TO HIVE-MIND... <span className="w-2 h-2 bg-primary rounded-full animate-pulse inline-block"></span></p>
                 </div>
               </div>
-            </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="absolute bottom-1/4 right-4 md:right-1/4 bg-glass border border-primary/30 p-2 md:p-4 animate-pulse hover:animate-none hover:scale-110 transition-transform"
-            >
-              <div className="flex items-center gap-2 md:gap-3">
-                <Weight className="text-primary w-5 h-5 md:w-6 md:h-6" />
-                <div className="text-left">
-                  <p className="text-[8px] md:text-[10px] text-primary font-headline uppercase">{t.weight}</p>
-                  <p className="text-base md:text-xl text-on-surface font-bold">48KG</p>
-                </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-auto">
+                 <div className="border border-primary/20 p-4 bg-[#0a0a0a]">
+                    <div className="flex items-center gap-3 mb-2">
+                      <Thermometer className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                      <span className="text-[10px] md:text-xs text-primary/60 tracking-widest">{t.temp}</span>
+                    </div>
+                    <div className="text-2xl md:text-3xl text-white">35.2<span className="text-sm md:text-base text-primary/40">ºC</span></div>
+                    <div className="w-full h-1 mt-3 bg-primary/20 overflow-hidden">
+                       <motion.div initial={{ width: 0 }} whileInView={{ width: "85%" }} transition={{ duration: 1, delay: 0.5 }} className="h-full bg-primary"></motion.div>
+                    </div>
+                 </div>
+                 
+                 <div className="border border-primary/20 p-4 bg-[#0a0a0a]">
+                    <div className="flex items-center gap-3 mb-2">
+                       <Weight className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                       <span className="text-[10px] md:text-xs text-primary/60 tracking-widest">{t.weight}</span>
+                    </div>
+                    <div className="text-2xl md:text-3xl text-white">48<span className="text-sm md:text-base text-primary/40">KG</span></div>
+                    <div className="w-full h-1 mt-3 bg-primary/20 overflow-hidden">
+                       <motion.div initial={{ width: 0 }} whileInView={{ width: "65%" }} transition={{ duration: 1, delay: 0.7 }} className="h-full bg-primary"></motion.div>
+                    </div>
+                 </div>
               </div>
-            </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="absolute top-1/2 right-2 md:right-10 bg-glass border border-secondary/30 p-2 md:p-4 hidden sm:block hover:scale-110 transition-transform"
-            >
-              <div className="flex items-center gap-2 md:gap-3">
-                <FileAudio className="text-secondary w-5 h-5 md:w-6 md:h-6" />
-                <div className="text-left">
-                  <p className="text-[8px] md:text-[10px] text-secondary font-headline uppercase">{t.audio}</p>
-                  <p className="text-base md:text-xl text-on-surface font-bold">SIESTA_MODE</p>
+            </div>
+          </motion.div>
+          
+          {/* Side Telemetry */}
+          <div className="flex flex-col gap-6">
+             <motion.div 
+               initial={{ opacity: 0, x: 20 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.6, delay: 0.3 }}
+               className="bg-[#050505] border border-secondary/20 p-6 flex-1 rounded-lg font-mono relative overflow-hidden group"
+             >
+                <div className="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+                <div className="flex items-center gap-3 mb-4">
+                   <FileAudio className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
+                   <span className="text-xs text-secondary/80 tracking-widest">{t.audio}</span>
                 </div>
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="absolute bottom-4 md:bottom-10 left-1/4 md:left-1/3 bg-glass border border-white/30 p-2 md:p-4 hidden sm:block hover:scale-110 transition-transform"
-            >
-              <div className="flex items-center gap-2 md:gap-3">
-                <HomeIcon className="text-on-surface w-5 h-5 md:w-6 md:h-6" />
-                <div className="text-left">
-                  <p className="text-[8px] md:text-[10px] text-on-surface-variant font-headline uppercase">{t.insulation}</p>
-                  <p className="text-base md:text-xl text-on-surface font-bold">ÁTICO DE LUJO</p>
+                <div className="h-[40px] md:h-[60px] flex items-end gap-1 mb-4 opacity-70 group-hover:opacity-100 transition-opacity">
+                   {[40, 20, 60, 80, 50, 30, 90, 70, 40, 50, 20].map((h, i) => (
+                      <motion.div key={i} initial={{ height: 0 }} whileInView={{ height: `${h}%` }} transition={{ duration: 0.5, delay: 0.5 + (i*0.05) }} className="flex-1 bg-secondary"></motion.div>
+                   ))}
                 </div>
-              </div>
-            </motion.div>
+                <div className="text-lg md:text-xl text-white font-bold">NORMAL <span className="text-xs md:text-sm font-normal text-secondary/60">FREQ: 240Hz</span></div>
+             </motion.div>
+             
+             <motion.div 
+               initial={{ opacity: 0, x: 20 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.6, delay: 0.5 }}
+               className="bg-[#050505] border border-white/10 p-6 flex-1 rounded-lg font-mono relative group flex flex-col justify-center"
+             >
+                 <div className="flex items-center gap-3 mb-4">
+                   <ShieldCheck className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                   <span className="text-xs text-white/60 tracking-widest uppercase">{t.insulation}</span>
+                 </div>
+                 <div className="text-2xl md:text-3xl text-white mb-2 group-hover:text-glow-white transition-all">MAXIMUM</div>
+                 <div className="text-[10px] text-white/40 tracking-widest">WINTER READY // ZERO DRAFT</div>
+                 <div className="mt-4 flex gap-1">
+                   {[1, 2, 3, 4, 5].map((_, i) => (
+                      <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.2, delay: 0.8 + (i*0.1) }} className="h-1 md:h-1.5 flex-1 bg-white"></motion.div>
+                   ))}
+                 </div>
+             </motion.div>
           </div>
+
         </div>
       </div>
     </section>

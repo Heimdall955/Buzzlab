@@ -134,7 +134,7 @@ const ContactForm = () => {
               className="space-y-8"
             >
               {/* FormSubmit Configuration */}
-              <input type="hidden" name="_subject" value={`BuzzLab: ${formData.mission}`} />
+              <input type="hidden" name="_subject" value={`BuzzNature: ${formData.mission}`} />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
               

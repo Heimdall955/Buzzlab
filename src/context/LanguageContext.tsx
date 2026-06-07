@@ -24,7 +24,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     }
 
     if (langQuery && ['es', 'en', 'it'].includes(langQuery)) return langQuery;
-    const stored = localStorage.getItem('buzzlab_lang') as Language;
+    const stored = localStorage.getItem('BuzzNature_lang') as Language;
     if (stored && ['es', 'en', 'it'].includes(stored)) return stored;
     
     // Check browser language
@@ -39,7 +39,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('buzzlab_lang', lang);
+    localStorage.setItem('BuzzNature_lang', lang);
     searchParams.set('lang', lang);
     setSearchParams(searchParams, { replace: true });
   };

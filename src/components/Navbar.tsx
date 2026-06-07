@@ -37,7 +37,7 @@ export const Navbar = () => {
         <Link to="/" className="flex items-center hover:scale-105 transition-transform duration-300" onClick={closeMobileMenu}>
           <img 
             src="/logo.svg" 
-            alt="BuzzLab Logo" 
+            alt="BuzzNature Logo" 
             className="h-10 md:h-14 w-auto object-contain"
           />
         </Link>

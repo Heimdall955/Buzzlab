@@ -39,7 +39,7 @@ const dashTranslations = {
       { id: 1, user: "Operador-X9A", action: "Se unió al enlace", time: "hace 2 min", type: "system" },
       { id: 2, user: "Nodo-ITA-04", action: "Alerta reportada: humedad > 65% estabilizada", time: "hace 15 min", type: "alert" },
       { id: 3, user: "Guardián_Zen", action: "Vídeo de la colmena Alfa compartido.", time: "hace 1 h", type: "user" },
-      { id: 4, user: "BuzzLab Control", action: "Actualización de protocolo V2.4 completada", time: "hace 3 h", type: "system" },
+      { id: 4, user: "BuzzNature Control", action: "Actualización de protocolo V2.4 completada", time: "hace 3 h", type: "system" },
     ]
   },
   en: {
@@ -63,7 +63,7 @@ const dashTranslations = {
       { id: 1, user: "Operator-X9A", action: "Joined the uplink", time: "2 min ago", type: "system" },
       { id: 2, user: "Node-ITA-04", action: "Alert reported: humidity > 65% stabilized", time: "15 min ago", type: "alert" },
       { id: 3, user: "Guardian_Zen", action: "Alpha hive video shared.", time: "1 hr ago", type: "user" },
-      { id: 4, user: "BuzzLab Control", action: "Protocol V2.4 update completed", time: "3 hrs ago", type: "system" },
+      { id: 4, user: "BuzzNature Control", action: "Protocol V2.4 update completed", time: "3 hrs ago", type: "system" },
     ]
   },
   it: {
@@ -87,7 +87,7 @@ const dashTranslations = {
       { id: 1, user: "Operatore-X9A", action: "Si è unito al collegamento", time: "2 min fa", type: "system" },
       { id: 2, user: "Nodo-ITA-04", action: "Allarme segnalato: umidità > 65% stabilizzata", time: "15 min fa", type: "alert" },
       { id: 3, user: "Guardiano_Zen", action: "Video dell'alveare Alfa condiviso.", time: "1 ora fa", type: "user" },
-      { id: 4, user: "BuzzLab Controllo", action: "Aggiornamento protocollo V2.4 completato", time: "3 ore fa", type: "system" },
+      { id: 4, user: "BuzzNature Controllo", action: "Aggiornamento protocollo V2.4 completato", time: "3 ore fa", type: "system" },
     ]
   }
 };
@@ -174,7 +174,7 @@ export const Login = () => {
   // Dashboard for Authenticated User
   return (
     <>
-      <SEO title="BuzzLab // Operator Node" description="Secured Operator Node Dashboard." />
+      <SEO title="BuzzNature // Operator Node" description="Secured Operator Node Dashboard." />
       <div className="min-h-screen bg-[#050505] text-[#F8F9FA] pt-24 pb-12 px-4 md:px-8 font-mono">
         {/* Background Grid */}
         <div className="fixed inset-0 z-0 pointer-events-none opacity-[0.03]" style={{
