@@ -1,83 +1,83 @@
 export const adoptTranslations = {
   es: {
     hero: {
-      title1: "Adopta una Colmena.",
-      title2: "No compras miel. Proteges vida.",
-      desc: "En BuzzLab, las abejas no son recursos. Son soberanas. Tú no compras un producto — te conviertes en guardián de un ecosistema vivo que depende de ti. Y a cambio, la naturaleza te devuelve lo más exclusivo que existe: miel que nace del respeto.",
-      cta: "[ ADOPTA TU COLMENA ]"
+      title1: "Adopta un Zángano.",
+      title2: "Nosotros protegemos a los olvidados.",
+      desc: "Todo el mundo protege a la reina. Mientras millones de personas hablan de la reina, nosotros queremos hablar del zángano. La abeja que nadie recuerda. La abeja que nadie pone en los carteles. Y sin embargo... sin ella no existiría la siguiente generación.",
+      cta: "[ ÚNETE AL EJÉRCITO DEL MILLÓN DE ZÁNGANOS ]"
     },
     different: {
-      title: "POR QUÉ ES DIFERENTE",
-      sub1: "El 70% de la miel es de las abejas.",
-      desc1: "Nosotros solo tomamos el 30%. No porque seamos generosos — porque es lo correcto. En BuzzLab no hay explotación, no hay químicos, no hay trashumancia. Las abejas viven donde nacieron, en un santuario a 650 metros de altitud en el corazón del Molise, Italia.",
-      sub2: "Cada tarro es una historia de supervivencia.",
-      desc2: "Mientras el mundo pierde el 62% de sus colmenas, las tuyas están protegidas. Cada tarro de miel BuzzLab Premium lleva dentro la filosofía de un santuario donde las abejas mandan y los humanos servimos.",
-      sub3: "No fabricamos miel. La custodiamos.",
-      desc3: "No hay producción industrial. No hay promesas de cantidad. Hay un compromiso: cuidar la biodiversidad, respetar el ritmo de la naturaleza, y compartir lo que ella decide darnos."
+      title: "¿POR QUÉ UN ZÁNGANO?",
+      sub1: "Lo que el mundo pasa por alto",
+      desc1: "Creemos que el futuro suele depender de aquello que el mundo ignora. Los zánganos. Los pueblos olvidados. Las especies olvidadas.",
+      sub2: "El símbolo de nuestra misión",
+      desc2: "Incluso las personas olvidadas y las ideas ignoradas. Por eso hemos convertido al zángano en nuestra bandera y nuestra prioridad.",
+      sub3: "Un ejército de un millón",
+      desc3: "Reunir a 1.000.000 de personas que crean que los olvidados también importan. No estás comprando miel, estás entrando a formar parte de una tribu que protege territorio y biodiversidad."
     },
     stats: {
-      title: "LOS NÚMEROS QUE IMPORTAN",
+      title: "¿A DÓNDE VA TU APORTACIÓN?",
       items: [
-        { icon: "🐝", text: "Cada colmena produce entre 20-30 kg de miel al año" },
-        { icon: "🍯", text: "Nosotros solo extraemos el 30% — 6-9 kg por colmena" },
-        { icon: "🌿", text: "El resto alimenta a la colmena y al ecosistema" },
-        { icon: "🏔️", text: "2 hectáreas de santuario en Roccavivara, Molise — sin pesticidas" },
-        { icon: "🛡️", text: "Abejas monitoreadas con tecnología IA que protege su salud" },
+        { icon: "🌿", text: "Crear hábitats para polinizadores y refugios pasivos" },
+        { icon: "🐝", text: "Mejorar nuestras colmenas y crear infraestructura" },
+        { icon: "🌳", text: "Plantar especies beneficiosas para la biodiversidad local" },
+        { icon: "🏡", text: "Recuperar territorios rurales olvidados y salvar ecosistemas" },
+        { icon: "🎥", text: "Crear contenido que demuestre que naturaleza e innovación caminan juntas" }
       ],
-      footer: "Esto no es apicultura. Es conservación con miel."
+      footer: "El futuro de los lugares más extraordinarios."
     },
     pricing: {
-      title: "ELIGE TU NIVEL DE COMPROMISO",
+      title: "¿QUÉ RECIBES AL UNIRTE?",
       b2c: [
         {
           icon: "🐝",
-          name: "Guardián",
-          price: "€79/año",
-          target: "Para quien quiere dar el primer paso.",
+          name: "Guardián del Zángano",
+          price: "€12/año",
+          target: "Menos de lo que cuestan dos cafés al mes.",
           features: [
-            "Adopción de 1 colmena con nombre propio",
             "Certificado digital personalizado",
-            "Fotos trimestrales del estado de tu colmena",
-            "1 tarro de miel BuzzLab Premium (500g) — miel pura del Molise",
-            "Newsletter exclusiva del Santuario con datos de biodiversidad"
+            "Número oficial dentro del Ejército del Millón de Zánganos",
+            "Tu nombre en el Muro de los Guardianes (si quieres aparecer)",
+            "Noticias y actualizaciones exclusivas de la colmena"
           ],
-          footer: "€6.6 al mes para proteger un ecosistema entero.",
+          footer: "Derecho a decir con orgullo: 'He adoptado un zángano'. La mayoría te preguntará qué significa eso.",
           cta: "[ QUIERO SER GUARDIÁN ]",
-          link: "https://buy.stripe.com/bJe9AT2mP8ikaFz8TNbo404"
+          link: "https://buy.stripe.com/9B600j3qT56814Z6LFbo406"
         },
         {
-          icon: "🐝🛡️",
-          name: "Protector",
-          price: "€149/año",
+          icon: "⚔️",
+          name: "Capitán de los Zánganos",
+          price: "€50/año",
           badge: "EL MÁS ELEGIDO",
-          target: "Para quien quiere mirar a sus abejas de cerca.",
+          target: "Porque proteger a los olvidados merece algunas ventajas.",
           features: [
-            "Todo lo del plan Guardián",
-            "Nombre grabado físicamente en tu colmena",
-            "Actualizaciones mensuales con datos reales: temperatura, peso, actividad",
-            "3 tarros de miel BuzzLab Premium (1.5 kg)",
-            "Acceso al estado general del Santuario"
+            "Todo lo incluido en el plan Guardián",
+            "Fotografías exclusivas de nuestras colmenas",
+            "Fotografías de zánganos reales capturados en su entorno",
+            "Historias, descubrimientos y aventuras de biodiversidad",
+            "Acceso prioritario a eventos",
+            "Contenido exclusivo del proyecto Bastardos"
           ],
-          footer: "Tu nombre en una colmena. Tu miel en tu mesa. Tu impacto en el planeta.",
-          cta: "[ QUIERO SER PROTECTOR ]",
-          link: "https://buy.stripe.com/8x25kD7H99mo14Zgmfbo403"
+          footer: "No solo ayudas. Te conviertes en defensor de la biodiversidad.",
+          cta: "[ QUIERO SER CAPITÁN ]",
+          link: "https://buy.stripe.com/cNibJ15z1buw2930nhbo407"
         },
         {
-          icon: "🐝👑",
-          name: "Patrón",
-          price: "€249/año",
-          target: "Para quien entiende que el legado se construye protegiendo.",
+          icon: "👑",
+          name: "Fundador de los Olvidados",
+          price: "€100/año",
+          target: "Para quienes ayudan a construir la historia desde el principio.",
           features: [
-            "Todo lo del plan Protector",
-            "6 tarros de miel BuzzLab Premium (3 kg) — el 30% de UNA colmena entera es tuyo",
-            "Tour virtual privado del Santuario",
-            "Invitación al evento anual en Roccavivara, Molise",
-            "Mención perpetua en el Muro de Patrones del Santuario",
-            "Video dedicado de tu colmena cada temporada"
+            "Todo lo incluido en el plan Capitán",
+            "Certificado especial de Fundador",
+            "Reconocimiento permanente en nuestra página de Fundadores",
+            "Acceso anticipado a nuevos proyectos y eventos",
+            "Fotografías y contenido exclusivo de temporada",
+            "1 tarro exclusivo de 500g de Miel de los Olvidados"
           ],
-          footer: "No solo adoptas. Dejas huella.",
-          cta: "[ QUIERO SER PATRÓN ]",
-          link: "https://buy.stripe.com/9B66oHd1tbuw9Bvgmfbo405"
+          footer: "Algunas cosas no deberían venderse. Se reservan para los Fundadores.",
+          cta: "[ QUIERO SER FUNDADOR ]",
+          link: "https://buy.stripe.com/6oU00j3qT5685lf4Dxbo408"
         }
       ],
       b2bTitle: "PARA EMPRESAS",
@@ -86,9 +86,9 @@ export const adoptTranslations = {
           name: "Santuario Partner",
           price: "€500/año",
           features: [
-            "5 colmenas adoptadas a nombre de tu empresa",
+            "5 zánganos apadrinados a nombre de tu empresa",
             "Certificado corporativo de adopción",
-            "10 tarros de miel premium para clientes o equipo",
+            "10 tarros de Miel de los Olvidados para clientes o equipo",
             "Logo en la web del Santuario",
             "2 menciones anuales en redes sociales",
             "Reportaje fotográfico anual de la biodiversidad que tu empresa está protegiendo"
@@ -98,8 +98,8 @@ export const adoptTranslations = {
           name: "Santuario Patron",
           price: "€1,500/año",
           features: [
-            "15 colmenas adoptadas",
-            "30 tarros de miel premium corporativa",
+            "15 zánganos apadrinados",
+            "30 tarros de Miel de los Olvidados",
             "Logo destacado en web + presencia en evento anual",
             "4 posts de contenido conjunto al año",
             "Reportaje fotográfico trimestral de la biodiversidad",
@@ -110,125 +110,125 @@ export const adoptTranslations = {
       b2bCta: "[ QUIERO PATROCINAR EL SANTUARIO ]"
     },
     exclusive: {
-      title: "LA MIEL MÁS EXCLUSIVA QUE VAS A PROBAR",
-      subtitle: "¿Por qué es premium de verdad?",
+      title: "LA MIEL DE LOS OLVIDADOS",
+      subtitle: "Esta miel no está a la venta. No puedes comprarla.",
       items: [
-        { title: "Limitada por naturaleza.", desc: "Solo extraemos el 30%. Si una colmena produce poco, hay poco. No hay reserva. No hay stock. Si se acaba, se acaba." },
-        { title: "Terroir del Molise.", desc: "650m de altitud. Encinas, tomillo, romero silvestre. Un ecosistema que no se puede replicar." },
-        { title: "Sin intervención.", desc: "No alimentamos con jarabe. No tratamos con químicos. No movemos las colmenas. La miel sabe a lo que huele el campo." },
-        { title: "Cosecha ética.", desc: "Solo cuando las abejas han guardado suficiente para ellas. Siempre ellas primero." },
-        { title: "Trazabilidad real.", desc: "Cada tarro viene de una colmena con nombre. Puedes ver fotos. Puedes ver los datos. Transparencia total." }
+        { title: "No está en Amazon.", desc: "No está en supermercados. No existe una tienda online o física donde conseguirla." },
+        { title: "La única vía de acceso.", desc: "La única forma de recibirla es convirtiéndote en Fundador de los Olvidados. Por 100€ al año obtienes este frasco en tu mesa." },
+        { title: "Para los que construyen la historia.", desc: "Porque algunas cosas no deberían venderse. Deberían reservarse para quienes apoyan este proyecto desde el principio." },
+        { title: "Símbolo de regeneración.", desc: "Esto no es solo un producto de consumo, es la prueba material de un ecosistema restaurado por tu aportación." },
+        { title: "Pura, cruda y sin concesiones.", desc: "Extraída éticamente de santuarios protegidos y vírgenes donde imperan las leyes del enjambre." }
       ],
-      footer: "Esto no es miel de supermercado con una etiqueta bonita. Es miel que cambia algo en el mundo."
+      footer: "Únete a un grupo exclusivo de personas que saborean el cambio real."
     },
     policy: {
-      title: "NUESTRA FILOSOFÍA DE COSECHA Y ENVÍO",
+      title: "SOMOS BASTARDOS",
       shipping: {
-        title: "Envíos desde el Santuario",
-        desc: "El coste del envío se calcula aparte y se pagará en el momento del envío según tu país. Toda nuestra miel viaja directamente desde el Santuario en Molise, Italia. Pagas el coste real de llevar el tesoro de las abejas a tu casa."
+        title: "No seguimos al mundo",
+        desc: "Descubrimos lo que el mundo ha olvidado. Creemos que los lugares más extraordinarios suelen encontrarse donde nadie está mirando. Por eso protegemos a los olvidados. Por eso elegimos a los zánganos como símbolo."
       },
       ethics: {
-        title: "El Pacto del 30%",
-        desc: "Nuestra ética es inquebrantable: dejamos el 70% de la miel para que las abejas pasen el invierno, y extraemos como máximo el 30%. Si un año la naturaleza es impredecible y no hay tanta floración, la cosecha (sea poca o mucha) se repartirá proporcionalmente entre todos los protectores. Adoptar significa aceptar los ritmos de la naturaleza, acompañarlos y no forzarlos."
+        title: "Lo que el mundo pasa por alto",
+        desc: "Queremos reunir a un millón de personas alrededor de una idea muy simple: El futuro suele depender de aquello que el mundo pasa por alto. Únete al ejército del millón de zánganos y ayúdanos a demostrarlo."
       }
     },
     faq: {
       title: "PREGUNTAS FRECUENTES",
       items: [
-        { q: "¿Cuánta miel voy a recibir exacta?", a: "La indicada en tu plan. Pero la cantidad real depende de la naturaleza. Un año llueve más, otro menos. Esa es la belleza de lo auténtico — nunca es industrial." },
-        { q: "¿Puedo visitar mi colmena?", a: "Los Patrones reciben invitación al evento anual en Roccavivara. Todos pueden visitar previa reserva." },
-        { q: "¿Es un regalo?", a: "Es el mejor regalo posible. Certificado + miel exclusiva + impacto real. Te lo envolvemos." },
-        { q: "¿Puedo cancelar?", a: "Sí. Pero las abejas echarían de menos tu nombre en la colmena." },
-        { q: "¿Qué significa 'abejas soberanas'?", a: "Que en BuzzLab las abejas no son propiedad. Son habitantes del santuario con derecho a su propia miel, su propio espacio y su propia vida. Nosotros las cuidamos. Ellas deciden." },
-        { q: "¿Qué reciben las empresas?", a: "Fotos reales de la biodiversidad que están protegiendo. No PDFs aburridos — imágenes de las flores que polinizan tus abejas, los paisajes que conservan, la vida que depende de ellas." }
+        { q: "¿Qué recibo realmente al adoptar un zángano?", a: "Recibes pertenencia. Un certificado, actualizaciones y en los niveles superiores, miel exclusiva y fotografías. Pero sobre todo, proteges territorio rural y biodiversidad." },
+        { q: "¿Pagar 12€ por un zángano vale la pena?", a: "Es menos que el coste de dos cafés al mes. Ese dinero se usa para regenerar hábitats y sembrar floración para millones de abejas." },
+        { q: "¿Puedo comprar la Miel de los Olvidados de forma individual?", a: "No. Solo se obtiene alcanzando el nivel 'Fundador de los Olvidados'. Nunca estará a la venta en tiendas." },
+        { q: "¿Cómo renuevo mi suscripción?", a: "Es anual. Te enviaremos un recordatorio cuando esté por finalizar tu ciclo para seguir protegiendo a los zánganos." },
+        { q: "¿Por qué el zángano y no la reina?", a: "Porque todo el mundo habla de la reina, pero sin el zángano no hay siguiente generación. Proteger lo que otros olvidan es la esencia de BuzzLab." },
+        { q: "¿Qué reciben las empresas?", a: "Fotos reales de la biodiversidad que están protegiendo y contenido para compartir el impacto ecosistémico con sus audiencias y empleados." }
       ]
     },
     ctaFinal: {
-      l1: "Las abejas llevan 130 millones de años en este planeta.",
-      l2: "Nosotros llevamos 5 minutos rompiéndolo.",
-      l3: "Tú puedes elegir de qué lado estar.",
-      btn: "[ ADOPTA TU COLMENA ]"
+      l1: "El futuro suele depender de aquello que el mundo ignora.",
+      l2: "Únete a un ejército libre de prejuicios y protectores.",
+      l3: "Mil zánganos te esperan.",
+      btn: "[ ÚNETE AL EJÉRCITO HOY ]"
     }
   },
   en: {
     hero: {
-      title1: "Adopt a Hive.",
-      title2: "You don't buy honey. You protect life.",
-      desc: "At BuzzLab, bees are not resources. They are sovereign. You don't buy a product — you become a guardian of a living ecosystem. And in return, nature gives you the most exclusive thing there is: honey born from respect.",
-      cta: "[ ADOPT YOUR HIVE ]"
+      title1: "Adopt a Drone Bee.",
+      title2: "We protect the forgotten ones.",
+      desc: "Everyone protects the queen. While millions talk about the queen, we want to talk about the drone. The bee that no one remembers. The bee no one puts on posters. And yet... without him, the next generation wouldn't exist.",
+      cta: "[ JOIN THE ONE MILLION DRONES ARMY ]"
     },
     different: {
-      title: "WHY IT'S DIFFERENT",
-      sub1: "70% of the honey belongs to the bees.",
-      desc1: "We only take 30%. Not because we are generous — because it's the right thing to do. At BuzzLab there is no exploitation, no chemicals, no transhumance. Bees live where they were born, in a sanctuary at 650 meters altitude in Molise, Italy.",
-      sub2: "Every jar is a story of survival.",
-      desc2: "While the world loses 62% of its hives, yours are protected. Each jar of BuzzLab Premium honey carries the philosophy of a sanctuary where bees rule and humans serve.",
-      sub3: "We don't manufacture honey. We guard it.",
-      desc3: "There is no industrial production. No promises of quantity. There is a commitment: to care for biodiversity, respect nature's rhythm, and share what she decides to give us."
+      title: "WHY A DRONE?",
+      sub1: "What the world overlooks",
+      desc1: "We believe the future often depends on what the world ignores. The drones. The forgotten towns. The forgotten species.",
+      sub2: "The symbol of our mission",
+      desc2: "Even forgotten people and ignored ideas. That is why we have made the drone our flag and our priority.",
+      sub3: "An army of a million",
+      desc3: "Gathering 1,000,000 people who believe the forgotten ones also matter. You are not buying honey, you are joining a tribe that protects territory and biodiversity."
     },
     stats: {
-      title: "NUMBERS THAT MATTER",
+      title: "WHERE DOES YOUR CONTRIBUTION GO?",
       items: [
-        { icon: "🐝", text: "Each hive produces between 20-30 kg of honey per year" },
-        { icon: "🍯", text: "We only extract 30% — 6-9 kg per hive" },
-        { icon: "🌿", text: "The rest feeds the hive and the ecosystem" },
-        { icon: "🏔️", text: "2 hectares of sanctuary in Roccavivara, Molise — pesticide-free" },
-        { icon: "🛡️", text: "Bees monitored with AI technology protecting their health" },
+        { icon: "🌿", text: "Create habitats for pollinators and passive shelters" },
+        { icon: "🐝", text: "Improve our hives and create infrastructure" },
+        { icon: "🌳", text: "Plant beneficial species for local biodiversity" },
+        { icon: "🏡", text: "Recover forgotten rural territories and save ecosystems" },
+        { icon: "🎥", text: "Create content that proves nature and innovation walk together" }
       ],
-      footer: "This is not beekeeping. It's conservation with honey."
+      footer: "The future of the most extraordinary places."
     },
     pricing: {
-      title: "CHOOSE YOUR COMMITMENT LEVEL",
+      title: "WHAT DO YOU RECEIVE?",
       b2c: [
         {
           icon: "🐝",
-          name: "Guardian",
-          price: "€79/year",
-          target: "For those making their first step.",
+          name: "Drone Guardian",
+          price: "€12/year",
+          target: "Less than the cost of two coffees a month.",
           features: [
-            "Adoption of 1 hive with its own name",
             "Personalized digital certificate",
-            "Quarterly photos of your hive's status",
-            "1 jar of BuzzLab Premium honey (500g)",
-            "Exclusive Sanctuary newsletter with biodiversity data"
+            "Official number within the One Million Drones Army",
+            "Your name on the Wall of Guardians (optional)",
+            "Exclusive news and updates from the hive"
           ],
-          footer: "€6.6 a month to protect an entire ecosystem.",
+          footer: "The right to proudly say: 'I have adopted a drone'. Most will ask what that means.",
           cta: "[ I WANT TO BE A GUARDIAN ]",
-          link: "https://buy.stripe.com/bJe9AT2mP8ikaFz8TNbo404"
+          link: "https://buy.stripe.com/9B600j3qT56814Z6LFbo406"
         },
         {
-          icon: "🐝🛡️",
-          name: "Protector",
-          price: "€149/year",
+          icon: "⚔️",
+          name: "Drone Captain",
+          price: "€50/year",
           badge: "MOST POPULAR",
-          target: "For those who want to watch their bees closely.",
+          target: "Because protecting the forgotten deserves privileges.",
           features: [
-            "Everything in Guardian plan",
-            "Name physically engraved on your hive",
-            "Monthly updates with real data: temp, weight, activity",
-            "3 jars of BuzzLab Premium honey (1.5 kg)",
-            "Access to the general Sanctuary status"
+            "Everything in the Guardian plan",
+            "Exclusive photos of our hives",
+            "Photos of real drones captured in their environment",
+            "Stories, discoveries, and biodiversity adventures",
+            "Priority access to events",
+            "Exclusive content from the Bastards project"
           ],
-          footer: "Your name on a hive. Your honey on your table. Your impact on the planet.",
-          cta: "[ I WANT TO BE A PROTECTOR ]",
-          link: "https://buy.stripe.com/8x25kD7H99mo14Zgmfbo403"
+          footer: "You don't just help. You become a frontline defender.",
+          cta: "[ I WANT TO BE A CAPTAIN ]",
+          link: "https://buy.stripe.com/cNibJ15z1buw2930nhbo407"
         },
         {
-          icon: "🐝👑",
-          name: "Patron",
-          price: "€249/year",
-          target: "For those who understand legacy is built by protecting.",
+          icon: "👑",
+          name: "Founder of the Forgotten",
+          price: "€100/year",
+          target: "For those who help build history from the start.",
           features: [
-            "Everything in Protector plan",
-            "6 jars of BuzzLab Premium honey (3 kg) — 30% of ONE entire hive is yours",
-            "Private virtual tour of the Sanctuary",
-            "Invitation to the annual event in Roccavivara, Italy",
-            "Perpetual mention on the Sanctuary Patron Wall",
-            "Dedicated video of your hive every season"
+            "Everything in the Captain plan",
+            "Special Founder's printed certificate",
+            "Permanent recognition on our Founders page",
+            "Early access to new projects and events",
+            "Exclusive seasonal photos and content",
+            "1 exclusive 500g jar of Honey of the Forgotten"
           ],
-          footer: "You don't just adopt. You leave a mark.",
-          cta: "[ I WANT TO BE A PATRON ]",
-          link: "https://buy.stripe.com/9B66oHd1tbuw9Bvgmfbo405"
+          footer: "Some things shouldn't be sold. They are reserved for the Founders.",
+          cta: "[ I WANT TO BE A FOUNDER ]",
+          link: "https://buy.stripe.com/6oU00j3qT5685lf4Dxbo408"
         }
       ],
       b2bTitle: "FOR COMPANIES",
@@ -237,9 +237,9 @@ export const adoptTranslations = {
           name: "Sanctuary Partner",
           price: "€500/year",
           features: [
-            "5 adopted hives in your company's name",
+            "5 adopted drones in your company's name",
             "Corporate adoption certificate",
-            "10 premium honey jars for clients or team",
+            "10 jars of Honey of the Forgotten for clients or team",
             "Logo on the Sanctuary website",
             "2 annual social media mentions",
             "Annual photo report of the biodiversity your company protects"
@@ -249,8 +249,8 @@ export const adoptTranslations = {
           name: "Sanctuary Patron",
           price: "€1,500/year",
           features: [
-            "15 adopted hives",
-            "30 corporate premium honey jars",
+            "15 adopted drones",
+            "30 jars of Honey of the Forgotten",
             "Prominent logo on web + presence at annual event",
             "4 joint content posts per year",
             "Quarterly photo report of protected biodiversity",
@@ -261,191 +261,195 @@ export const adoptTranslations = {
       b2bCta: "[ I WANT TO SPONSOR THE SANCTUARY ]"
     },
     exclusive: {
-      title: "THE MOST EXCLUSIVE HONEY YOU WILL TASTE",
-      subtitle: "Why is it truly premium?",
+      title: "THE HONEY OF THE FORGOTTEN",
+      subtitle: "This honey is not for sale. You cannot buy it.",
       items: [
-        { title: "Limited by nature.", desc: "We only extract 30%. If a hive produces little, there is little. No reserve. No stock. When it's gone, it's gone." },
-        { title: "Molise Terroir.", desc: "650m altitude. Holm oaks, thyme, wild rosemary. An ecosystem that cannot be replicated." },
-        { title: "No intervention.", desc: "We don't feed sugar syrup. We don't treat with chemicals. We don't move the hives. The honey tastes like the field smells." },
-        { title: "Ethical harvest.", desc: "Only when the bees have saved enough for themselves. Always them first." },
-        { title: "Real traceability.", desc: "Every jar comes from a named hive. You can see photos. You can see data. Total transparency." }
+        { title: "Not on Amazon.", desc: "It is not in supermarkets. There is no online or physical store to get it." },
+        { title: "The only access path.", desc: "The only way to receive it is by becoming a Founder of the Forgotten. For €100 a year, you get this jar on your table." },
+        { title: "For history builders.", desc: "Because some things shouldn't be sold. They should be reserved for those who support this project." },
+        { title: "A symbol of regeneration.", desc: "This is not just a consumer product, it is material proof of an ecosystem restored by your contribution." },
+        { title: "Pure, raw and uncompromising.", desc: "Ethically extracted from protected sanctuaries where the laws of the swarm reign." }
       ],
-      footer: "This is not supermarket honey with a pretty label. This is honey that changes the world."
+      footer: "Join an exclusive group of people tasting real change."
     },
     policy: {
-      title: "OUR HARVEST & SHIPPING PHILOSOPHY",
+      title: "WE ARE BASTARDS",
       shipping: {
-        title: "Shipping from the Sanctuary",
-        desc: "Shipping costs are calculated separately and will be paid at the time of shipment, based on your country. All our honey travels directly from the Sanctuary in Molise, Italy. You pay the real cost of bringing the bees' treasure to your home."
+        title: "We don't follow the world",
+        desc: "We discover what the world has forgotten. We believe the most extraordinary places are usually found where no one is looking. That's why we protect the forgotten. That's why we chose drones as a symbol."
       },
       ethics: {
-        title: "The 30% Pact",
-        desc: "Our ethics are unwavering: we leave 70% of the honey for the bees to spend the winter, extracting a maximum of 30%. If nature is unpredictable one year and there is less blooming, the harvest (whether small or bountiful) will be equitably shared among all protectors. Adopting means accepting nature's rhythms, accompanying them, not forcing them."
+        title: "What the world overlooks",
+        desc: "We want to gather a million people around a simple idea: The future often depends on what the world overlooks. Join the army of a million drones and help us prove it."
       }
     },
     faq: {
       title: "FREQUENTLY ASKED QUESTIONS",
       items: [
-        { q: "How much honey exactly will I receive?", a: "The amount indicated in your plan. But actual output depends on nature. This is the beauty of authenticity — it's never industrial." },
-        { q: "Can I visit my hive?", a: "Patrons receive an invitation to the annual event. Everyone can visit by prior reservation." },
-        { q: "Is it a gift?", a: "It's the best possible gift. Certificate + exclusive honey + real impact. We wrap it for you." },
-        { q: "Can I cancel?", a: "Yes. But the bees would miss your name on the hive." },
-        { q: "What does 'sovereign bees' mean?", a: "In BuzzLab, bees are not property. They are sanctuary inhabitants with a right to their own honey, space, and life. We care for them. They decide." },
-        { q: "What do companies receive?", a: "Real photos of the biodiversity they protect. Not boring PDFs — images of flowers, landscapes, and life that depends on your bees." }
+        { q: "What do I actually receive by adopting a drone?", a: "You receive belonging. A certificate, updates, and at higher tiers, exclusive honey and photos. Mostly, you protect territory and biodiversity." },
+        { q: "Is paying €12 for a drone worth it?", a: "It's less than two coffees a month. That money regenerates habitats and sows flora for millions of bees." },
+        { q: "Can I buy the Honey of the Forgotten individually?", a: "No. You can only get it by reaching the 'Founder of the Forgotten' tier. It will never be sold." },
+        { q: "How do I renew my subscription?", a: "It's annual. We will send you a reminder when your cycle is about to end so you can continue protecting drones." },
+        { q: "Why the drone and not the queen?", a: "Because everyone talks about the queen, but without the drone there is no next generation. Protecting what others forget is BuzzLab's essence." },
+        { q: "What do companies receive?", a: "Real photos of the biodiversity they are protecting and content to share the ecosystem impact with their audiences." }
       ]
     },
     ctaFinal: {
-      l1: "Bees have been on this planet for 130 million years.",
-      l2: "We've been breaking it for 5 minutes.",
-      l3: "You can choose which side to be on.",
-      btn: "[ ADOPT YOUR HIVE ]"
+      l1: "The future depends on what the world ignores.",
+      l2: "Join an army of open-minded protectors.",
+      l3: "A thousand drones are calling.",
+      btn: "[ JOIN THE ARMY TODAY ]"
     }
   },
   it: {
     hero: {
-      title1: "Adotta un Alveare.",
-      title2: "Non compri miele. Proteggi la vita.",
-      desc: "In BuzzLab, le api non sono risorse. Sono sovrane. Non compri un prodotto — diventi custode di un ecosistema vivo. E in cambio, la natura ti restituisce la cosa più esclusiva: il miele nato dal rispetto.",
-      cta: "[ ADOTTA IL TUO ALVEARE ]"
+      title1: "Adotta un Fuco.",
+      title2: "Noi proteggiamo i dimenticati.",
+      desc: "Tutti proteggono l'ape regina. Mentre milioni di persone parlano dell'ape regina, noi vogliamo parlare del fuco. L'ape che nessuno ricorda. L'ape che nessuno mette nei manifesti. Eppure... senza di lui, la prossima generazione non esisterebbe.",
+      cta: "[ UNISCITI ALL'ESERCITO DI UN MILIONE DI FUCHI ]"
     },
     different: {
-      title: "PERCHÉ È DIVERSO",
-      sub1: "Il 70% del miele appartiene alle api.",
-      desc1: "Prendiamo solo il 30%. Non perché siamo generosi, ma perché è giusto. Da BuzzLab non c'è sfruttamento, niente chimica, niente transumanza. Le api vivono a 650 metri nel Molise.",
-      sub2: "Ogni vasetto è una storia di sopravvivenza.",
-      desc2: "Mentre il mondo perde il 62% dei suoi alveari, i tuoi sono protetti. Ogni vasetto Premium porta con sé la filosofia di un santuario.",
-      sub3: "Non produciamo miele. Lo custodiamo.",
-      desc3: "Nessuna produzione industriale. Nessuna promessa di quantità. Solo impegno per la biodiversità e rispetto del ritmo della natura."
+      title: "PERCHÉ UN FUCO?",
+      sub1: "Ciò che il mondo trascura",
+      desc1: "Crediamo che il futuro dipenda spesso da ciò che il mondo ignora. I fuchi. I paesi dimenticati. Le specie dimenticate.",
+      sub2: "Il simbolo della nostra missione",
+      desc2: "Persino le persone e le idee ignorate. Per questo abbiamo reso il fuco la nostra bandiera e priorità.",
+      sub3: "Un esercito di un milione",
+      desc3: "Riunire 1.000.000 di persone che credono che anche i dimenticati contino. Non stai comprando miele, stai entrando in una tribù."
     },
     stats: {
-      title: "I NUMERI CHE CONTANO",
+      title: "DOVE VA IL TUO CONTRIBUTO?",
       items: [
-        { icon: "🐝", text: "Ogni alveare produce circa 20-30 kg di miele all'anno" },
-        { icon: "🍯", text: "Estraiamo solo il 30% — 6-9 kg per alveare" },
-        { icon: "🌿", text: "Il resto nutre l'alveare e l'ecosistema" },
-        { icon: "🏔️", text: "2 ettari di santuario a Roccavivara, Molise — senza pesticidi" },
-        { icon: "🛡️", text: "Api monitorate con IA per proteggere la loro salute" },
+        { icon: "🌿", text: "Creare habitat per gli impollinatori e rifugi" },
+        { icon: "🐝", text: "Migliorare le nostre arnie e creare infrastrutture" },
+        { icon: "🌳", text: "Piantare specie benefiche per la biodiversità" },
+        { icon: "🏡", text: "Recuperare territori rurali dimenticati" },
+        { icon: "🎥", text: "Creare contenuti per dimostrare che natura e innovazione coesistono" }
       ],
-      footer: "Questa non è apicoltura. È conservazione con il miele."
+      footer: "Il futuro dei luoghi più straordinari."
     },
     pricing: {
-      title: "SCEGLI IL TUO LIVELLO DI IMPEGNO",
+      title: "COSA RICEVI UNENDOTI A NOI?",
       b2c: [
         {
           icon: "🐝",
-          name: "Guardiano",
-          price: "€79/anno",
-          target: "Per chi vuole fare il primo passo.",
+          name: "Guardiano del Fuco",
+          price: "€12/anno",
+          target: "Meno del costo di due caffè al mese.",
           features: [
-            "Adozione di 1 alveare con nome proprio",
             "Certificato digitale personalizzato",
-            "Foto trimestrali dello stato dell'alveare",
-            "1 vasetto BuzzLab Premium (500g)",
-            "Newsletter esclusiva con dati sulla biodiversità"
+            "Numero ufficiale nell'Esercito del Milione di Fuchi",
+            "Il tuo nome sul Muro dei Guardiani (opzionale)",
+            "Notizie e aggiornamenti esclusivi dall'alveare"
           ],
-          footer: "€6.6 al mese per proteggere un ecosistema.",
+          footer: "Il diritto di dire con orgoglio: 'Ho adottato un fuco'.",
           cta: "[ VOGLIO ESSERE GUARDIANO ]",
-          link: "https://buy.stripe.com/bJe9AT2mP8ikaFz8TNbo404"
+          link: "https://buy.stripe.com/9B600j3qT56814Z6LFbo406"
         },
         {
-          icon: "🐝🛡️",
-          name: "Protettore",
-          price: "€149/anno",
+          icon: "⚔️",
+          name: "Capitano dei Fuchi",
+          price: "€50/anno",
           badge: "IL PIÙ SCELTO",
-          target: "Per chi vuole osservare da vicino.",
+          target: "Perché proteggere i dimenticati merita vantaggi.",
           features: [
-            "Tutto nel piano Guardiano",
-            "Nome inciso fisicamente sull'alveare",
-            "Aggiornamenti mensili: temperatura, peso, attività",
-            "3 vasetti BuzzLab Premium (1.5 kg)",
-            "Accesso allo stato generale del Santuario"
+            "Tutto ciò che è incluso nel piano Guardiano",
+            "Fotografie esclusive delle nostre arnie",
+            "Foto di fuchi reali nel loro ambiente",
+            "Storie, scoperte e avventure sulla biodiversità",
+            "Accesso prioritario agli eventi",
+            "Contenuti esclusivi del progetto Bastardi"
           ],
-          footer: "Il tuo nome sull'alveare. Il tuo impatto sul pianeta.",
-          cta: "[ VOGLIO ESSERE PROTETTORE ]",
-          link: "https://buy.stripe.com/8x25kD7H99mo14Zgmfbo403"
+          footer: "Diventi un difensore della biodiversità in prima linea.",
+          cta: "[ VOGLIO ESSERE CAPITANO ]",
+          link: "https://buy.stripe.com/cNibJ15z1buw2930nhbo407"
         },
         {
-          icon: "🐝👑",
-          name: "Patrono",
-          price: "€249/anno",
-          target: "Per chi sa che l'eredità si costruisce proteggendo.",
+          icon: "👑",
+          name: "Fondatore dei Dimenticati",
+          price: "€100/anno",
+          target: "Per chi aiuta a costruire la storia fin dall'inizio.",
           features: [
-            "Tutto nel piano Protettore",
-            "6 vasetti BuzzLab Premium (3 kg)",
-            "Tour virtuale privato del Santuario",
-            "Invito all'evento annuale a Roccavivara",
-            "Menzione perpetua sul Muro dei Patroni",
-            "Video dedicato del tuo alveare"
+            "Tutto ciò che è incluso nel piano Capitano",
+            "Certificato speciale stampato di Fondatore",
+            "Riconoscimento permanente sulla pagina dei Fondatori",
+            "Accesso anticipato a nuovi progetti ed eventi",
+            "Fotografie e contenuti esclusivi stagionali",
+            "1 esclusivo vasetto da 500g di Miele dei Dimenticati"
           ],
-          footer: "Non adotti solo. Lasci un segno.",
-          cta: "[ VOGLIO ESSERE PATRONO ]",
-          link: "https://buy.stripe.com/9B66oHd1tbuw9Bvgmfbo405"
+          footer: "Alcune cose non si vendono. Si riservano ai Fondatori.",
+          cta: "[ VOGLIO ESSERE FONDATORE ]",
+          link: "https://buy.stripe.com/6oU00j3qT5685lf4Dxbo408"
         }
       ],
       b2bTitle: "PER AZIENDE",
       b2b: [
         {
-          name: "Partner Santuario",
+          name: "Partner del Santuario",
           price: "€500/anno",
           features: [
-            "5 alveari adottati a nome dell'azienda",
-            "Certificato aziendale",
-            "10 vasetti premium per clienti/team",
-            "Logo sul sito web",
+            "5 fuchi adottati a nome dell'azienda",
+            "Certificato aziendale di adozione",
+            "10 vasetti di Miele dei Dimenticati",
+            "Logo sul sito web del Santuario",
+            "2 menzioni annuali sui social",
             "Report fotografico annuale della biodiversità"
           ]
         },
         {
-          name: "Patrono Santuario",
+          name: "Mecenate del Santuario",
           price: "€1,500/anno",
           features: [
-            "15 alveari adottati",
-            "30 vasetti premium",
-            "Logo in evidenza e presenza all'evento",
+            "15 fuchi adottati",
+            "30 vasetti di Miele dei Dimenticati",
+            "Logo in evidenza sul sito + presenza evento",
+            "4 post sui social all'anno",
             "Report fotografico trimestrale",
-            "Tour virtuale per il tuo team"
+            "Tour virtuale privato"
           ]
         }
       ],
-      b2bCta: "[ VOGLIO SPONSORIZZARE SECONDO PIANO ]"
+      b2bCta: "[ VOGLIO SPONSORIZZARE IL SANTUARIO ]"
     },
     exclusive: {
-      title: "IL MIELE PIÙ ESCLUSIVO",
-      subtitle: "Perché è veramente premium?",
+      title: "IL MIELE DEI DIMENTICATI",
+      subtitle: "Questo miele non è in vendita. Non puoi comprarlo.",
       items: [
-        { title: "Limitato dalla natura.", desc: "Estraiamo solo il 30%. Niente scorte." },
-        { title: "Terroir del Molise.", desc: "650m di altitudine. Un ecosistema unico." },
-        { title: "Nessun intervento.", desc: "Niente sciroppi, niente chimica." },
-        { title: "Raccolto etico.", desc: "Solo quando le api hanno abbastanza per loro." },
-        { title: "Tracciabilità reale.", desc: "Ogni vasetto ha un nome. Trasparenza totale." }
+        { title: "Non è su Amazon.", desc: "Non si trova nei supermercati. Non esiste alcun negozio dove procurarlo." },
+        { title: "L'unica via d'accesso.", desc: "Puoi ottenerlo solo diventando Fondatore dei Dimenticati. Per 100€ ottieni questo vasetto speciale." },
+        { title: "Per chi crea la storia.", desc: "Alcune cose non dovrebbero essere vendute. Devono essere riservate a chi crede nel progetto." },
+        { title: "Simbolo di rigenerazione.", desc: "Non è un prodotto qualunque, è la prova materiale di un ecosistema restaurato." },
+        { title: "Puro e crudo.", desc: "Estratto eticamente in santuari protetti dove governano le leggi dello sciame." }
       ],
-      footer: "Questo non è miele da supermercato. È miele che cambia il mondo."
+      footer: "Scopri il vero sapore del cambiamento radicale."
     },
     policy: {
-      title: "LA NOSTRA FILOSOFIA DI RACCOLTO E SPEDIZIONE",
+      title: "SIAMO BASTARDI",
       shipping: {
-        title: "Spedizioni dal Santuario",
-        desc: "Il costo di spedizione è calcolato a parte e verrà pagato al momento della spedizione in base alla tua nazione. Tutto il nostro miele viaggia direttamente dal Santuario in Molise, Italia. Paghi il vero costo per portare il tesoro delle api a casa tua."
+        title: "Non seguiamo il mondo",
+        desc: "Scopriamo ciò che il mondo ha dimenticato. Crediamo che i luoghi straordinari si trovino dove nessuno sta guardando. Per questo adottiamo i fuchi come simbolo."
       },
       ethics: {
-        title: "Il Patto del 30%",
-        desc: "La nostra etica è irremovibile: lasciamo il 70% del miele alle api per l'inverno, estraendo al massimo il 30%. Se un anno la natura è imprevedibile e ci sono meno fioriture, il raccolto disponibile (poco o tanto che sia) verrà diviso proporzionalmente tra tutti i protettori. Adottare significa accettare i ritmi della natura, assecondarli e non forzarli."
+        title: "Ciò che il mondo trascura",
+        desc: "Vogliamo riunire un milione di persone per un'idea: Il futuro spesso dipende da ciò che viene trascurato. Unisciti all'esercito e aiutaci a dimostrarlo."
       }
     },
     faq: {
       title: "DOMANDE FREQUENTI",
       items: [
-        { q: "Quanto miele riceverò?", a: "La quantità indicata nel piano, ma varia in base alla natura." },
-        { q: "Posso visitare?", a: "I Patroni ricevono un invito all'evento annuale. Gli altri su prenotazione." },
-        { q: "È un regalo?", a: "Il miglior regalo. Certificato + miele + impatto." },
-        { q: "Cos'è 'api sovrane'?", a: "Le api non sono proprietà, sono abitanti del santuario." }
+        { q: "Cosa ricevo adottando un fuco?", a: "Sensazione di appartenenza. Certificato, aggiornamenti, miele esclusivo (se Fondatore). Ma proteggi la biodiversità." },
+        { q: "Vale la pena pagare 12€ per un fuco?", a: "Meno di due caffè al mese per piantare foreste e salvare habitat." },
+        { q: "Posso acquistare il Miele dei Dimenticati separatamente?", a: "No, è riservato ai Fondatori. Mai in vendita." },
+        { q: "Come si rinnova?", a: "Annuale. Ti ricorderemo noi la scadenza." },
+        { q: "Perché il fuco e non la regina?", a: "Tutti parlano della regina, ma il fuco garantisce il futuro della colonia." },
+        { q: "E per le aziende?", a: "Materiale fotografico della natura che sponsorizzano, per condividerlo e dare l'esempio." }
       ]
     },
     ctaFinal: {
-      l1: "Le api sono su questo pianeta da 130 milioni di anni.",
-      l2: "Noi lo stiamo distruggendo in 5 minuti.",
-      l3: "Tu puoi scegliere da che parte stare.",
-      btn: "[ ADOTTA IL TUO ALVEARE ]"
+      l1: "Il futuro dipende da quello che gli altri ignorano.",
+      l2: "Unisciti all'esercito di chi protegge il mondo rurale.",
+      l3: "Un milione di fuchi conta su di te.",
+      btn: "[ UNISCITI ALL'ESERCITO OGGI ]"
     }
   }
 };
