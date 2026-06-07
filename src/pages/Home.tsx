@@ -6,6 +6,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { SEO } from '../components/SEO';
 
+import heroImg from '../assets/images/hero_bee_natural_1780844978015.png';
+import techHoneycombImg from '../assets/images/tech_honeycomb_1780844459150.png';
+import smartHiveImg from '../assets/images/smart_hive_wood_1780844997526.png';
+import nodeCardImg from '../assets/images/node_card_bee_1780845015465.png';
+import lavenderImg from '../assets/images/tech_lavender_1780844472408.png';
+import rosemaryImg from '../assets/images/tech_rosemary_1780844485131.png';
+import thymeImg from '../assets/images/tech_thyme_1780844499574.png';
+import droneBeeImg from '../assets/images/tech_drone_bee_1780844513991.png';
+
+import eggImg from '../assets/images/cycle_egg_macro_1780845335403.png';
+import larvaImg from '../assets/images/cycle_larva_macro_1780845350996.png';
+import pupaImg from '../assets/images/cycle_pupa_macro_1780845366606.png';
+import adultImg from '../assets/images/cycle_adult_macro_1780845380795.png';
+
 const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language].hero;
@@ -23,7 +37,7 @@ const Hero = () => {
           fetchPriority="high"
           loading="eager"
           decoding="sync"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkxa5YVh4G41xi1jdfn1frHkN3uQz3qhOguxp0z9DK-X7xPmdvvj4k7ac94bJ-HwVr-4yEii-MVyyJnQKOIglTMgD7q6P23_viBQbQCaONqFthNom6PTBK2F8vYWB87Iaw7PuUICkWrA5f87HxfP4_S3anrsFYYeqSWohXYLb93Y0aIF8E56-YzXP48UemVuomVRJvP1dz42SOuYSlv_uuiuc30_J1C5YH4MQcODJlL6v3lC3auZWLRaHas2sM_Bb3SUDZx4TZ5MiE"
+          src={heroImg}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
       </div>
@@ -140,7 +154,7 @@ const PactSection = () => {
             className="p-8 md:p-16 bg-[#002b25] relative flex flex-col justify-center border-t md:border-t-0 md:border-l border-secondary/20"
           >
             <div className="absolute inset-0 opacity-20">
-              <img className="w-full h-full object-cover" alt="honeycomb" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPS_B5uW_9CieUiFCWo12hk9u5bDf_Vn6CrrbIhmjUmIXM-wYcxSxW5NAEcERgQ9sw4QL0TQCOUz44RtIW0R9nIb62N6hC3JkI3jBbc5n1TZngP4FjpgFPewmVrfg8a3hu5jsEJesSqqa-VxZKJQIwBJZeEsZ86gBRr-GxGQdBWpmLR0IF88dWkgpFPtS3gnPLAjBkiORFSUm47L5oKbbBatz0sv5TX1DlTIrjac3vITVKkIIF1jtPc9FMieCMmlq0mztrHC6HSPU"/>
+              <img className="w-full h-full object-cover" alt="honeycomb" src={techHoneycombImg}/>
             </div>
             <div className="relative z-10">
               <span className="font-headline text-secondary text-xs md:text-sm tracking-[0.3em] mb-4">{t.buzzlabProtocol}</span>
@@ -186,7 +200,7 @@ const ArchitectureSection = () => {
               transition={{ duration: 0.7 }}
               className="w-full h-full object-cover grayscale brightness-75" 
               alt="wild honeycomb" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCbTc4W70vpfEFTAlij4x58mcF1oTsSeV2vx9c8v4QnWXwdYterlppiBsoBYpBQu7fEDFXadnyyro9J6ZLPniFbrEm03atIZB5z9V8c_o3PRRQrw_ueX916YjEfVVLN6VaT5c9DZh4dW7ybsljhunJolXosFRF_6qieLohSeerDubJbALE8QMNcUbrxbJCsLGu9bjx8W_VZZjjx4f2uLcq1n2h-LVoGd1EvhC0Wn2C9tuu8-i-wBKm4oPvcawsTq2DYTzf43LB-uK3"
+              src={smartHiveImg}
             />
             <div className="absolute inset-0 border-[10px] md:border-[20px] border-background pointer-events-none"></div>
           </div>
@@ -234,7 +248,7 @@ const SmartColmenaSection = () => {
       <div className="container mx-auto px-6 md:px-12 relative">
         <div className="max-w-4xl mx-auto relative group">
           <div className="aspect-video bg-surface-container-low border border-outline-variant/10 flex items-center justify-center p-4 md:p-12 overflow-hidden relative">
-            <img className="w-full h-full object-contain opacity-40 mix-blend-screen" loading="lazy" decoding="async" alt="schematic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vTo1ocH7bkusolFdCbwNRGG-tJWdiMbp_7xrASjNZTwvW5IkND8KDt9_lO5y6htx_vREnn9NrS6T4e0Fh3E5a1Y4QLXsXjgaUeOTxLVzwTubTqPv3nw7wcXLIpKWZpktM64pvN0O4aIwn7nPgABdsGtj2re5vu08p89MNsiadI9XiLRGJiMLc-7S5mjK_IEqJiGLeUYQLrxc-Snzzs1qRKofppS3O2TEpx30_ShHIG7jyYyrG_ESQ4O7E4ppxryWA49Z6fH4wZi3"/>
+            <img className="w-full h-full object-cover opacity-30 mix-blend-screen" loading="lazy" decoding="async" alt="schematic" src={smartHiveImg}/>
             
             <motion.div 
               initial={{ opacity: 0, scale: 0.8 }}
@@ -332,19 +346,19 @@ const GardenCarousel = () => {
             name: t.lavenderName,
             status: "JUNIO_ACTIVE",
             desc: t.lavenderDesc,
-            img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB7ebpgDqwgViiIq3WEZ_pgVApktd5i4mqFa-ISPBXwbYyb97sRwH-MSq5l_iiZe3L0cPXzrRm1quWSVBWIGWPTDwYq8UfQOFII8-KgSb4qqH7paTShBwq6Ae6mGqjbdEgC13yfTdqpwz_fXIJ7NFMQFwraFieJ7T95qugF5Q9azlqEBblCwrhnevFGR80y-Wy66HaEIP7dv7pay1OVZ1HwfRqDxTj7AjW-rBVisKdL14JdoyrAPjloJLAEoUWkRiC3GgOA2rYEtdUE"
+            img: lavenderImg
           },
           {
             name: t.rosemaryName,
             status: "ABRIL_ACTIVE",
             desc: t.rosemaryDesc,
-            img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAaXBX6kIar2zeb055q1zopIsukWDdkYssBmlCuyl-87ACfXei_yzc0E4lk_iggdje-uxrWSmgnEvqk63ZikB33N-SShBgHN-VzjVc22PeorA27rlE-1Birl1v1lcVsvvY65So6JDR3VcXiYlwRkV_-M_arsbaIWJxckxMrwf4jP4uLewY94FgNKBbX3iWK8YWRl-mzKcPwXgSdvjD2cGoMbZH35eVgTXRAyO5MCjXf_IxiVwv8l7lhPT8eFlrS8-0WHDJ7Tm2nNMdk"
+            img: rosemaryImg
           },
           {
             name: t.thymeName,
             status: "MAYO_ACTIVE",
             desc: t.thymeDesc,
-            img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCPKO4PbeX9BHIYqlfCTg70ZKlIfQxPRQIQno4If9-Ql3ktkmCKIZSrPem420CoYVRQc4cTQUHqMZbaF708UjyWs_F6hJzcXuRqalcVWEVumOStzFbdVltTGSJ_GM3mlNn5Ng0vsbJvXZ1rID6tE_AOLbShPCBsu-zh0ySJW-ZnRHbQaSn8fK9e8oAFWiPAEgBtsJ5WzRdI25CQckGMvHjWvB_FxuoLqFanltZeyMuV-xkYtnG9M1GxYb8HMkfE4axUzXGUfeASqPvQ"
+            img: thymeImg
           }
         ].map((item, i) => (
           <motion.div 
@@ -389,10 +403,10 @@ const SynthesisCycle = () => {
           <div className="absolute top-[40px] left-0 w-full h-[2px] bg-secondary/20 hidden md:block"></div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
             {[
-              { icon: Circle, title: t.eggTitle, days: t.eggDays, desc: t.eggDesc, active: false },
-              { icon: Bug, title: t.larvaTitle, days: t.larvaDays, desc: t.larvaDesc, active: false },
-              { icon: Hourglass, title: t.pupaTitle, days: t.pupaDays, desc: t.pupaDesc, active: true },
-              { icon: Plane, title: t.adultTitle, days: t.adultDays, desc: t.adultDesc, active: false }
+              { img: eggImg, title: t.eggTitle, days: t.eggDays, desc: t.eggDesc, active: false },
+              { img: larvaImg, title: t.larvaTitle, days: t.larvaDays, desc: t.larvaDesc, active: false },
+              { img: pupaImg, title: t.pupaTitle, days: t.pupaDays, desc: t.pupaDesc, active: true },
+              { img: adultImg, title: t.adultTitle, days: t.adultDays, desc: t.adultDesc, active: false }
             ].map((stage, i) => (
               <motion.div 
                 key={i} 
@@ -402,9 +416,9 @@ const SynthesisCycle = () => {
                 transition={{ duration: 0.5, delay: i * 0.2 }}
                 className="flex flex-col items-center group cursor-pointer"
               >
-                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-high border-2 flex items-center justify-center mb-6 relative transition-colors duration-300 ${stage.active ? 'border-primary' : 'border-secondary/30 group-hover:border-primary'}`}>
-                  <div className={`absolute inset-0 rounded-full blur-md transition-opacity ${stage.active ? 'bg-primary/20 animate-pulse opacity-100' : 'bg-secondary/10 opacity-0 group-hover:opacity-100'}`}></div>
-                  <stage.icon className={`w-8 h-8 md:w-10 md:h-10 transition-colors ${stage.active ? 'text-primary' : 'text-secondary group-hover:text-primary'}`} />
+                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-high border-2 flex items-center justify-center mb-6 relative transition-all duration-300 overflow-hidden ${stage.active ? 'border-primary shadow-[0_0_20px_rgba(38,254,220,0.3)]' : 'border-secondary/30 group-hover:border-primary'}`}>
+                  <div className={`absolute inset-0 rounded-full blur-md transition-opacity z-10 ${stage.active ? 'bg-primary/20 animate-pulse opacity-100' : 'bg-secondary/10 opacity-0 group-hover:opacity-100'}`}></div>
+                  <img src={stage.img} alt={stage.title} className={`w-full h-full object-cover transition-transform duration-700 ${stage.active ? 'scale-110 grayscale-0' : 'grayscale-[50%] group-hover:grayscale-0 group-hover:scale-110'}`} />
                 </div>
                 <div className="text-center w-full">
                   <h3 className={`font-headline text-lg md:text-xl mb-2 transition-colors ${stage.active ? 'text-primary' : 'text-secondary group-hover:text-primary'}`}>{stage.title}</h3>
@@ -455,7 +469,7 @@ const DroneSection = () => {
         >
           <div className="absolute -inset-1 bg-secondary/20 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
           <div className="relative aspect-video bg-black overflow-hidden border border-secondary/30">
-            <img className="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" alt="drone bee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXGsbTr-86Gi5ypKdm3O7qLB_J3httw-8gkNNfESQmuCp2miWrKUfNhZrvQBcNz9MVOSURPME0xo8a3MauQXRdp0V36LzjAZ9Um5-FZDL8plXzzEHj4plIMoWzc3XQ_WBzmwfTB6ZgVwUXrf5NCGKhF9Mk4wGraINfg0p_Q5ZOOjboJWCFgF42boRUnAGfIypdkwwPrnLmdb1CR5uoHCwsamqbJgL7mho_jb7XTRvnfqlByn_sIQ3gkmtCTbfD6tLsoA715immVYpt"/>
+            <img className="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" alt="drone bee" src={droneBeeImg}/>
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-black to-transparent">
               <div className="flex items-center gap-2">
                 <motion.span 
@@ -561,32 +575,14 @@ const ProductSection = () => {
             <div className="absolute bottom-4 right-4 border-r-2 border-b-2 border-primary/50 w-8 h-8"></div>
             <div className="absolute top-0 right-1/2 translate-x-1/2 w-1/2 h-[1px] bg-primary/40 block"></div>
             
-            <div className="relative w-3/4 max-w-[280px] aspect-[1/1.3] group-hover:scale-105 transition-transform duration-700">
-               {/* Jar Simulation using CSS shapes - a sleek minimal block */}
-               <div className="absolute inset-0 bg-[#0e0e0e] shadow-2xl overflow-hidden rounded-[2px] flex flex-col">
-                  {/* Cap */}
-                  <div className="h-[20%] w-[90%] mx-auto bg-[#1a1a1a] border-b border-white/10 mt-2 rounded-t flex items-center justify-center">
-                    <div className="w-full h-[2px] bg-[#050505] repeating-linear-gradient-45"></div>
-                  </div>
-                  {/* Body with honey tint */}
-                  <div className="flex-1 bg-gradient-to-b from-[#111] to-[#2a2205] relative overflow-hidden flex flex-col items-center justify-center px-6">
-                    <span className="font-headline text-primary text-[8px] tracking-[0.3em] uppercase absolute top-6 left-1/2 -translate-x-1/2 whitespace-nowrap">BUZZLAB EXTRACT</span>
-                    
-                    {/* The label */}
-                    <div className="bg-[#f0f0f0] w-full py-8 mt-4 flex flex-col items-center justify-center shadow-inner relative">
-                      <ShieldCheck className="w-4 h-4 text-[#0a0a0a] mb-2" />
-                      <span className="font-headline text-[#0a0a0a] font-bold text-xs md:text-sm tracking-widest text-center">HONEY_OS</span>
-                      <span className="font-mono text-[8px] text-[#333] mt-2 tracking-widest">BATCH: 12/31</span>
-                      <div className="absolute bottom-2 right-2 flex gap-1">
-                        <div className="w-1 h-3 bg-[#0a0a0a]"></div><div className="w-2 h-3 bg-[#0a0a0a]"></div><div className="w-0.5 h-3 bg-[#0a0a0a]"></div>
-                      </div>
-                    </div>
-
-                    <div className="absolute bottom-4 w-full px-6 flex justify-between items-end">
-                      <span className="font-mono text-primary/40 text-[6px]">100% RAW</span>
-                      <span className="font-mono text-primary/40 text-[6px]">500G</span>
-                    </div>
-                  </div>
+            <div className="relative w-3/4 max-w-[320px] aspect-[4/5] group-hover:scale-105 transition-transform duration-700">
+               <img src={nodeCardImg} alt="Smart Node Card" className="w-full h-full object-cover rounded-md shadow-2xl brightness-90 grayscale-[20%]" />
+               <div className="absolute inset-0 ring-1 ring-inset ring-primary/30 rounded-md"></div>
+               <div className="absolute top-2 right-2 flex gap-1">
+                 <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
+               </div>
+               <div className="absolute bottom-4 left-4 bg-background/80 backdrop-blur backdrop-saturate-150 px-3 py-1.5 text-[8px] font-mono text-primary tracking-widest border border-primary/20">
+                 ID: BZ-NODE-77
                </div>
             </div>
             

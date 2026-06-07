@@ -1,20 +1,20 @@
 export const translations = {
   es: {
     seo: {
-      home: { title: "BuzzLab — Santuario de Abejas con IA | Apicultura Ética", desc: "BuzzLab transforma la apicultura con IA. Monitoreo de colmenas, certificación ética, adopción de colmenas. Las abejas son soberanas." },
+      home: { title: "BuzzLab — Rescate de Abejas con IA | Apicultura Ética", desc: "Las abejas están desapareciendo. BuzzLab transforma la apicultura con Smart-Hives y software para protegerlas. Adopta un zángano y únete a la resistencia." },
       lab: { title: "Análisis IA Colmenas — BuzzLab", desc: "Monitoreo con IA. Detección Varroa, análisis acústico, alertas tiempo real." },
       sanctuary: { title: "El Santuario — BuzzLab | Abejas Soberanas", desc: "Santuario en Roccavivara, Molise. 2 hectáreas a 650m donde las abejas gobiernan." },
       network: { title: "Red BuzzLab | Comunidad Apicultura Ética", desc: "Red de apicultores éticos. Datos, certificación, consulting biodiversidad." },
       contact: { title: "BuzzLab // Contacto", desc: "Contacta con el núcleo estratégico de BuzzLab. Solicita audiencias y comunícate directamente con la colmena." },
-      adopt: { title: "Adopta una Colmena — BuzzLab | Desde €79/año", desc: "Adopta una colmena real en Italia. Certificado personalizado, miel artesanal, fotos trimestrales. Las abejas son dueñas." }
+      adopt: { title: "Adopta una Colmena — BuzzLab | Desde €79/año", desc: "Adopta un zángano en Italia. Certificado personalizado, miel artesanal, tu propio dashboard. Las abejas son dueñas." }
     },
-    banner: "COSECHA LUNAR: QUEDAN 12/31 BOTES DISPONIBLES",
+    banner: "ALERTA DE SISTEMA: ECOSISTEMA EN PELIGRO CRÍTICO",
     whatsapp: {
       message: "¿Quieres hablar con la abeja reina? 🐝👑"
     },
     nav: {
       home: 'INICIO',
-      lab: 'LABORATORIO',
+      lab: 'EL OS',
       sanctuary: 'SANTUARIO',
       adopt: 'ADOPTA',
       network: 'RED',
@@ -22,92 +22,92 @@ export const translations = {
       login: 'INICIAR SESIÓN'
     },
     footer: {
-      desc: "Ingeniería biológica, extracción ética y datos de polinización. No estamos aquí para venderte sirope, sino para reprogramar el ecosistema.",
-      copyright: "© 2026 BUZZLAB. Miel extraída con el consentimiento de las Obreras.",
+      desc: "Ingeniería biológica, hardware propietario y datos de polinización. Escalamos el impacto ecológico con tecnología.",
+      copyright: "© 2026 BUZZLAB. Datos extraídos bajo la normativa Honey_OS.",
       navTitle: "NAVEGACIÓN_RAPIDA",
       socialTitle: "REDES_INTERESPECIE"
     },
     product: {
-      title: "EL HARDWARE ORGÁNICO",
-      subtitle: "[ BOTE DE EDICIÓN LIMITADA ]",
-      desc: "Este no es un tarro de supermercado. Es una cápsula de tiempo biológica de la floración actual. Nuestra miel cruda no se calienta, no se filtra y su extracción está restringida. Cada unidad tiene un identificador que rastrea su origen floral exacto.",
-      label: "LOTE ACTUAL: 12 DE 31",
-      btn: "RESERVAR EXTRACTO"
+      title: "LA SMART-COLMENA (NODO)",
+      subtitle: "[ HARDWARE DE SUPERVIVENCIA ]",
+      desc: "Respetamos el diseño orgánico de la naturaleza. Nuestras colmenas son cajas de madera viva y corteza natural, pero equipadas como refugios de alta tecnología. La estructura rústica está sensorizada y transmite constantes vitales al Honey_OS. Cero estrés, máxima protección.",
+      label: "COLMENAS SALVADAS: 12 DE 31 ESTE MES",
+      btn: "VER DATOS EN TIEMPO REAL"
     },
     hero: {
-      supertitle: "[ MIEL CRUDA BIOMONITORIZADA ]",
-      badge1: "EXTRACCIÓN ÉTICA (30%)",
-      badge2: "DATA LAB 24/7",
-      badge3: "ULTRA-LIMITADO",
-      btnMicro: "*Reserva uno de los 31 nodos disponibles",
-      subtitle: "EL SANTUARIO DONDE",
-      title: "LAS ABEJAS TIENEN SINDICATO",
-      desc: "Mucha gente cría abejas para quitarles todo... En BuzzLab invertimos el flujo: ellas son las dueñas, nosotros solo el soporte técnico.",
-      btn: "SOLICITAR AUDIENCIA A LA REINA"
+      supertitle: "[ INFRAESTRUCTURA DE SUPERVIVENCIA ]",
+      badge1: "SISTEMA OPERATIVO API",
+      badge2: "CERO ESTRÉS TÉRMICO",
+      badge3: "EXTRACCIÓN ÉTICA",
+      btnMicro: "*Ayuda desde casa: patrocina nuestro escudo biológico",
+      subtitle: "ALERTA GLOBAL",
+      title: "LAS ABEJAS SE ESTÁN APAGANDO",
+      desc: "Pesticidas, cambio climático y una apicultura prehistórica que les roba todo y las estresa hasta matarlas. Resultado: colapso. En BuzzLab usamos IA y Smart-Colmenas para blindarlas. Ellas viven como reinas, y tú puedes ayudarnos adoptando al miembro más vago (y vital) de la familia.",
+      btn: "ADOPTA UN ZÁNGANO AHORA"
     },
     pact: {
-      standardMetric: "MÉTRICA ESTÁNDAR",
-      standardTitle: "LO QUE HACEN TODOS",
-      standardDesc: "Extracción del 95% de la miel. Sustitución por agua con azúcar refinada. Estrés térmico. Colapsos cíclicos. La industria trata a la abeja como un filtro de aire desechable.",
-      standardLabel: "95% EXTRACCIÓN AGRESIVA",
-      buzzlabProtocol: "PROTOCOLO BUZZLAB",
-      buzzlabLabel: "30% EXCEDENTE CONSCIENTE",
-      title: "NUESTRO TRATO CON LA NATURALEZA",
-      extTitle: "EXTRACCIÓN",
-      extDesc: "Solo tomamos el 30% del excedente. El resto pertenece al nodo central (la colmena).",
-      invTitle: "INVERSIÓN",
-      invDesc: "El 95% de los beneficios se reinvierte en hardware de monitorización y expansión de flora."
+      standardMetric: "SISTEMA LEGACY (EL PROBLEMA)",
+      standardTitle: "APICULTURA TÓXICA Y OBSOLETA",
+      standardDesc: "Roban el 100% de su reserva de invierno y les dan agua con azúcar. Abren las colmenas a ciegas, provocando hipotermia. La industria las trata como fábricas desechables. Resultado: muerte.",
+      standardLabel: "RUDIMENTARIO, ESTRÉS EXTREMO Y LETAL",
+      buzzlabProtocol: "LA SOLUCIÓN BUZZLAB",
+      buzzlabLabel: "MONITORIZACIÓN 24/7 NO INVASIVA",
+      title: "CÓMO ESTAMOS ARREGLANDO EL BUG",
+      extTitle: "EXTRACCIÓN ÉTICA",
+      extDesc: "Solo tomamos un 30% del excedente... si es que sobra. Su miel es su sistema inmunológico y no somos ladrones.",
+      invTitle: "IA COMO MÉDICO",
+      invDesc: "Sensores térmicos y acústicos detectan plagas (como el destructivo ácaro Varroa) semanas antes del caos. Intervenimos de forma quirúrgica."
     },
     arch: {
-      title: "AQUÍ NO USAMOS MOLDES",
-      desc1: "La apicultura tradicional es un sistema legacy. Nosotros hemos rediseñado la arquitectura.",
-      desc2: "Nuestras colmenas no son cajas de madera estándar. Son servidores biológicos. Diseñamos estructuras hexagonales modulares impresas en 3D con materiales biodegradables que imitan la termodinámica natural del enjambre.",
-      desc3: "Menos estrés para ellas. Datos más puros para nosotros."
+      title: "NUESTRAS COLMENAS SALVAN VIDAS",
+      desc1: "Vivir en una caja comercial fina y sin aislar es como vivir con ventanas rotas en enero. Nosotros devolvemos a las abejas a la corteza gruesa del árbol.",
+      desc2: "Al tratar cada colmena como un servidor biológico, nuestras estructuras de madera rústica imitan la termodinámica del bosque natural. Consiguen mantener la temperatura perfecta de 35ºC con mínimo esfuerzo, gracias a los sensores no invasivos.",
+      desc3: "Tecnología al servicio de quien realmente hace el trabajo duro."
     },
     smart: {
-      title: "SMART-COLMENA NODE",
-      subtitle: "MONITORIZACIÓN EN TIEMPO REAL",
-      temp: "TEMPERATURA INTERNA",
-      weight: "PESO DEL NODO",
-      audio: "FRECUENCIA DE ZUMBIDO",
-      insulation: "AISLAMIENTO TÉRMICO"
+      title: "HONEY_OS SYSTEM",
+      subtitle: "SUPERVISIÓN SANITARIA EN TU MÓVIL",
+      temp: "TERMORREGULACIÓN VITAL",
+      weight: "RESERVAS DE SUPERVIVENCIA",
+      audio: "ZUMBIDO (DETECTA ENFERMEDADES)",
+      insulation: "CIBERSEGURIDAD CONTRA EL FRÍO"
     },
     garden: {
-      title: "EL JARDÍN DE DATOS",
-      desc: "Cada gota de miel es un registro geográfico de nuestra flora local.",
+      title: "FLORA = SISTEMA INMUNE",
+      desc: "Cada flor local que monitoreamos con el Honey_OS provee fitoquímicos clave que curan a las abejas y dan un sabor único a nuestro 30% de excedente.",
       lavenderName: "LAVANDA",
-      lavenderDesc: "Aporta notas florales persistentes y propiedades relajantes tanto a la abeja como al catador.",
+      lavenderDesc: "Notas florales persistentes. Indicador de salud ambiental. Calma la colmena entera.",
       rosemaryName: "ROMERO",
-      rosemaryDesc: "El motor de arranque de la colmena en primavera. Una explosión de alcanfor y energía pura.",
+      rosemaryDesc: "El motor de arranque. Métrica de supervivencia tras el duro invierno registrada en los sensores.",
       thymeName: "TOMILLO",
-      thymeDesc: "El antibiótico natural del monte. Sabor intenso, terroso y con un golpe de autoridad."
+      thymeDesc: "El antibiótico natural del monte. Vital para purgar parásitos intestinales de las obreras."
     },
     cycle: {
-      title: "EL CICLO DE LA SÍNTESIS",
+      title: "EL BOOTEO BIOLÓGICO",
       eggTitle: "HUEVO",
       eggDays: "Día 1-3",
-      eggDesc: "El inicio del código biológico.",
+      eggDesc: "Inicialización del código genético.",
       larvaTitle: "LARVA",
       larvaDays: "Día 4-9",
-      larvaDesc: "Crecimiento exponencial. Dieta de Jalea Real.",
+      larvaDesc: "Crecimiento de su diminuto hardware, requiere temperatura sin estrés.",
       pupaTitle: "PUPA",
       pupaDays: "Día 10-20",
-      pupaDesc: "La metamorfosis silenciosa.",
+      pupaDesc: "Metamorfosis. Donde la IA de Buzzlab previene el ataque de ácaros.",
       adultTitle: "ADULTA",
       adultDays: "Día 21+",
-      adultDesc: "Activación del protocolo de pecoreo."
+      adultDesc: "Activación del protocolo al ecosistema exterior."
     },
     drone: {
-      unit: "Unidad Especial: Bio-Shield",
-      title: "EL ZÁNGANO: NUESTRO ARMA SECRETA (Y ALGO VAGO)",
-      desc1: "Zánganos: No solo están para la foto. En BuzzLab, su \"ocio\" es estratégico. Al construir celdas más grandes para ellos, atraemos a la Varroa lejos de las obreras.",
-      desc2: "\"Son nuestro escudo biológico de élite... aunque pasen el día de siesta. Su sola existencia es un firewall orgánico contra parásitos.\"",
-      desc3: "Mientras la industria los ve como \"gastos innecesarios\", nosotros los vemos como el sacrificio táctico que mantiene la salud del nodo central. Son los influencers definitivos: viven bien, no trabajan, pero su presencia salva al resto del equipo."
+      unit: "OPERACIÓN DE RESCATE: ADOPCIÓN",
+      title: "SALVA A LA COLMENA INVIRTIENDO EN... UN VAGO",
+      desc1: "Los zánganos no pican, no recolectan, solo comen, duermen y se reproducen. La industria estándar los elimina por considerarlos un 'gasto'. Nosotros los criamos como escudos biológicos.",
+      desc2: "\"Son nuestro firewall orgánico de élite. Al tener celdas más grandes, el destructivo ácaro Varroa ataca al zángano y deja en paz a las valiosas obreras. ¡Se sacrifican durmiendo!\"",
+      desc3: "Transformamos la vagancia en puro heroísmo. Con tu aportación desde 79€/año, adoptas el escudo de la red. Recibes acceso al Dashboard, dividendos en miel cruda intocada, y un PDF certificando que tú sí sabes salvar al mundo."
     },
     scarcity: {
-      title: "SOLO 31 BOTES",
-      desc: "No producimos para el mercado masivo. Solo compartimos el excedente real de este ciclo lunar. Una vez agotado, el nodo se cierra hasta la próxima floración.",
-      btn: "ENVIAR SOLICITUD A LA COLMENA CENTRAL"
+      title: "SÉ PARTE DE LA SOLUCIÓN",
+      desc: "Consumir miel ultraprocesada del supermercado financia la extinción de las abejas. Pásate al modelo regenerativo. Adopta un zángano o prueba nuestro excedente biomonitorizado.",
+      btn: "ACCEDER A LA PLATAFORMA DE ADOPCIÓN"
     },
     lab: {
       hero: {
@@ -299,20 +299,20 @@ export const translations = {
   },
   en: {
     seo: {
-      home: { title: "BuzzLab — AI Bee Sanctuary | Ethical Beekeeping", desc: "BuzzLab transforms beekeeping with AI. Hive monitoring, ethical certification, hive adoption. The bees are sovereign." },
+      home: { title: "BuzzLab — AI Bee Rescue | Ethical Beekeeping", desc: "Bees are disappearing. BuzzLab transforms beekeeping with Smart-Hives and software to protect them. Adopt a drone and join the resistance." },
       lab: { title: "AI Hive Analysis — BuzzLab", desc: "AI-powered monitoring. Varroa detection, acoustic analysis, real-time alerts." },
       sanctuary: { title: "The Sanctuary — BuzzLab | Sovereign Bees", desc: "Sanctuary in Roccavivara, Molise. 2 hectares at 650m where bees rule." },
       network: { title: "BuzzLab Network | Ethical Beekeeping Community", desc: "Network of ethical beekeepers. Data, certification, biodiversity consulting." },
       contact: { title: "BuzzLab // Contact", desc: "Contact the strategic core of BuzzLab. Request audiences and communicate directly with the hive." },
-      adopt: { title: "Adopt a Hive — BuzzLab | From €79/year", desc: "Adopt a real hive in Italy. Personalized certificate, artisanal honey, quarterly photos. The bees are the owners." }
+      adopt: { title: "Adopt a Hive — BuzzLab | From €79/year", desc: "Adopt a drone in Italy. Personalized certificate, artisanal honey, quarterly photos. The bees are the owners." }
     },
-    banner: "LUNAR HARVEST: 12/31 JARS AVAILABLE",
+    banner: "SYSTEM ALERT: ECOSYSTEM IN CRITICAL DANGER",
     whatsapp: {
       message: "Want to talk to the Queen Bee? 🐝👑"
     },
     nav: {
       home: 'HOME',
-      lab: 'LAB',
+      lab: 'THE OS',
       sanctuary: 'SANCTUARY',
       adopt: 'ADOPT',
       network: 'NETWORK',
@@ -320,92 +320,92 @@ export const translations = {
       login: 'SYSTEM LOGIN'
     },
     footer: {
-      desc: "Biological engineering, ethical extraction, and pollination data. We are not here to sell you syrup, but to reprogram the ecosystem.",
-      copyright: "© 2026 BUZZLAB. Honey extracted with the consent of the Worker Bees.",
+      desc: "Biological engineering, proprietary hardware, and pollination data. We scale ecological impact with technology.",
+      copyright: "© 2026 BUZZLAB. Data extracted under Honey_OS regulations.",
       navTitle: "QUICK_NAVIGATION",
       socialTitle: "INTERSPECIES_SOCIALS"
     },
     product: {
-      title: "THE ORGANIC HARDWARE",
-      subtitle: "[ LIMITED EDITION JAR ]",
-      desc: "This is not a supermarket jar. It is a biological time capsule of the current bloom. Our raw honey is unheated, unfiltered, and its extraction strictly limited. Each unit has a unique identifier tracking its exact floral origin.",
-      label: "CURRENT BATCH: 12 OF 31",
-      btn: "RESERVE EXTRACT"
+      title: "THE SMART-HIVE (NODE)",
+      subtitle: "[ SURVIVAL HARDWARE ]",
+      desc: "We respect nature's organic design. Our hives are natural wood and bark boxes, yet equipped as high-tech shelters. The rustic structure is heavily sensorized and transmits vital signs to Honey_OS. Zero stress, maximum protection.",
+      label: "HIVES SAVED: 12 OF 31 THIS MONTH",
+      btn: "VIEW REAL-TIME DATA"
     },
     hero: {
-      supertitle: "[ BIO-MONITORED RAW HONEY ]",
-      badge1: "ETHICAL EXTRACTION (30%)",
-      badge2: "DATA LAB 24/7",
-      badge3: "ULTRA-LIMITED",
-      btnMicro: "*Reserve one of the 31 available nodes",
-      subtitle: "THE SANCTUARY WHERE",
-      title: "BEES HAVE A UNION",
-      desc: "Many people keep bees to take everything from them... At BuzzLab we invert the flow: they are the owners, we are just the tech support.",
-      btn: "REQUEST AN AUDIENCE WITH THE QUEEN"
+      supertitle: "[ SURVIVAL INFRASTRUCTURE ]",
+      badge1: "API OPERATING SYSTEM",
+      badge2: "ZERO THERMAL STRESS",
+      badge3: "ETHICAL EXTRACTION",
+      btnMicro: "*Help from home: sponsor our biological shield",
+      subtitle: "GLOBAL ALERT",
+      title: "THE BEES ARE LOGGING OFF",
+      desc: "Pesticides, climate change, and prehistoric beekeeping that steals all their honey and destroys their microclimate. Result: collapse. At BuzzLab we use AI and Smart-Hives to shield them. They live like queens, and you can help by adopting the laziest (and most vital) member of the family.",
+      btn: "ADOPT A DRONE NOW"
     },
     pact: {
-      standardMetric: "STANDARD METRIC",
-      standardTitle: "WHAT EVERYONE DOES",
-      standardDesc: "Extraction of 95% of the honey. Substitution with refined sugar water. Thermal stress. Cyclical collapses. The industry treats the bee like a disposable air filter.",
-      standardLabel: "95% AGGRESSIVE EXTRACTION",
-      buzzlabProtocol: "BUZZLAB PROTOCOL",
-      buzzlabLabel: "30% CONSCIOUS SURPLUS",
-      title: "OUR PACT WITH NATURE",
-      extTitle: "EXTRACTION",
-      extDesc: "We only take 30% of the surplus. The rest belongs to the central node (the hive).",
-      invTitle: "INVESTMENT",
-      invDesc: "95% of profits are reinvested in monitoring hardware and flora expansion."
+      standardMetric: "LEGACY SYSTEM (THE PROBLEM)",
+      standardTitle: "TOXIC & OBSOLETE BEEKEEPING",
+      standardDesc: "They steal 100% of their honey, replacing it with sugar water in winter. They aggressively open hives causing hypothermia and stress. The industry treats them like disposable factories. Result: death.",
+      standardLabel: "RUDIMENTARY, EXTREME STRESS & LETHAL",
+      buzzlabProtocol: "THE BUZZLAB SOLUTION",
+      buzzlabLabel: "NON-INVASIVE 24/7 MONITORING",
+      title: "HOW WE'RE FIXING THE BUG",
+      extTitle: "ETHICAL EXTRACTION",
+      extDesc: "We only take 30% of the surplus, when available. Their honey is their immune system and we won't take it from them.",
+      invTitle: "AI AS A DOCTOR",
+      invDesc: "Thermal, weight, and acoustic sensors detect pests (like the dreaded Varroa mite) weeks before they destroy the colony. We intervene surgically."
     },
     arch: {
-      title: "WE DON'T USE MOLDS HERE",
-      desc1: "Traditional beekeeping is a legacy system. We have redesigned the architecture.",
-      desc2: "Our hives are not standard wooden boxes. They are biological servers. We design modular hexagonal structures 3D-printed with biodegradable materials that mimic the natural thermodynamics of the swarm.",
-      desc3: "Less stress for them. Purer data for us."
+      title: "OUR HIVES SAVE LIVES",
+      desc1: "Living in a thin, uninsulated commercial box is like living with broken windows in mid-January. We return bees to the thick bark of a tree.",
+      desc2: "By treating each hive as a biological data server, our rustic wooden structures mimic the natural forest's thermodynamics. They maintain a perfect 35ºC temperature with minimal effort, thanks to non-invasive integrated sensors.",
+      desc3: "Technology at the service of those who actually do the hard work."
     },
     smart: {
-      title: "SMART-HIVE NODE",
-      subtitle: "REAL-TIME MONITORING",
-      temp: "INTERNAL TEMPERATURE",
-      weight: "NODE WEIGHT",
-      audio: "BUZZ FREQUENCY",
-      insulation: "THERMAL INSULATION"
+      title: "HONEY_OS SYSTEM",
+      subtitle: "HEALTH SURVEILLANCE IN YOUR POCKET",
+      temp: "VITAL THERMOREGULATION",
+      weight: "SURVIVAL RESERVES",
+      audio: "BUZZING (DETECTS DISEASES)",
+      insulation: "WINTER CYBERSECURITY"
     },
     garden: {
-      title: "THE DATA GARDEN",
-      desc: "Every drop of honey is a geographic record of our local flora.",
+      title: "FLORA = IMMUNE SYSTEM",
+      desc: "Every local flower we monitor with Honey_OS provides key phytochemicals that heal the bees and give a unique flavor to our 30% surplus.",
       lavenderName: "LAVENDER",
-      lavenderDesc: "Provides persistent floral notes and relaxing properties to both the bee and the taster.",
+      lavenderDesc: "Persistent floral notes. Environmental health indicator. Calms the entire hive.",
       rosemaryName: "ROSEMARY",
-      rosemaryDesc: "The hive's starter motor in spring. An explosion of camphor and pure energy.",
+      rosemaryDesc: "The starter motor. Survival metric after the harsh winter, recorded on sensors.",
       thymeName: "THYME",
-      thymeDesc: "The mountain's natural antibiotic. Intense, earthy flavor with a strike of authority."
+      thymeDesc: "The mountain's natural antibiotic. Vital for purging intestinal parasites from the workers."
     },
     cycle: {
-      title: "THE SYNTHESIS CYCLE",
+      title: "THE BIOLOGICAL BOOTUP",
       eggTitle: "EGG",
       eggDays: "Day 1-3",
-      eggDesc: "The beginning of the biological code.",
+      eggDesc: "Genetic code initialization.",
       larvaTitle: "LARVA",
       larvaDays: "Day 4-9",
-      larvaDesc: "Exponential growth. Royal Jelly diet.",
+      larvaDesc: "Hardware growth, requires a stress-free thermal environment.",
       pupaTitle: "PUPA",
       pupaDays: "Day 10-20",
-      pupaDesc: "The silent metamorphosis.",
+      pupaDesc: "Metamorphosis. Where Buzzlab AI prevents mite attacks.",
       adultTitle: "ADULT",
       adultDays: "Day 21+",
-      adultDesc: "Foraging protocol activation."
+      adultDesc: "Outdoor ecosystem protocol activation."
     },
     drone: {
-      unit: "Special Unit: Bio-Shield",
-      title: "THE DRONE: OUR SECRET WEAPON (AND KINDA LAZY)",
-      desc1: "Drones: They're not just here for the picture. At BuzzLab, their \"leisure\" is strategic. By building larger cells for them, we lure the Varroa away from the workers.",
-      desc2: "\"They are our elite biological shield... even if they nap all day. Their mere existence is an organic firewall against parasites.\"",
-      desc3: "While the industry sees them as \"unnecessary expenses\", we see them as the tactical sacrifice that maintains the health of the central node. They are the ultimate influencers: they live well, don't work, but their presence saves the rest of the team."
+      unit: "RESCUE OPERATION: ADOPTION",
+      title: "SAVE THE HIVE BY INVESTING IN... A SLACKER",
+      desc1: "Drones don't sting, they don't forage, they just eat, sleep, and mate. The standard industry eliminates them as an 'expense'. We raise them as biological shields.",
+      desc2: "\"They are our elite organic firewall. By having larger cells, the Varroa mite (the great bee destroyer) attacks the drone and leaves the valuable workers alone. They sacrifice themselves by sleeping!\"",
+      desc3: "Turning laziness into pure heroism. With your contribution from €79/year, you adopt the network's shield. You get Dashboard access, dividends in untouched raw honey, and a PDF certifying that you know how to save the world."
     },
     scarcity: {
-      title: "ONLY 31 JARS",
-      desc: "We don't produce for the mass market. We only share the real surplus of this lunar cycle. Once sold out, the node closes until the next bloom.",
-      btn: "SEND REQUEST TO CENTRAL HIVE"
+      title: "BE PART OF THE SOLUTION",
+      desc: "If we consume blind supermarket honey, we fund their extinction. Switch to the regenerative model. Adopt a drone, or taste our bio-monitored honey.",
+      btn: "ACCESS THE ADOPTION PLATFORM"
     },
     lab: {
       hero: {
@@ -597,20 +597,20 @@ export const translations = {
   },
   it: {
     seo: {
-      home: { title: "BuzzLab — Santuario delle Api con IA | Apicoltura Etica", desc: "BuzzLab trasforma l'apicoltura con l'IA. Monitoraggio alveari, certificazione etica, adozione alveari. Le api sono sovrane." },
+      home: { title: "BuzzLab — Salvataggio Api con IA | Apicoltura Etica", desc: "Le api stanno scomparendo. BuzzLab trasforma l'apicoltura con Smart-Hives e software per proteggerle. Adotta un fuco e unisciti alla resistenza." },
       lab: { title: "Analisi IA Alveari — BuzzLab", desc: "Monitoraggio basato sull'IA. Rilevamento Varroa, analisi acustica, avvisi in tempo real." },
       sanctuary: { title: "Il Santuario — BuzzLab | Api Sovrane", desc: "Santuario a Roccavivara, Molise. 2 ettari a 650m dove le api governano." },
       network: { title: "Rete BuzzLab | Comunità di Apicoltura Etica", desc: "Rete di apicoltori etici. Dati, certificazione, consulenza biodiversità." },
       contact: { title: "BuzzLab // Contatto", desc: "Contatta il nucleo strategico di BuzzLab. Richiedi udienze e comunica direttamente con l'alveare." },
-      adopt: { title: "Adotta un Alveare — BuzzLab | Da €79/anno", desc: "Adotta un vero alveare in Italia. Certificato personalizzato, miele artigianale, foto trimestrali. Le api sono le proprietarie." }
+      adopt: { title: "Adotta un Alveare — BuzzLab | Da €79/anno", desc: "Adotta un fuco in Italia. Certificato personalizzato, miele artigianale, foto trimestrali. Le api sono le proprietarie." }
     },
-    banner: "RACCOLTO LUNARE: 12/31 VASETTI DISPONIBILI",
+    banner: "ALLARME DI SISTEMA: ECOSISTEMA IN PERICOLO CRITICO",
     whatsapp: {
       message: "Vuoi parlare con l'Ape Regina? 🐝👑"
     },
     nav: {
       home: 'INIZIO',
-      lab: 'LABORATORIO',
+      lab: 'L\'OS',
       sanctuary: 'SANTUARIO',
       adopt: 'ADOTTA',
       network: 'RETE',
@@ -618,92 +618,92 @@ export const translations = {
       login: 'ACCESSO NODO'
     },
     footer: {
-      desc: "Ingegneria biologica, estrazione etica e dati di impollinazione. Non siamo qui per venderti sciroppo, ma per riprogrammare l'ecosistema.",
-      copyright: "© 2026 BUZZLAB. Miele estratto con il consenso delle Api Operaie.",
+      desc: "Ingegneria biologica, hardware proprietario e dati di impollinazione. Scaliamo l'impatto ecologico tramite la tecnologia.",
+      copyright: "© 2026 BUZZLAB. Dati estratti sotto normativa Honey_OS.",
       navTitle: "NAVIGAZIONE_VELOCE",
       socialTitle: "SOCIAL_INTERSPECIE"
     },
     product: {
-      title: "L'HARDWARE ORGANICO",
-      subtitle: "[ VASETTO EDIZIONE LIMITATA ]",
-      desc: "Questo non è un vasetto da supermercato. È una capsula del tempo biologica dell'attuale fioritura. Il nostro miele grezzo non è riscaldato, non è filtrato e la sua estrazione è limitata. Ogni unità ha un identificatore unico che traccia la sua origine floreale esatta.",
-      label: "LOTTO ATTUALE: 12 DI 31",
-      btn: "PRENOTA ESTRATTO"
+      title: "LA SMART-ARNIA (NODO)",
+      subtitle: "[ HARDWARE DI SOPRAVVIVENZA ]",
+      desc: "Rispettiamo il design organico della natura. Le nostre arnie sono scatole in legno vivo e corteccia, ma equipaggiate come rifugi ad alta tecnologia. La struttura rustica è dotata di sensori e trasmette i parametri vitali a Honey_OS. Zero stress, massima protezione.",
+      label: "ARNIE SALVATE: 12 DI 31 QUESTO MESE",
+      btn: "VEDI I DATI IN TEMPO REALE"
     },
     hero: {
-      supertitle: "[ MIELE GREZZO BIOMONITORATO ]",
-      badge1: "ESTRAZIONE ETICA (30%)",
-      badge2: "DATA LAB 24/7",
-      badge3: "ULTRA-LIMITATO",
-      btnMicro: "*Prenota uno dei 31 nodi disponibili",
-      subtitle: "IL SANTUARIO DOVE",
-      title: "LE API HANNO UN SINDACATO",
-      desc: "Molte persone allevano api per togliere loro tutto... Al BuzzLab invertiamo il flusso: loro sono le proprietarie, noi siamo solo il supporto tecnico.",
-      btn: "RICHIEDI UN'UDIENZA ALLA REGINA"
+      supertitle: "[ INFRASTRUTTURA DI SOPRAVVIVENZA ]",
+      badge1: "SISTEMA OPERATIVO API",
+      badge2: "ZERO STRESS TERMICO",
+      badge3: "ESTRAZIONE ETICA",
+      btnMicro: "*Aiuto da casa: sponsorizza il nostro scudo biologico",
+      subtitle: "ALLARME GLOBALE",
+      title: "LE API SI STANNO SPEGNENDO",
+      desc: "Pesticidi, cambiamento climatico e un'apicoltura preistorica che ruba loro tutto il miele e distrugge il loro microclima. Risultato: collasso. Al BuzzLab usiamo IA e Smart-Hives per blindarle. Vivono come regine, e tu puoi aiutarci adottando il membro più pigro (e vitale) della famiglia.",
+      btn: "ADOTTA UN FUCO ORA"
     },
     pact: {
-      standardMetric: "METRICA STANDARD",
-      standardTitle: "QUELLO CHE FANNO TUTTI",
-      standardDesc: "Estrazione del 95% del miele. Sostituzione con acqua e zucchero raffinato. Stress termico. Collassi ciclici. L'industria tratta l'ape come un filtro dell'aria usa e getta.",
-      standardLabel: "95% ESTRAZIONE AGGRESSIVA",
-      buzzlabProtocol: "PROTOCOLLO BUZZLAB",
-      buzzlabLabel: "30% SURPLUS CONSAPEVOLE",
-      title: "IL NOSTRO PATTO CON LA NATURA",
-      extTitle: "ESTRAZIONE",
-      extDesc: "Prendiamo solo il 30% del surplus. Il resto appartiene al nodo centrale (l'alveare).",
-      invTitle: "INVESTIMENTO",
-      invDesc: "Il 95% dei profitti viene reinvestito in hardware di monitoraggio ed espansione della flora."
+      standardMetric: "SISTEMA LEGACY (IL PROBLEMA)",
+      standardTitle: "APICOLTURA TOSSICA E OBSOLETA",
+      standardDesc: "Rubano il 100% del loro miele, sostituendolo con acqua e zucchero in inverno. Aprono le arnie in modo aggressivo, causando ipotermia e stress. L'industria le tratta come fabbriche usa e getta. Risultato: morte.",
+      standardLabel: "RUDIMENTALE, STRESS ESTREMO E LETALE",
+      buzzlabProtocol: "LA SOLUZIONE BUZZLAB",
+      buzzlabLabel: "MONITORAGGIO 24/7 NON INVASIVO",
+      title: "COME STIAMO RISOLVENDO IL BUG",
+      extTitle: "ESTRAZIONE ETICA",
+      extDesc: "Prendiamo solo il 30% del surplus, quando possibile. Il loro miele è il loro sistema immunitario e non glielo toglieremo.",
+      invTitle: "L'IA COME MEDICO",
+      invDesc: "Sensori termici, di peso e acustici rilevano parassiti (come la temuta Varroa) settimane prima che distruggano la colonia. Interveniamo in modo chirurgico."
     },
     arch: {
-      title: "QUI NON USIAMO STAMPI",
-      desc1: "L'apicoltura tradizionale è un sistema legacy. Abbiamo riprogettato l'architettura.",
-      desc2: "Le nostre arnie non sono scatole di legno standard. Sono server biologici. Progettiamo strutture esagonali modulari stampate in 3D con materiali biodegradabili che imitano la termodinamica naturale dello sciame.",
-      desc3: "Meno stress per loro. Dati più puri per noi."
+      title: "LE NOSTRE ARNIE SALVANO VITE",
+      desc1: "Vivere in una sottile scatola commerciale senza isolamento è come vivere con le finestre rotte in pieno gennaio. Noi riportiamo le api alla spessa corteccia dell'albero.",
+      desc2: "Trattando ogni arnia come un server biologico, le nostre strutture in legno rustico imitano la termodinamica della foresta. Mantengono una temperatura perfetta di 35ºC con il minimo sforzo, grazie ai sensori non invasivi integrati.",
+      desc3: "La tecnologia al servizio di chi fa davvero il lavoro sporco."
     },
     smart: {
-      title: "NODO SMART-HIVE",
-      subtitle: "MONITORAGGIO IN TEMPO REALE",
-      temp: "TEMPERATURA INTERNA",
-      weight: "PESO DEL NODO",
-      audio: "FREQUENZA DEL RONZIO",
-      insulation: "ISOLAMENTO TERMICO"
+      title: "HONEY_OS SYSTEM",
+      subtitle: "SORVEGLIANZA SANITARIA NEL TUO TELEFONO",
+      temp: "TERMOREGOLAZIONE VITALE",
+      weight: "RISERVE DI SOPRAVVIVENZA",
+      audio: "RONZIO (RILEVA MALATTIE)",
+      insulation: "CYBERSECURITY CONTRO IL FREDDO"
     },
     garden: {
-      title: "IL GIARDINO DEI DATI",
-      desc: "Ogni goccia di miele è un registro geografico della nostra flora locale.",
+      title: "FLORA = SISTEMA IMMUNITARIO",
+      desc: "Ogni fiore locale che monitoriamo con Honey_OS fornisce fitochimici chiave che curano le api e danno un sapore unico al nostro surplus del 30%.",
       lavenderName: "LAVANDA",
-      lavenderDesc: "Fornisce note floreali persistenti e proprietà rilassanti sia all'ape che all'assaggiatore.",
+      lavenderDesc: "Note floreali persistenti. Indicatore di salute ambientale. Calma l'intera arnia.",
       rosemaryName: "ROSMARINO",
-      rosemaryDesc: "Il motorino di avviamento dell'alveare in primavera. Un'esplosione di canfora ed energia pura.",
+      rosemaryDesc: "Il motorino di avviamento. Metrica di sopravvivenza dopo il duro inverno, registrata dai sensori.",
       thymeName: "TIMO",
-      thymeDesc: "L'antibiotico naturale della montagna. Sapore intenso, terroso e con un colpo di autorità."
+      thymeDesc: "L'antibiotico naturale dei monti. Vitale per espellere i parassiti intestinali dalle operaie."
     },
     cycle: {
-      title: "IL CICLO DI SINTESI",
+      title: "IL BOOT BIOLOGICO",
       eggTitle: "UOVO",
       eggDays: "Giorno 1-3",
-      eggDesc: "L'inizio del codice biologico.",
+      eggDesc: "Inizializzazione del codice genetico.",
       larvaTitle: "LARVA",
       larvaDays: "Giorno 4-9",
-      larvaDesc: "Crescita esponenziale. Dieta a base di Pappa Reale.",
+      larvaDesc: "Crescita dell'hardware, richiede un ambiente termico privo di stress.",
       pupaTitle: "PUPA",
       pupaDays: "Giorno 10-20",
-      pupaDesc: "La metamorfosi silenziosa.",
+      pupaDesc: "Metamorfosi. Dove l'IA di Buzzlab previene gli attacchi degli acari.",
       adultTitle: "ADULTA",
       adultDays: "Giorno 21+",
-      adultDesc: "Attivazione del protocollo di bottinatura."
+      adultDesc: "Attivazione del protocollo di ecosistema esterno."
     },
     drone: {
-      unit: "Unità Speciale: Bio-Shield",
-      title: "IL FUCO: LA NOSTRA ARMA SEGRETA (E UN PO' PIGRA)",
-      desc1: "Fuchi: Non sono qui solo per la foto. In BuzzLab, il loro \"ozio\" è strategico. Costruendo celle più grandi per loro, attiriamo la Varroa lontano dalle operaie.",
-      desc2: "\"Sono il nostro scudo biologico d'élite... anche se fanno un pisolino tutto il giorno. La loro mera esistenza è un firewall organico contro i parassiti.\"",
-      desc3: "Mentre l'industria li vede come \"spese inutili\", noi li vediamo come il sacrificio tattico che mantiene la salute del nodo centrale. Sono gli influencer definitivi: vivono bene, non lavorano, ma la loro presenza salva il resto della squadra."
+      unit: "OPERAZIONE DI SALVATAGGIO: ADOZIONE",
+      title: "SALVA L'ARNIA INVESTENDO IN... UN PIGRO",
+      desc1: "I fuchi non pungono, non bottinano, mangiano, dormono e si riproducono. L'industria standard li elimina come una 'spesa'. Noi li alleviamo come scudi biologici.",
+      desc2: "\"Sono il nostro firewall organico d'élite. Avendo celle più grandi, l'acaro Varroa (il grande distruttore di api) attacca il fuco e lascia in pace le preziose operaie. Si sacrificano dormendo!\"",
+      desc3: "Trasformando la pigrizia in puro eroismo. Con un contributo da 79€/anno, adotti lo scudo della rete. Ottieni l'accesso alla Dashboard, dividendi in miele grezzo e un PDF che certifica che tu sì sai come salvare il mondo."
     },
     scarcity: {
-      title: "SOLO 31 VASETTI",
-      desc: "Non produciamo per il mercato di massa. Condividiamo solo il vero surplus di questo ciclo lunare. Una volta esaurito, il nodo si chiude fino alla prossima fioritura.",
-      btn: "INVIA RICHIESTA ALL'ALVEARE CENTRALE"
+      title: "SII PARTE DELLA SOLUZIONE",
+      desc: "Se consumiamo miele cieco del supermercato, finanziamo la loro estinzione. Passa al modello rigenerativo. Adotta un fuco, o assaggia il nostro miele biomonitorato.",
+      btn: "ACCEDI ALLA PIATTAFORMA DI ADOZIONE"
     },
     lab: {
       hero: {
