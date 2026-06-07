@@ -79,14 +79,14 @@ export const SEO: React.FC<SEOProps> = ({ page, title, description }) => {
       <meta property="og:title" content={seoData.title} />
       <meta property="og:description" content={seoData.desc} />
       <meta property="og:site_name" content="BuzzLab" />
-      <meta property="og:image" content="https://images.pexels.com/photos/1118121/pexels-photo-1118121.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+      <meta property="og:image" content="https://images.unsplash.com/photo-1587049352847-4d4e1cb71511?auto=format&fit=crop&q=80&w=1200" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={currentUrl} />
       <meta property="twitter:title" content={seoData.title} />
       <meta property="twitter:description" content={seoData.desc} />
-      <meta property="twitter:image" content="https://images.pexels.com/photos/1118121/pexels-photo-1118121.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+      <meta property="twitter:image" content="https://images.unsplash.com/photo-1587049352847-4d4e1cb71511?auto=format&fit=crop&q=80&w=1200" />
 
       {/* Language Alternates (Hreflang) */}
       <link rel="alternate" href={`${siteUrl}${basePath}`} hrefLang="es" />
