@@ -11,7 +11,7 @@ const AdoptHero = ({ t }: { t: any }) => {
     <header className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.pexels.com/photos/1118121/pexels-photo-1118121.jpeg?auto=compress&cs=tinysrgb&w=1920" 
+          src="https://images.unsplash.com/photo-1587049352847-4d4e1cb71511?auto=format&fit=crop&q=80&w=1920" 
           alt="Beekeeper and bees" 
           className="w-full h-full object-cover opacity-30 grayscale-[50%] brightness-[0.7]"
           fetchPriority="high"
